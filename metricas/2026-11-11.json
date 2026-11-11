@@ -1,0 +1,64 @@
+{
+  "coletado_em": "2026-11-11T20:07:32.578892+00:00",
+  "conta": {
+    "id": "17841438504846156",
+    "followers_count": 1,
+    "media_count": 2,
+    "username": "allaboutsports.ai"
+  },
+  "conta_dia": {
+    "reach": 0
+  },
+  "posts": [
+    {
+      "media_id": "18011505707780908",
+      "publicado_em": "2026-11-11T20:05:07+0000",
+      "dia_semana": "Wed",
+      "hora_brt": "17:05",
+      "tipo_meta": "CAROUSEL_ALBUM",
+      "link": "https://www.instagram.com/p/DfnTExOjB4F/",
+      "legenda_inicio": "200 milhões de motoristas usam o Waze. Agora o app passa a mostrar ciclistas que usam Garmin.\n\nGarmin e Waze lançaram os Live Cycling Alerts",
+      "curtidas": 0,
+      "comentarios": 0,
+      "metricas": {
+        "reach": 0,
+        "views": 0,
+        "saved": 0,
+        "shares": 0,
+        "likes": 0,
+        "comments": 0,
+        "total_interactions": 0,
+        "profile_visits": 0,
+        "follows": 0
+      },
+      "pasta": "2026-11-12-waze-garmin",
+      "formato": "noticia",
+      "pilar": "Tech, produto & parcerias",
+      "manchete": "de motoristas usam o Waze, que agora mostra ciclistas com Garmin",
+      "slides": 7
+    },
+    {
+      "media_id": "17995024590105298",
+      "publicado_em": "2026-11-11T18:36:18+0000",
+      "dia_semana": "Wed",
+      "hora_brt": "15:36",
+      "tipo_meta": "CAROUSEL_ALBUM",
+      "link": "https://www.instagram.com/p/DfnI7X2oGq3/",
+      "legenda_inicio": "O negócio por trás dos esportes, explicado em português.\n\nO AllAboutSports.AI traz todo dia as principais notícias de negócios do esporte mu",
+      "curtidas": 0,
+      "comentarios": 0,
+      "metricas": {
+        "reach": 0,
+        "views": 0,
+        "saved": 0,
+        "shares": 0,
+        "likes": 0,
+        "comments": 0,
+        "total_interactions": 0,
+        "profile_visits": 0,
+        "follows": 0
+      }
+    }
+  ],
+  "metricas_indisponiveis": []
+}

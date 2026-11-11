@@ -1,5 +1,19 @@
 {
-  "coletado_em": "2026-11-11T21:17:07.462407+00:00",
+  "coletado_em": "2026-11-11T21:59:09.135852+00:00",
   "perfil": "allaboutsports.ai",
-  "comentarios": []
+  "comentarios": [
+    {
+      "comment_id": "18119185373077101",
+      "usuario": "tgolessa",
+      "texto": "noticia muito boa. parabens para as duas empresas.",
+      "quando": "2026-11-11T21:53:44+0000",
+      "curtidas": 0,
+      "respostas_de_outros": [],
+      "post": {
+        "media_id": "18003938178034117",
+        "link": "https://www.instagram.com/reel/DfnajdXiBRb/",
+        "legenda_inicio": "200 milhões de motoristas usam o Waze. Agora o app mostra quando tem ciclista com Garmin por perto.\n\nO ciclista ativa o LiveTrack, e quem está dirigindo vê um ícone em movimento no mapa e recebe um aviso. Opcional, só durante o pedal e sem mostrar nome nem rota.\n\nManda para aquele amigo que pedala.\n"
+      }
+    }
+  ]
 }

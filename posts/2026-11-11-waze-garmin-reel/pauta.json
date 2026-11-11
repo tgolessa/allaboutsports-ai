@@ -1,0 +1,19 @@
+{
+  "tipo": "noticia",
+  "pilar": "Tech, produto & parcerias",
+  "fonte": "Garmin · 10 nov 2026",
+  "fontes": ["Garmin, comunicado oficial · 10 nov 2026", "Engadget · 10 nov 2026"],
+  "capa": {
+    "prefixo": "",
+    "numero": "200mi",
+    "manchete": "de motoristas usam o Waze, que agora mostra ciclistas com Garmin"
+  },
+  "fato": "Garmin e Waze lançaram os Live Cycling Alerts: quando um ciclista com Garmin compartilha a localização, motoristas próximos veem um ícone em movimento no mapa.",
+  "numero": {
+    "valor": "R$ 0",
+    "legenda": "é o custo do LiveTrack para quem já tem um relógio ou ciclocomputador Garmin compatível"
+  },
+  "contexto": "O LiveTrack já existia: ciclistas usavam para a família acompanhar o pedal. A novidade é levar esse sinal para dentro do Waze, o app de navegação do Google.",
+  "por_que_importa": "Para a Garmin, é um diferencial que ajuda a vender relógio e ciclocomputador. Para o Waze, segurança vira recurso. E dados de wearables ganham valor fora do próprio app.",
+  "o_que_observar": "As empresas ainda não detalharam em quais países o recurso chega primeiro. A dúvida é se Strava, Apple e outras marcas vão buscar acordos parecidos."
+}

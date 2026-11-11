@@ -85,6 +85,12 @@ def wait_ready(container_id, label, tries=30, delay=4):
     raise GraphError(f"{label}: container não ficou pronto a tempo")
 
 
+def collab(meta):
+    """Collab post: perfis convidados como coautores (precisam aceitar no app)."""
+    users = [u.lstrip("@") for u in meta.get("colaboradores", []) if u.strip()]
+    return {"collaborators": json.dumps(users[:3])} if users else {}
+
+
 def publish_post(post_dir):
     meta_path = post_dir / "post.json"
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
@@ -96,7 +102,7 @@ def publish_post(post_dir):
         if not (post_dir / video).is_file():
             raise FileNotFoundError(f"vídeo não encontrado: {post_dir / video}")
         params = {"media_type": "REELS", "video_url": raw_url(post_dir, video),
-                  "caption": caption, "share_to_feed": "true"}
+                  "caption": caption, "share_to_feed": "true", **collab(meta)}
         if meta.get("capa") and (post_dir / meta["capa"]).is_file():
             params["cover_url"] = raw_url(post_dir, meta["capa"])
         print(f"[{post_dir.name}] reel")
@@ -119,7 +125,7 @@ def publish_post(post_dir):
         print(f"[{post_dir.name}] {len(urls)} imagem(ns)")
 
         if len(urls) == 1:
-            c = graph("POST", f"{IG_USER}/media", {"image_url": urls[0], "caption": caption})
+            c = graph("POST", f"{IG_USER}/media", {"image_url": urls[0], "caption": caption, **collab(meta)})
             creation_id = c["id"]
             wait_ready(creation_id, "imagem")
         else:
@@ -134,6 +140,7 @@ def publish_post(post_dir):
                 "media_type": "CAROUSEL",
                 "children": ",".join(children),
                 "caption": caption,
+                **collab(meta),
             })
             creation_id = c["id"]
             wait_ready(creation_id, "carrossel")
@@ -150,6 +157,20 @@ def publish_post(post_dir):
     meta.pop("erro", None)
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"[{post_dir.name}] publicado: {info.get('permalink')}")
+
+    # Threads: espelha o post. Uma falha aqui fica registrada, mas não
+    # desfaz nem marca erro na publicação do Instagram.
+    try:
+        import threads
+        if threads.enabled():
+            res = threads.publish(post_dir, meta, raw_url)
+            meta.update(res)
+            meta.pop("threads_erro", None)
+            print(f"[{post_dir.name}] threads: {res.get('threads_link')}")
+    except Exception as e:  # noqa: BLE001
+        meta["threads_erro"] = str(e)
+        print(f"[{post_dir.name}] threads ERRO: {e}", file=sys.stderr)
+    meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return meta
 
 

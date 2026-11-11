@@ -45,3 +45,18 @@ No ranking, todos os itens usam o mesmo tipo de valor (total do negócio, conver
 ### Identidade
 
 Cores, fontes e margens ficam em `templates/base.css`. Fontes: Archivo, Archivo Black e IBM Plex Mono (licença SIL OFL).
+
+## Agentes e automações
+
+| Arquivo | O que faz | Quando |
+| --- | --- | --- |
+| `AGENTE.md` | Pesquisa notícias, produz o pacote de posts e abre a proposta | 7h45 todo dia · 15h45 seg–sex |
+| `ANALISTA.md` | Relatório de desempenho e ajustes em `docs/aprendizados.md` | segunda 8h15 |
+| `COMENTARIOS.md` | Responde comentários simples e separa os sensíveis | 12h05 · 18h05 · 22h05 |
+| `PARCERIAS.md` | Sugere 5 parcerias com convites prontos | quarta 9h45 |
+| `publicar.yml` | Publica no Instagram (e no Threads, se configurado) os posts aprovados | a cada 15 min |
+| `metricas.yml` | Coleta as métricas do dia | 23h30 |
+| `comentarios.yml` | Busca comentários e publica respostas | 11h50 · 17h50 · 21h50 |
+| `threads-chave.yml` | Renova a chave do Threads | dias 1 e 16 |
+
+Collab post: no `post.json`, `"colaboradores": ["@usuario"]` (até 3). Threads: `"legenda_threads"` opcional, até 500 caracteres; sem ela, o texto é gerado da legenda do Instagram.

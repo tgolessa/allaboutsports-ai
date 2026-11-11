@@ -1,0 +1,31 @@
+name: Renovar chave do Threads
+
+# A chave do Threads vale 60 dias. Este workflow renova a cada 15 dias e
+# grava a nova no segredo THREADS_TOKEN. Para gravar segredos, precisa de
+# um token pessoal do GitHub no segredo GH_SECRETS_TOKEN (permissão
+# "Secrets: read and write" só neste repositório).
+
+on:
+  schedule:
+    - cron: "17 13 1,16 * *"
+  workflow_dispatch:
+
+jobs:
+  renovar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Renovar e gravar
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+        run: |
+          test -n "$THREADS_TOKEN" || { echo "THREADS_TOKEN não configurado."; exit 1; }
+          test -n "$GH_TOKEN" || { echo "GH_SECRETS_TOKEN não configurado."; exit 1; }
+          NOVA=$(python publicador/threads.py --refresh)
+          echo "::add-mask::$NOVA"
+          gh secret set THREADS_TOKEN --body "$NOVA" -R "$GITHUB_REPOSITORY"
+          echo "Chave do Threads renovada."

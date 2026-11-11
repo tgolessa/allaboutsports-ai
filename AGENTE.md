@@ -25,6 +25,7 @@ Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
 
 - Total de 2 a 4 posts por pacote, **mais o Reel** (veja abaixo). Use os primeiros horários da tabela, na ordem; o carrossel vai no primeiro horário.
 - **Sexta de manhã:** acrescente o `semanal` (Top 10 da semana, segunda a sexta), no último horário do pacote. Ele pode ser o 4º post.
+- **Sexta de manhã, newsletter:** acrescente também a edição da newsletter (Top 10 da semana por e-mail), com envio às **18:00**. Ela não ocupa horário do feed. Veja "Newsletter" em Produção.
 - **Sexta à tarde, semana ISO par:** acrescente o `ranking` (10 maiores valores dos últimos 14 dias, todos no mesmo tipo de valor e moeda), no último horário.
 - **Reel em todo pacote:** o carrossel do pacote também vira um Reel, publicado como post separado no horário de Reel: **15:30** (manhã, seg–sex), **18:45** (tarde) e **19:30** (fim de semana). Os horários respeitam o intervalo mínimo de 1 hora entre posts do publicador. Veja a seção "Reel" em Produção.
 - **Story em todo post do feed:** cada carrossel e nota ganha um `story.jpg`, publicado nos Stories logo depois do post. Veja "Story" em Produção.
@@ -79,6 +80,12 @@ Cria `story.jpg` na pasta do post; o publicador cuida do resto. Abra a imagem pa
 python agente/reel.py posts/<pasta-reel>/pauta.json
 ```
 Isso cria `reel.mp4` (9:16, trilha original gerada por código) e `reel_capa.jpg`. Assista a pelo menos 3 quadros (`ffmpeg -ss <segundos> -i reel.mp4 -frames:v 1 quadro.png`) para conferir. O `post.json` do Reel usa `"tipo": "reel"`, `"video": "reel.mp4"`, `"capa": "reel_capa.jpg"` (sem `imagens`) e uma legenda mais curta que a do carrossel, começando pelo gancho e terminando com um convite para salvar ou mandar para alguém.
+
+**Newsletter** (sexta de manhã): crie a pasta `posts/AAAA-MM-DD-newsletter/` com um `edicao.json` (formato no topo de `agente/newsletter.py`): número da edição (anterior + 1), abertura de 2 a 3 frases sobre o que marcou a semana, os mesmos 10 itens do Top 10 com 2 a 3 frases cada (mais completos que no carrossel) e link da fonte, e um fechamento de 1 a 2 frases. Gere o HTML e a prévia:
+```bash
+python agente/newsletter.py posts/<pasta>/edicao.json --previa
+```
+O `post.json` usa `"tipo": "newsletter"`, `"status": "aprovado"`, `"publicar_em": "<sexta>T18:00:00-03:00"`, `"assunto"` (até 60 caracteres, com o tema mais forte da semana), `"previa"` (até 90 caracteres, complementando o assunto), `"descricao"` e `"html": "newsletter.html"`. Inclua `previa.jpg` no corpo da proposta.
 
 **Legenda** (até ~1.200 caracteres):
 1. Primeira linha: o gancho da capa, em outras palavras.

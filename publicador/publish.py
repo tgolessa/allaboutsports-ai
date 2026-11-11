@@ -94,6 +94,14 @@ def collab(meta):
 def publish_post(post_dir):
     meta_path = post_dir / "post.json"
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    if meta.get("tipo") == "newsletter":
+        import newsletter
+        meta.update(newsletter.send(post_dir, meta))
+        meta.update({"status": "publicado", "publicado_em": dt.datetime.now(dt.timezone.utc).isoformat()})
+        meta.pop("erro", None)
+        meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"[{post_dir.name}] newsletter agendada no Kit: {meta.get('link')}")
+        return meta
     caption = meta["legenda"]
 
     if meta.get("video"):
@@ -247,6 +255,16 @@ def main():
     posts = due_posts(now)
     if not posts:
         print("Nenhum post aprovado com horário vencido.")
+        return
+    # Newsletters não disputam espaço no feed: saem todas, sem intervalo.
+    for post_dir in [p for p in posts if json.loads((p / "post.json").read_text(encoding="utf-8")).get("tipo") == "newsletter"]:
+        try:
+            publish_post(post_dir)
+        except Exception as e:  # noqa: BLE001
+            print(f"[{post_dir.name}] ERRO: {e}", file=sys.stderr)
+            mark_error(post_dir, str(e))
+    posts = [p for p in posts if json.loads((p / "post.json").read_text(encoding="utf-8")).get("tipo") != "newsletter"]
+    if not posts:
         return
     # Um post por rodada, e só se o último post da conta (inclusive manual)
     # tiver mais de MIN_GAP_MIN minutos. Evita despejar vários posts juntos

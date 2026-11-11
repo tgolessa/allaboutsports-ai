@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
     inputs:
       modo:
-        description: "check = só testa a chave · post = publica um post agora · due = publica os vencidos"
+        description: "check = testa a chave do Instagram · kit = testa a chave do Kit · post = publica um post agora · due = publica os vencidos"
         required: true
         default: check
         type: choice
-        options: [check, post, due]
+        options: [check, post, due, kit]
       post:
         description: "Pasta do post (só no modo post), ex.: posts/apresentacao"
         required: false
@@ -40,6 +40,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
           MODO: ${{ github.event_name == 'schedule' && 'due' || inputs.modo }}
           POST: ${{ inputs.post }}
         run: |
@@ -48,6 +49,7 @@ jobs:
             post)  test -n "$POST" || { echo "Informe a pasta do post."; exit 1; }
                    python publicador/publish.py --post "$POST" ;;
             due)   python publicador/publish.py --due ;;
+            kit)   python publicador/newsletter.py ;;
           esac
 
       - name: Registrar resultado

@@ -1,0 +1,41 @@
+name: Coletar métricas
+
+on:
+  schedule:
+    # Todo dia por volta de 23h30 em Brasília (02:37 UTC).
+    - cron: "37 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coletar-metricas
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Coletar
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python publicador/metricas.py --dias 35
+
+      - name: Salvar no repositório
+        run: |
+          if [ -n "$(git status --porcelain metricas)" ]; then
+            git config user.name "allaboutsports-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add metricas
+            git commit -m "Métricas do dia"
+            git pull --rebase -q origin main
+            git push -q origin HEAD:main
+          fi

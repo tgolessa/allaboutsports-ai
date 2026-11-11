@@ -11,7 +11,7 @@ git clone https://github.com/tgolessa/allaboutsports-ai && cd allaboutsports-ai
 pip install --break-system-packages playwright pillow
 ```
 
-Leia antes de começar: `docs/linha-editorial.md` (regras de conteúdo), `README.md` (formatos e limites de texto) e os exemplos em `templates/exemplos/`.
+Leia antes de começar: `docs/linha-editorial.md` (regras de conteúdo), `docs/aprendizados.md` (regras aprendidas com os números do perfil, que você deve seguir), `README.md` (formatos e limites de texto) e os exemplos em `templates/exemplos/`.
 
 Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
 

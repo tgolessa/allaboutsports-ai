@@ -1,0 +1,61 @@
+name: Publicar no Instagram
+
+on:
+  schedule:
+    # A cada 15 minutos publica os posts aprovados cujo horário já passou.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "check = só testa a chave · post = publica um post agora · due = publica os vencidos"
+        required: true
+        default: check
+        type: choice
+        options: [check, post, due]
+      post:
+        description: "Pasta do post (só no modo post), ex.: posts/apresentacao"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-instagram
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publicar
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          MODO: ${{ github.event_name == 'schedule' && 'due' || inputs.modo }}
+          POST: ${{ inputs.post }}
+        run: |
+          case "$MODO" in
+            check) python publicador/publish.py --check ;;
+            post)  test -n "$POST" || { echo "Informe a pasta do post."; exit 1; }
+                   python publicador/publish.py --post "$POST" ;;
+            due)   python publicador/publish.py --due ;;
+          esac
+
+      - name: Registrar resultado
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain posts)" ]; then
+            git config user.name "allaboutsports-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add posts
+            git commit -m "Registro de publicação"
+            git pull --rebase -q origin main
+            git push -q origin HEAD:main
+          fi

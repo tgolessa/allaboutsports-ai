@@ -38,6 +38,7 @@ BRANCH = os.environ.get("RAW_BRANCH", "main")
 VERSION = os.environ.get("GRAPH_VERSION", "").strip("/")
 BASE = "https://graph.facebook.com" + (f"/{VERSION}" if VERSION else "")
 MAX_ITEMS = 10  # limite de itens por carrossel na API
+MIN_GAP_MIN = int(os.environ.get("MIN_GAP_MIN", "60"))  # intervalo mínimo entre posts
 
 
 class GraphError(RuntimeError):
@@ -151,6 +152,14 @@ def due_posts(now):
     return [p for _, p in sorted(found)]
 
 
+def minutes_since_last_post(now):
+    data = graph("GET", f"{IG_USER}/media", {"fields": "timestamp", "limit": "1"}).get("data", [])
+    if not data:
+        return None
+    ts = dt.datetime.strptime(data[0]["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+    return (now - ts).total_seconds() / 60
+
+
 def mark_error(post_dir, message):
     meta_path = post_dir / "post.json"
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
@@ -186,16 +195,22 @@ def main():
     if not posts:
         print("Nenhum post aprovado com horário vencido.")
         return
-    failures = 0
-    for post_dir in posts:
-        try:
-            publish_post(post_dir)
-        except Exception as e:  # registra e segue para o próximo
-            failures += 1
-            print(f"[{post_dir.name}] ERRO: {e}", file=sys.stderr)
-            mark_error(post_dir, str(e))
-    if failures:
-        sys.exit(f"{failures} post(s) com erro.")
+    # Um post por rodada, e só se o último post da conta (inclusive manual)
+    # tiver mais de MIN_GAP_MIN minutos. Evita despejar vários posts juntos
+    # quando um pacote é aprovado depois dos horários previstos.
+    last = minutes_since_last_post(now)
+    if last is not None and last < MIN_GAP_MIN:
+        print(f"Último post há {last:.0f} min; aguardando {MIN_GAP_MIN} min. Na fila: {len(posts)}.")
+        return
+    post_dir = posts[0]
+    try:
+        publish_post(post_dir)
+    except Exception as e:
+        print(f"[{post_dir.name}] ERRO: {e}", file=sys.stderr)
+        mark_error(post_dir, str(e))
+        sys.exit(1)
+    if len(posts) > 1:
+        print(f"Restam {len(posts) - 1} post(s) na fila; saem nas próximas rodadas.")
 
 
 if __name__ == "__main__":

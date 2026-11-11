@@ -105,10 +105,19 @@ def main():
     a = ap.parse_args()
     pauta_path = Path(a.pauta).resolve()
     out_dir = Path(a.out).resolve() if a.out else pauta_path.parent
-    d = json.loads(pauta_path.read_text(encoding="utf-8"))
-    builders = {"noticia": r.build_noticia, "nota": r.build_nota,
-                "semanal": r.build_semanal, "ranking": r.build_ranking}
-    docs = [adapt_for_reel(doc) for doc in builders[d["tipo"]](d)]
+    if pauta_path.suffix == ".py":
+        # Post especial: um gerar.py que expõe a lista "slides" (HTML de cada slide).
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("especial", pauta_path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        raw = mod.slides
+    else:
+        d = json.loads(pauta_path.read_text(encoding="utf-8"))
+        builders = {"noticia": r.build_noticia, "nota": r.build_nota,
+                    "semanal": r.build_semanal, "ranking": r.build_ranking}
+        raw = builders[d["tipo"]](d)
+    docs = [adapt_for_reel(doc) for doc in raw]
     durations = [reading_time(doc, i == len(docs) - 1) for i, doc in enumerate(docs)]
 
     with tempfile.TemporaryDirectory() as tmp:

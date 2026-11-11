@@ -26,6 +26,7 @@ Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
 - Total de 2 a 4 posts por pacote. Use os primeiros horários da tabela, na ordem; o carrossel vai no primeiro horário.
 - **Sexta de manhã:** acrescente o `semanal` (Top 10 da semana, segunda a sexta), no último horário do pacote. Ele pode ser o 4º post.
 - **Sexta à tarde, semana ISO par:** acrescente o `ranking` (10 maiores valores dos últimos 14 dias, todos no mesmo tipo de valor e moeda), no último horário.
+- **Reels (terça e quinta de manhã):** o carrossel do pacote também vira um Reel, publicado às 14:30 como post separado (ele ocupa esse horário e conta no limite de 4). Veja a seção "Reel" em Produção.
 - Qualidade antes de volume: se não houver 2 pautas que passem nos critérios, entregue 1 e explique na proposta.
 
 ## 2. Pesquisa
@@ -64,6 +65,12 @@ Se aparecer `ESTOUROU`, encurte o texto e gere de novo.
 }
 ```
 O status já vai como `aprovado` porque a aprovação acontece no merge da proposta.
+
+**Reel** (só terça e quinta de manhã): crie a pasta `posts/AAAA-MM-DD-manha-NN-<slug>-reel/`, copie o `pauta.json` do carrossel e gere o vídeo:
+```bash
+python agente/reel.py posts/<pasta-reel>/pauta.json
+```
+Isso cria `reel.mp4` (9:16, trilha original gerada por código) e `reel_capa.jpg`. Assista a pelo menos 3 quadros (`ffmpeg -ss <segundos> -i reel.mp4 -frames:v 1 quadro.png`) para conferir. O `post.json` do Reel usa `"tipo": "reel"`, `"video": "reel.mp4"`, `"capa": "reel_capa.jpg"` (sem `imagens`) e uma legenda mais curta que a do carrossel, começando pelo gancho e terminando com um convite para salvar ou mandar para alguém.
 
 **Legenda** (até ~1.200 caracteres):
 1. Primeira linha: o gancho da capa, em outras palavras.

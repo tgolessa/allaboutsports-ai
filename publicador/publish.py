@@ -88,40 +88,55 @@ def wait_ready(container_id, label, tries=30, delay=4):
 def publish_post(post_dir):
     meta_path = post_dir / "post.json"
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
-    images = meta["imagens"]
     caption = meta["legenda"]
-    if not images:
-        raise ValueError("post sem imagens")
-    if len(images) > MAX_ITEMS:
-        raise ValueError(f"carrossel com {len(images)} imagens; o máximo é {MAX_ITEMS}")
-    for rel in images:
-        if not (post_dir / rel).is_file():
-            raise FileNotFoundError(f"imagem não encontrada: {post_dir / rel}")
-        if not rel.lower().endswith((".jpg", ".jpeg")):
-            raise ValueError(f"{rel}: a Meta aceita apenas JPEG")
 
-    urls = [raw_url(post_dir, rel) for rel in images]
-    print(f"[{post_dir.name}] {len(urls)} imagem(ns)")
-
-    if len(urls) == 1:
-        c = graph("POST", f"{IG_USER}/media", {"image_url": urls[0], "caption": caption})
+    if meta.get("video"):
+        # Reel: vídeo MP4 9:16, com capa opcional.
+        video = meta["video"]
+        if not (post_dir / video).is_file():
+            raise FileNotFoundError(f"vídeo não encontrado: {post_dir / video}")
+        params = {"media_type": "REELS", "video_url": raw_url(post_dir, video),
+                  "caption": caption, "share_to_feed": "true"}
+        if meta.get("capa") and (post_dir / meta["capa"]).is_file():
+            params["cover_url"] = raw_url(post_dir, meta["capa"])
+        print(f"[{post_dir.name}] reel")
+        c = graph("POST", f"{IG_USER}/media", params)
         creation_id = c["id"]
-        wait_ready(creation_id, "imagem")
+        wait_ready(creation_id, "reel", tries=60, delay=6)
     else:
-        children = []
-        for i, u in enumerate(urls, 1):
-            c = graph("POST", f"{IG_USER}/media", {"image_url": u, "is_carousel_item": "true"})
-            children.append(c["id"])
-            print(f"  item {i:02d} -> {c['id']}")
-        for i, cid in enumerate(children, 1):
-            wait_ready(cid, f"item {i:02d}")
-        c = graph("POST", f"{IG_USER}/media", {
-            "media_type": "CAROUSEL",
-            "children": ",".join(children),
-            "caption": caption,
-        })
-        creation_id = c["id"]
-        wait_ready(creation_id, "carrossel")
+        images = meta["imagens"]
+        if not images:
+            raise ValueError("post sem imagens")
+        if len(images) > MAX_ITEMS:
+            raise ValueError(f"carrossel com {len(images)} imagens; o máximo é {MAX_ITEMS}")
+        for rel in images:
+            if not (post_dir / rel).is_file():
+                raise FileNotFoundError(f"imagem não encontrada: {post_dir / rel}")
+            if not rel.lower().endswith((".jpg", ".jpeg")):
+                raise ValueError(f"{rel}: a Meta aceita apenas JPEG")
+
+        urls = [raw_url(post_dir, rel) for rel in images]
+        print(f"[{post_dir.name}] {len(urls)} imagem(ns)")
+
+        if len(urls) == 1:
+            c = graph("POST", f"{IG_USER}/media", {"image_url": urls[0], "caption": caption})
+            creation_id = c["id"]
+            wait_ready(creation_id, "imagem")
+        else:
+            children = []
+            for i, u in enumerate(urls, 1):
+                c = graph("POST", f"{IG_USER}/media", {"image_url": u, "is_carousel_item": "true"})
+                children.append(c["id"])
+                print(f"  item {i:02d} -> {c['id']}")
+            for i, cid in enumerate(children, 1):
+                wait_ready(cid, f"item {i:02d}")
+            c = graph("POST", f"{IG_USER}/media", {
+                "media_type": "CAROUSEL",
+                "children": ",".join(children),
+                "caption": caption,
+            })
+            creation_id = c["id"]
+            wait_ready(creation_id, "carrossel")
 
     pub = graph("POST", f"{IG_USER}/media_publish", {"creation_id": creation_id})
     media_id = pub["id"]

@@ -27,6 +27,7 @@ As imagens saem em `templates/out/<nome-do-json>/`. O script reduz a fonte de te
 | `nota` | Nota rápida, 2 a 4 por dia | 1 ou 2 | A · cobalto |
 | `semanal` | Top 10 da semana, toda sexta | 7 | C · terminal |
 | `ranking` | Ranking dos 10 maiores valores, a cada 15 dias | 7 | C · terminal |
+| `reel` | Versão em vídeo 9:16 de um carrossel (`agente/reel.py`), terça e quinta | 1 vídeo | A ou C |
 
 Os campos de cada tipo estão nos exemplos em `templates/exemplos/`.
 

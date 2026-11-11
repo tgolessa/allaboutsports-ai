@@ -286,12 +286,20 @@ def build_ranking(d):
 
 
 # ---------------------------------------------------------------- main
-def render(slides, out_dir):
+SIZES = {"feed": (1080, 1350), "vertical": (1080, 1920)}
+
+
+def render(slides, out_dir, formato="feed"):
+    w, h = SIZES[formato]
+    if formato == "vertical":
+        # 9:16 para Reels: mesma arte, com margens de segurança para a
+        # interface do Instagram (topo, legenda/botões embaixo e à direita).
+        slides = [s.replace('<html lang="pt-BR">', '<html lang="pt-BR" class="v">') for s in slides]
     out_dir.mkdir(parents=True, exist_ok=True)
     reports = []
     with sync_playwright() as p:
         browser = p.chromium.launch(executable_path=CHROME, args=["--no-sandbox"])
-        ctx = browser.new_context(viewport={"width": 1080, "height": 1350}, device_scale_factor=1)
+        ctx = browser.new_context(viewport={"width": w, "height": h}, device_scale_factor=1)
         pg = ctx.new_page()
         for i, doc in enumerate(slides, 1):
             tmp = ROOT / f".slide_{i:02d}.html"
@@ -303,7 +311,7 @@ def render(slides, out_dir):
             target = out_dir / f"{i:02d}.jpg"
             # A Meta aceita apenas JPEG na publicação via API.
             pg.screenshot(path=str(target), type="jpeg", quality=92,
-                          clip={"x": 0, "y": 0, "width": 1080, "height": 1350})
+                          clip={"x": 0, "y": 0, "width": w, "height": h})
             tmp.unlink()
             reports.append((target.name, rep))
         browser.close()
@@ -314,6 +322,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("data")
     ap.add_argument("--out")
+    ap.add_argument("--vertical", action="store_true", help="gera em 1080x1920 (Reels)")
     args = ap.parse_args()
     data_path = Path(args.data)
     d = json.loads(data_path.read_text(encoding="utf-8"))
@@ -321,7 +330,7 @@ def main():
     if d.get("tipo") not in builders:
         sys.exit('Campo "tipo" deve ser "noticia", "nota", "semanal" ou "ranking".')
     out_dir = Path(args.out) if args.out else ROOT / "out" / data_path.stem
-    for name, rep in render(builders[d["tipo"]](d), out_dir):
+    for name, rep in render(builders[d["tipo"]](d), out_dir, "vertical" if args.vertical else "feed"):
         flag = "  ESTOUROU" if rep["overflow"] else ""
         print(f"{out_dir.name}/{name}  ajustes={rep['shrinkSteps']}{flag}")
 

@@ -1,0 +1,23 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "[veículo] · [data]",
+  "fontes": ["[Veículo 1] · [data]", "[Veículo 2] · [data]"],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "10bi",
+    "manchete": "Quanto vale o time mais caro da NFL"
+  },
+  "fato": "Um grupo de investidores fechou a compra de uma franquia da NFL pelo maior valor já pago por um time esportivo nos EUA.",
+  "numero": {
+    "valor": "3x",
+    "legenda": "o valor médio de uma franquia há dez anos",
+    "comparacao": [
+      { "rotulo": "2016 · US$ 2,3 bi", "valor": 2.3 },
+      { "rotulo": "2026 · US$ 7 bi", "valor": 7 }
+    ]
+  },
+  "contexto": "Os valores das franquias subiram com contratos de TV cada vez maiores, receita dividida entre os times e oferta limitada: são só 32 equipes.",
+  "por_que_importa": "O preço vira referência para as próximas vendas. Quem comprar o próximo time vai negociar a partir daqui, e fundos de investimento ganham mais espaço na liga.",
+  "o_que_observar": "A venda ainda precisa ser aprovada pelos outros donos. A pergunta é se a liga vai abrir mais espaço para investidores de fora dos EUA."
+}

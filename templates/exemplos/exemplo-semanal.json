@@ -1,0 +1,107 @@
+{
+  "tipo": "semanal",
+  "semana": 46,
+  "periodo": "09–13 NOV 2026",
+  "noticias": [
+    {
+      "titulo_curto": "Venda recorde na NFL",
+      "titulo": "Franquia da NFL vendida por valor recorde",
+      "resumo": "Investidores pagam o maior valor já visto por um time nos EUA.",
+      "numero": "$10B",
+      "direcao": "up",
+      "sinal": "Valuation",
+      "pilar": "NFL · Deals",
+      "fonte": "[veículo]"
+    },
+    {
+      "titulo_curto": "Novo acordo de TV na Premier League",
+      "titulo": "Premier League renova direitos de TV",
+      "resumo": "Novo ciclo no Reino Unido supera o contrato anterior.",
+      "numero": "£6,7B",
+      "direcao": "up",
+      "sinal": "Mídia",
+      "pilar": "Futebol · Mídia",
+      "fonte": "[veículo]"
+    },
+    {
+      "titulo_curto": "Naming rights de arena na NBA",
+      "titulo": "Arena da NBA ganha novo nome",
+      "resumo": "Empresa de tecnologia fecha contrato de longo prazo.",
+      "numero": "$40M/ano",
+      "direcao": "up",
+      "sinal": "Patrocínio",
+      "pilar": "NBA · Marcas",
+      "fonte": "[veículo]"
+    },
+    {
+      "titulo_curto": "Audiência da F1 nos EUA",
+      "titulo": "Audiência da F1 cai nos EUA",
+      "resumo": "Média por corrida recua depois de três anos de alta.",
+      "numero": "−8%",
+      "direcao": "down",
+      "sinal": "Audiência",
+      "pilar": "F1 · Mídia",
+      "fonte": "[veículo]"
+    },
+    {
+      "titulo_curto": "Aporte em liga de padel",
+      "titulo": "Liga de padel recebe aporte",
+      "resumo": "Fundo entra no circuito para acelerar a expansão nas Américas.",
+      "numero": "$150M",
+      "direcao": "up",
+      "sinal": "Investimento",
+      "pilar": "Padel · Deals",
+      "fonte": "[veículo]"
+    },
+    {
+      "titulo_curto": "Contrato recorde na MLB",
+      "titulo": "Jogador fecha o maior contrato da MLB",
+      "resumo": "Acordo de longo prazo redefine o teto salarial do beisebol.",
+      "numero": "$700M",
+      "direcao": "up",
+      "sinal": "Salários",
+      "pilar": "MLB · Deals",
+      "fonte": "[veículo]"
+    },
+    {
+      "titulo_curto": "Streaming compra Champions",
+      "titulo": "Streaming leva direitos da Champions",
+      "resumo": "Plataforma assume jogos de terça em mais um mercado europeu.",
+      "numero": "€1,2B",
+      "direcao": "up",
+      "sinal": "Mídia",
+      "pilar": "Futebol · Mídia",
+      "fonte": "[veículo]"
+    },
+    {
+      "titulo_curto": "Patrocínio máster no UFC",
+      "titulo": "UFC troca patrocinador máster",
+      "resumo": "Nova marca de bebidas assume o maior contrato da organização.",
+      "numero": "$100M",
+      "direcao": "up",
+      "sinal": "Patrocínio",
+      "pilar": "UFC · Marcas",
+      "fonte": "[veículo]"
+    },
+    {
+      "titulo_curto": "Receita da WNBA",
+      "titulo": "WNBA bate recorde de receita",
+      "resumo": "Bilheteria e mídia puxam o crescimento pelo terceiro ano.",
+      "numero": "+35%",
+      "direcao": "up",
+      "sinal": "Receita",
+      "pilar": "WNBA · Ligas",
+      "fonte": "[veículo]"
+    },
+    {
+      "titulo_curto": "Venda de clube na Itália",
+      "titulo": "Clube italiano muda de dono",
+      "resumo": "Fundo americano assume o controle e promete novo estádio.",
+      "numero": "€900M",
+      "direcao": "flat",
+      "sinal": "Aquisição",
+      "pilar": "Futebol · Deals",
+      "fonte": "[veículo]"
+    }
+  ]
+}

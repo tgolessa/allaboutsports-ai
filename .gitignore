@@ -1,0 +1,3 @@
+templates/out/
+templates/.slide_*.html
+__pycache__/

@@ -1,0 +1,77 @@
+{
+  "tipo": "ranking",
+  "quinzena": "23",
+  "periodo": "31 OUT – 13 NOV 2026",
+  "itens": [
+    {
+      "numero": "$10B",
+      "titulo": "Venda de franquia da NFL",
+      "resumo": "Maior valor já pago por um time nos EUA.",
+      "categoria": "Deals",
+      "fonte": "[veículo]"
+    },
+    {
+      "numero": "£6,7B",
+      "titulo": "Direitos de TV da Premier League",
+      "resumo": "Novo ciclo de transmissão no Reino Unido.",
+      "categoria": "Mídia",
+      "fonte": "[veículo]"
+    },
+    {
+      "numero": "€1,2B",
+      "titulo": "Champions no streaming",
+      "resumo": "Direitos de terça em mais um mercado europeu.",
+      "categoria": "Mídia",
+      "fonte": "[veículo]"
+    },
+    {
+      "numero": "€900M",
+      "titulo": "Venda de clube italiano",
+      "resumo": "Fundo americano assume o controle.",
+      "categoria": "Deals",
+      "fonte": "[veículo]"
+    },
+    {
+      "numero": "$700M",
+      "titulo": "Contrato recorde na MLB",
+      "resumo": "Maior acordo da história do beisebol.",
+      "categoria": "Salários",
+      "fonte": "[veículo]"
+    },
+    {
+      "numero": "$500M",
+      "titulo": "Novo estádio na NFL",
+      "resumo": "Financiamento privado com apoio público.",
+      "categoria": "Estrutura",
+      "fonte": "[veículo]"
+    },
+    {
+      "numero": "$150M",
+      "titulo": "Aporte em liga de padel",
+      "resumo": "Expansão do circuito nas Américas.",
+      "categoria": "Investimento",
+      "fonte": "[veículo]"
+    },
+    {
+      "numero": "$120M",
+      "titulo": "Patrocínio de camisa na Europa",
+      "resumo": "Acordo de cinco anos com marca de tecnologia.",
+      "categoria": "Marcas",
+      "fonte": "[veículo]"
+    },
+    {
+      "numero": "$100M",
+      "titulo": "Patrocinador máster do UFC",
+      "resumo": "Nova marca de bebidas assume.",
+      "categoria": "Marcas",
+      "fonte": "[veículo]"
+    },
+    {
+      "numero": "$40M/ano",
+      "titulo": "Naming rights na NBA",
+      "resumo": "Arena muda de nome na próxima temporada.",
+      "categoria": "Marcas",
+      "fonte": "[veículo]"
+    }
+  ]
+}

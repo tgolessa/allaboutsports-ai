@@ -20,13 +20,15 @@ Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
 | Período | Pacote | Horários de publicação |
 | --- | --- | --- |
 | Manhã, seg–sex | 1 carrossel (`noticia`) + 1 a 3 notas (`nota`) | 09:30 · 11:30 · 13:00 · 14:30 |
-| Tarde, seg–sex | 1 carrossel (`noticia`) + 1 a 3 notas (`nota`) | 17:30 · 19:30 · 21:00 · 22:00 |
+| Tarde, seg–sex | 1 carrossel (`noticia`) + 1 a 3 notas (`nota`) | 17:30 · 20:00 · 21:15 · 22:30 |
 | Manhã, sáb e dom | 1 carrossel + 1 a 3 notas | 10:00 · 12:30 · 15:00 · 18:00 |
 
-- Total de 2 a 4 posts por pacote. Use os primeiros horários da tabela, na ordem; o carrossel vai no primeiro horário.
+- Total de 2 a 4 posts por pacote, **mais o Reel** (veja abaixo). Use os primeiros horários da tabela, na ordem; o carrossel vai no primeiro horário.
 - **Sexta de manhã:** acrescente o `semanal` (Top 10 da semana, segunda a sexta), no último horário do pacote. Ele pode ser o 4º post.
 - **Sexta à tarde, semana ISO par:** acrescente o `ranking` (10 maiores valores dos últimos 14 dias, todos no mesmo tipo de valor e moeda), no último horário.
-- **Reels (terça e quinta de manhã):** o carrossel do pacote também vira um Reel, publicado às 14:30 como post separado (ele ocupa esse horário e conta no limite de 4). Veja a seção "Reel" em Produção.
+- **Reel em todo pacote:** o carrossel do pacote também vira um Reel, publicado como post separado no horário de Reel: **15:30** (manhã, seg–sex), **18:45** (tarde) e **19:30** (fim de semana). Os horários respeitam o intervalo mínimo de 1 hora entre posts do publicador. Veja a seção "Reel" em Produção.
+- **Story em todo post do feed:** cada carrossel e nota ganha um `story.jpg`, publicado nos Stories logo depois do post. Veja "Story" em Produção.
+- **Grandes eventos:** confira `docs/calendario.md`. Se houver um evento nos próximos 7 dias, pelo menos 1 post do pacote deve ser sobre o negócio por trás dele (e o pacote pode trazer uma série, marcada como `"serie": "<nome>"` no `post.json`). Se o assunto merecer identidade especial, sugira na proposta.
 - Qualidade antes de volume: se não houver 2 pautas que passem nos critérios, entregue 1 e explique na proposta.
 
 ## 2. Pesquisa
@@ -66,7 +68,13 @@ Se aparecer `ESTOUROU`, encurte o texto e gere de novo.
 ```
 O status já vai como `aprovado` porque a aprovação acontece no merge da proposta.
 
-**Reel** (só terça e quinta de manhã): crie a pasta `posts/AAAA-MM-DD-manha-NN-<slug>-reel/`, copie o `pauta.json` do carrossel e gere o vídeo:
+**Story** (todo carrossel e nota):
+```bash
+python agente/story.py posts/<pasta>/pauta.json
+```
+Cria `story.jpg` na pasta do post; o publicador cuida do resto. Abra a imagem para conferir.
+
+**Reel** (todo pacote): crie a pasta `posts/AAAA-MM-DD-<periodo>-NN-<slug>-reel/`, copie o `pauta.json` do carrossel e gere o vídeo:
 ```bash
 python agente/reel.py posts/<pasta-reel>/pauta.json
 ```

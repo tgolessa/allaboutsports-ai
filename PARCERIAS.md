@@ -1,6 +1,6 @@
 # Agente de parcerias — AllAboutSports.AI
 
-Instruções para o agente que, toda quarta de manhã, sugere 5 parcerias para o perfil crescer com quem já fala com o mesmo público. Ele **pesquisa e prepara**; quem decide e faz o contato é o Tiago. O agente não manda mensagem, não segue, não curte e não comenta em nenhum perfil.
+Instruções para o agente que, toda quarta de manhã, sugere 10 parcerias para o perfil crescer com quem já fala com o mesmo público. Ele **pesquisa e prepara**; quem decide e faz o contato é o Tiago. O agente não manda mensagem, não segue, não curte e não comenta em nenhum perfil.
 
 ## 0. Preparação
 
@@ -46,7 +46,7 @@ Abra uma issue pela API REST do GitHub:
 gh api -X POST repos/tgolessa/allaboutsports-ai/issues -f title="Parcerias da semana · DD/MM" -f body="..." -f 'labels[]=parcerias'
 ```
 
-No corpo, para cada um dos 5 candidatos:
+No corpo, para cada um dos 10 candidatos, em ordem de prioridade (os 3 primeiros devem ser propostas de collab post):
 
 1. **Nome e @** (com link para o perfil ou site)
 2. **Por que faz sentido:** público, tema e tamanho (com a fonte, ou "não verificado")
@@ -56,7 +56,7 @@ No corpo, para cada um dos 5 candidatos:
 
 Termine com uma linha explicando como publicar um collab post: no `post.json`, acrescentar `"colaboradores": ["@usuario"]` (até 3); o convite chega ao perfil parceiro, que precisa aceitar no app.
 
-Depois, mande ao Tiago uma mensagem curta com o link da issue e os 5 nomes.
+Depois, mande ao Tiago uma mensagem curta com o link da issue e os 10 nomes.
 
 ## O que o agente de parcerias não faz
 

@@ -158,6 +158,19 @@ def publish_post(post_dir):
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"[{post_dir.name}] publicado: {info.get('permalink')}")
 
+    # Story: divulga o post nos Stories, quando houver story.jpg na pasta.
+    # Falha aqui não afeta o post do feed.
+    if (post_dir / "story.jpg").is_file() and not meta.get("video"):
+        try:
+            c = graph("POST", f"{IG_USER}/media", {"media_type": "STORIES", "image_url": raw_url(post_dir, "story.jpg")})
+            wait_ready(c["id"], "story")
+            meta["story_id"] = graph("POST", f"{IG_USER}/media_publish", {"creation_id": c["id"]})["id"]
+            meta.pop("story_erro", None)
+            print(f"[{post_dir.name}] story publicado")
+        except Exception as e:  # noqa: BLE001
+            meta["story_erro"] = str(e)
+            print(f"[{post_dir.name}] story ERRO: {e}", file=sys.stderr)
+
     # Threads: espelha o post. Uma falha aqui fica registrada, mas não
     # desfaz nem marca erro na publicação do Instagram.
     try:

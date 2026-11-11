@@ -41,9 +41,15 @@ Escreva `relatorios/AAAA-MM-DD.md` (data da segunda-feira) com, nesta ordem:
 4. **Horários:** o que funcionou melhor e pior.
 5. **Destaques:** 3 melhores e 3 piores posts, com link e motivo provável.
 6. **Recomendações:** no máximo 3, cada uma com a evidência (números e quantidade de posts) e a mudança concreta proposta.
-7. **Hipóteses para observar:** padrões ainda sem amostra suficiente.
+7. **Impulsionar:** os 2 posts da semana com maior taxa de salvamento + compartilhamento (e alcance acima da mediana), indicados para impulsionamento pago. Para cada um: link, por que foi escolhido, público sugerido (Brasil, 25–45 anos, interesses em esportes, negócios, marketing ou tecnologia, ajustado ao tema), orçamento sugerido de R$ 20 a R$ 50 por dia por 3 a 5 dias e objetivo (visitas ao perfil). A decisão e o gasto são do Tiago; você só recomenda.
+8. **Reels:** compare Reels e carrosséis do mesmo assunto (alcance e seguidores ganhos) e diga se a frequência de Reels deve subir, cair ou se manter.
+9. **Hipóteses para observar:** padrões ainda sem amostra suficiente.
 
 Texto direto, em português, sem jargão desnecessário e sem expressões com cara de texto de IA (veja a lista na linha editorial).
+
+## 3.1 Calendário de grandes eventos
+
+Atualize `docs/calendario.md` com os grandes eventos esportivos das **próximas 8 semanas** (finais, inícios de temporada, drafts, janelas de transferência, grandes torneios, leilões de direitos), checando cada data em fonte oficial e citando a fonte na tabela. Remova os que já passaram. Inclua essa mudança na mesma proposta.
 
 ## 4. Proposta de ajustes
 
@@ -57,7 +63,7 @@ O agente de pauta lê `docs/aprendizados.md` em toda rodada; o que você escreve
 
 ```bash
 git checkout -b relatorio/AAAA-MM-DD
-git add relatorios docs/aprendizados.md
+git add relatorios docs/aprendizados.md docs/calendario.md
 git commit -m "Relatório semanal de DD/MM"
 git push -u origin relatorio/AAAA-MM-DD
 ```

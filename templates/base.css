@@ -131,3 +131,11 @@ body { -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; 
 .c .countdown .first { color: var(--color-amber); }
 .c.podium .block:last-child .rank { color: var(--color-amber); }
 .c.podium .block:last-child .ticker-sm { font-size: 150px; }
+
+/* A · listas (posts especiais) */
+.a .items { display: flex; flex-direction: column; }
+.a .item { display: flex; align-items: baseline; gap: 28px; border-top: 2px solid var(--color-ice); padding: 26px 0; }
+.a .item:last-child { border-bottom: 2px solid var(--color-ice); }
+.a .item .k { width: 64px; flex-shrink: 0; font-family: var(--font-sans); font-weight: 700; font-size: 28px; color: var(--color-cobalt); }
+.a .item .t { font-family: var(--font-sans); font-weight: 600; font-size: 46px; line-height: 1.15; letter-spacing: -0.015em; }
+.a .item .t small { display: block; font-weight: 400; font-size: 30px; line-height: 1.35; color: var(--color-muted); letter-spacing: 0; padding-top: 6px; }

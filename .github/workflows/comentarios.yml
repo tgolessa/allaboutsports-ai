@@ -1,0 +1,72 @@
+name: Comentários
+
+# Os dados (fila de comentários e respostas) ficam na branch "comentarios",
+# para não encher a main de commits. Os scripts vêm sempre da main.
+
+on:
+  schedule:
+    # Coleta 15 min antes de cada rodada do agente (11h50, 17h50 e 21h50 em Brasília).
+    - cron: "50 14,20 * * *"
+    - cron: "50 0 * * *"
+  workflow_dispatch:
+    inputs:
+      acao:
+        description: "coletar = atualiza a fila · responder = publica as respostas de um arquivo"
+        required: true
+        default: coletar
+        type: choice
+        options: [coletar, responder]
+      arquivo:
+        description: "Só no modo responder: caminho na branch comentarios, ex.: comentarios/respostas/2026-11-12-1205.json"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: comentarios
+  cancel-in-progress: false
+
+jobs:
+  comentarios:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          ref: comentarios
+          path: dados
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Executar
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          ACAO: ${{ github.event_name == 'schedule' && 'coletar' || inputs.acao }}
+          ARQUIVO: ${{ inputs.arquivo }}
+        run: |
+          case "$ACAO" in
+            coletar)   python publicador/comentarios.py coletar --saida dados/comentarios/fila.json ;;
+            responder) test -n "$ARQUIVO" || { echo "Informe o arquivo."; exit 1; }
+                       python publicador/comentarios.py responder "dados/$ARQUIVO" ;;
+          esac
+
+      - name: Salvar na branch comentarios
+        if: always()
+        working-directory: dados
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "allaboutsports-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Comentários: $ACAO"
+            git pull --rebase -q origin comentarios
+            git push -q origin HEAD:comentarios
+          fi
+        env:
+          ACAO: ${{ github.event_name == 'schedule' && 'coletar' || inputs.acao }}

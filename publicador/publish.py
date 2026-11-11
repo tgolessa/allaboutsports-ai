@@ -236,7 +236,11 @@ def main():
         return
 
     if args.post:
-        publish_post((ROOT / args.post).resolve())
+        post_dir = (ROOT / args.post).resolve()
+        status = json.loads((post_dir / "post.json").read_text(encoding="utf-8")).get("status", "")
+        if status.startswith("publicado"):
+            sys.exit(f"{args.post} já está como '{status}'; nada a fazer (evita post duplicado).")
+        publish_post(post_dir)
         return
 
     now = dt.datetime.now(dt.timezone.utc)

@@ -24,13 +24,13 @@ slides = [
         '<div class="top"><span class="brand">AllAboutSports<b>.AI</b></span><span class="pillar">Apresentação</span></div>'
         '<div class="cover-hero"><span class="cover-prefix">até</span>'
         '<span class="cover-number fit-w">6</span>'
-        '<span class="cover-title">posts por dia sobre o dinheiro por trás do jogo</span></div>'
+        '<span class="cover-title">posts por dia sobre o negócio por trás dos esportes</span></div>'
         + r.a_foot("Prazer, AllAboutSports.AI", "Arraste →"),
         "a",
     ),
     r.page(
         top(2) + '<div class="body">' + label("O que é")
-        + '<p class="text">As principais notícias de negócios do esporte mundial, explicadas em português e em menos de um minuto por post.</p></div>'
+        + '<p class="text">As principais notícias de negócios do esporte mundial: deals, mídia, marcas, tecnologia e parcerias, explicadas em português.</p></div>'
         + r.a_foot("NFL, NBA, Premier League, F1, UFC, tênis e mais"),
         "a",
     ),
@@ -41,9 +41,9 @@ slides = [
             ("Mídia & streaming", "Direitos de transmissão e audiência"),
             ("Marcas & patrocínio", "Naming rights, camisas, atletas como marca"),
             ("Ligas & modelos de negócio", "Teto salarial, novas ligas, SAF"),
-            ("Tech & inovação", "Dados, IA, apostas e a experiência do fã"),
+            ("Tech, produto & parcerias", "Dados, IA, parcerias entre marcas e a experiência do fã"),
         ]) + "</div>"
-        + r.a_foot("Sempre com um número na frente"),
+        + r.a_foot("Direto ao ponto, com fonte em todo post"),
         "a",
     ),
     r.page(

@@ -1,6 +1,6 @@
 # AllAboutSports.AI
 
-O dinheiro por trás do jogo, explicado em português. Perfil de Instagram com notícias globais de sports business, produzido por agentes no Claude com revisão humana.
+O negócio por trás dos esportes, explicado em português. Perfil de Instagram com notícias globais de sports business, produzido por agentes no Claude com revisão humana.
 
 ## Como o repositório funciona
 

@@ -16,6 +16,8 @@ Fã de esporte de 25 a 45 anos que já consome conteúdo de negócios (finanças
 | Ligas & modelos de negócio | Novas ligas, teto salarial, SAF, regras com impacto financeiro | 15% |
 | Tech, produto & parcerias | IA, dados, wearables, apostas, parcerias entre marcas de tecnologia e esporte | 10% |
 
+**Primeiro mês (até 11/12/2026): cerca de 40% dos posts com ângulo brasileiro** (SAF, patrocínio de clubes, direitos do Brasileirão, brasileiros em ligas de fora, empresas brasileiras no esporte global, comparações Brasil x mundo). O objetivo é gerar identificação e compartilhamento enquanto o perfil busca os primeiros seguidores. Depois dessa data, volta a regra abaixo, salvo nova decisão.
+
 Temas globais (NFL, NBA, MLB, NHL, Premier League e grandes ligas europeias, Champions, F1, UFC, tênis, golfe, olimpismo, ciclismo, corrida, padel). Brasil entra quando há conexão global.
 
 ## Tom de voz

@@ -42,7 +42,8 @@ Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
    - envolve marca, liga ou atleta conhecido do público brasileiro;
    - é novo ou muda o entendimento de um tema;
    - rende um "por que importa" claro;
-   - equilibra os pesos dos pilares na semana.
+   - equilibra os pesos dos pilares na semana;
+   - **até 11/12/2026:** tem ângulo brasileiro. Mire em cerca de 40% dos posts da semana com conexão Brasil (veja a linha editorial) e diga na proposta quantos posts do pacote têm esse ângulo.
 5. **Checagem:** confirme cada número em pelo menos uma fonte confiável, de preferência duas, e nunca afirme mais do que a fonte diz.
 
 ## 3. Produção

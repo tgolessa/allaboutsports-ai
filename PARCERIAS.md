@@ -38,6 +38,18 @@ Para cada candidato, pense numa **ideia concreta** de colaboração, por exemplo
 - participação num episódio ou live;
 - série conjunta curta (ex.: 3 posts sobre o negócio da Copa, da F1, do tênis).
 
+## 2.1 Conteúdo de presente (os 3 primeiros candidatos)
+
+Para os 3 primeiros candidatos (os de collab post), não peça só a parceria: **entregue o post pronto**. Para cada um:
+
+1. Escolha uma notícia ou tema recente que una o assunto do criador ao negócio do esporte, com dados checados como em `docs/linha-editorial.md`.
+2. Produza um carrossel completo (`noticia`), como na seção 3 do `AGENTE.md`, na pasta `posts/presente-<slug-do-criador>/`, com `post.json` em `"status": "rascunho"`, `"colaboradores": ["@usuario"]` e uma legenda que funcione para os dois perfis.
+3. Gere uma folha de prévia: `python agente/previa.py posts/presente-<slug> --out posts/_previas/presente-<slug>.jpg`.
+
+Entregue os 3 numa branch `presentes/AAAA-MM-DD` (push, **sem** pull request). Na issue, para cada um, inclua a prévia (`![](https://raw.githubusercontent.com/tgolessa/allaboutsports-ai/presentes/AAAA-MM-DD/posts/_previas/presente-<slug>.jpg)`) e uma mensagem de convite que ofereça o carrossel pronto para publicar em coautoria.
+
+Quando um criador aceitar, o Tiago avisa e o post entra no fluxo normal de aprovação, com status `aprovado` e horário definido.
+
 ## 3. Entrega
 
 Abra uma issue pela API REST do GitHub:

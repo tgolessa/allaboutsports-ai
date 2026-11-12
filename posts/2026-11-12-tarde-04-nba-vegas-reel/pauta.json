@@ -1,0 +1,33 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "ESPN · KSNV · 12 nov 2026",
+  "fontes": [
+    "ESPN (Shams Charania) · 11 nov 2026",
+    "KSNV News 3 Las Vegas · 12 nov 2026",
+    "HITC · 12 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "10bi",
+    "manchete": "é o lance de cada finalista por um time em Las Vegas"
+  },
+  "fato": "Segundo Shams Charania, da ESPN, os três grupos finalistas para o novo time da NBA em Las Vegas oferecem US$ 10 bi de taxa de entrada. Talvez mais.",
+  "numero": {
+    "valor": "33x",
+    "legenda": "o que o Charlotte pagou em 2004, na última vez que a NBA criou um time",
+    "comparacao": [
+      {
+        "rotulo": "Charlotte 2004 · US$ 0,3 bi",
+        "valor": 0.3
+      },
+      {
+        "rotulo": "Las Vegas 2026 · US$ 10 bi",
+        "valor": 10
+      }
+    ]
+  },
+  "contexto": "Os finalistas: Nancy Walton Laurie, herdeira do Walmart, e o marido, Bill; Bill Foley, dono do Vegas Golden Knights, com Jerry Colangelo; e Steve Apostolopoulos com Marc Lasry.",
+  "por_que_importa": "Um time que ainda não existe já vale o mesmo que os Lakers, vendidos em 2025 com valuation recorde de US$ 10 bi. O preço de entrada na liga mudou de patamar.",
+  "o_que_observar": "A NBA quer decidir até o fim de 2026. Seattle é a principal candidata à 32ª vaga, e os times novos podem estrear em 2028-29."
+}

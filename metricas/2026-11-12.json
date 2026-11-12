@@ -1,0 +1,114 @@
+{
+  "coletado_em": "2026-11-12T03:27:09.757405+00:00",
+  "conta": {
+    "id": "17841438504846156",
+    "followers_count": 3,
+    "media_count": 4,
+    "username": "allaboutsports.ai"
+  },
+  "conta_dia": {
+    "reach": 169
+  },
+  "posts": [
+    {
+      "media_id": "18135454258744062",
+      "publicado_em": "2026-11-11T22:29:23+0000",
+      "dia_semana": "Wed",
+      "hora_brt": "19:29",
+      "tipo_meta": "CAROUSEL_ALBUM",
+      "link": "https://www.instagram.com/p/Dfnjl7GIUWD/",
+      "legenda_inicio": "R$ 40 mil por 3 dias treinando com Jan Frodeno, no interior de São Paulo.\n\nO alemão, campeão olímpico em Pequim 2008 e tricampeão mundial do",
+      "curtidas": 2,
+      "comentarios": 0,
+      "metricas": {
+        "reach": 117,
+        "views": 195,
+        "saved": 0,
+        "shares": 49,
+        "likes": 2,
+        "comments": 0,
+        "total_interactions": 51,
+        "profile_visits": 2,
+        "follows": 0
+      },
+      "pasta": "2026-11-12-frodeno-camp",
+      "formato": "nota",
+      "pilar": "Marcas & patrocínio",
+      "manchete": "por 3 dias treinando com Jan Frodeno no interior de SP",
+      "slides": 2
+    },
+    {
+      "media_id": "18003938178034117",
+      "publicado_em": "2026-11-11T21:10:48+0000",
+      "dia_semana": "Wed",
+      "hora_brt": "18:10",
+      "tipo_meta": "VIDEO",
+      "link": "https://www.instagram.com/reel/DfnajdXiBRb/",
+      "legenda_inicio": "200 milhões de motoristas usam o Waze. Agora o app mostra quando tem ciclista com Garmin por perto.\n\nO ciclista ativa o LiveTrack, e quem es",
+      "curtidas": 1,
+      "comentarios": 2,
+      "metricas": {
+        "reach": 15,
+        "views": 26,
+        "saved": 0,
+        "shares": 0,
+        "likes": 1,
+        "comments": 2,
+        "total_interactions": 3
+      }
+    },
+    {
+      "media_id": "18011505707780908",
+      "publicado_em": "2026-11-11T20:05:07+0000",
+      "dia_semana": "Wed",
+      "hora_brt": "17:05",
+      "tipo_meta": "CAROUSEL_ALBUM",
+      "link": "https://www.instagram.com/p/DfnTExOjB4F/",
+      "legenda_inicio": "200 milhões de motoristas usam o Waze. Agora o app passa a mostrar ciclistas que usam Garmin.\n\nGarmin e Waze lançaram os Live Cycling Alerts",
+      "curtidas": 5,
+      "comentarios": 0,
+      "metricas": {
+        "reach": 142,
+        "views": 229,
+        "saved": 0,
+        "shares": 1,
+        "likes": 5,
+        "comments": 0,
+        "total_interactions": 8,
+        "profile_visits": 1,
+        "follows": 1
+      },
+      "pasta": "2026-11-12-waze-garmin",
+      "formato": "noticia",
+      "pilar": "Tech, produto & parcerias",
+      "manchete": "de motoristas usam o Waze, que agora mostra ciclistas com Garmin",
+      "slides": 7
+    },
+    {
+      "media_id": "17995024590105298",
+      "publicado_em": "2026-11-11T18:36:18+0000",
+      "dia_semana": "Wed",
+      "hora_brt": "15:36",
+      "tipo_meta": "CAROUSEL_ALBUM",
+      "link": "https://www.instagram.com/p/DfnI7X2oGq3/",
+      "legenda_inicio": "O negócio por trás dos esportes, explicado em português.\n\nO AllAboutSports.AI traz todo dia as principais notícias de negócios do esporte mu",
+      "curtidas": 1,
+      "comentarios": 0,
+      "metricas": {
+        "reach": 3,
+        "views": 6,
+        "saved": 0,
+        "shares": 0,
+        "likes": 1,
+        "comments": 0,
+        "total_interactions": 1,
+        "profile_visits": 0,
+        "follows": 0
+      }
+    }
+  ],
+  "metricas_indisponiveis": [
+    "follows",
+    "profile_visits"
+  ]
+}

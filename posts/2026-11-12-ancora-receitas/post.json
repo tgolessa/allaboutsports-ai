@@ -1,5 +1,5 @@
 {
-  "status": "aprovado",
+  "status": "publicado",
   "publicar_em": "2026-11-12T08:30:00-03:00",
   "tipo": "especial",
   "serie": "ancora",
@@ -13,5 +13,9 @@
     "imagens/06.jpg",
     "imagens/07.jpg",
     "imagens/08.jpg"
-  ]
+  ],
+  "media_id": "17927450049449240",
+  "link": "https://www.instagram.com/p/Dfo-ALsFNjo/",
+  "publicado_em": "2026-11-12T11:39:29+0000",
+  "story_id": "17956107732334992"
 }

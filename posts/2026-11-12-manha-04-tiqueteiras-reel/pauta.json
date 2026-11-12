@@ -1,0 +1,33 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "Máquina do Esporte · 11 nov 2026",
+  "fontes": [
+    "Máquina do Esporte · 11 nov 2026",
+    "Exame · 1 out 2026",
+    "Brazil Journal · 9 out 2026"
+  ],
+  "capa": {
+    "prefixo": "R$",
+    "numero": "140mi",
+    "manchete": "que o São Paulo levou ao ceder a bilheteria à Ticketmaster"
+  },
+  "fato": "O São Paulo entregou à Ticketmaster a venda de ingressos e o sócio-torcedor por 5 anos. Recebeu R$ 110 mi adiantados e mais R$ 30 mi por um camarote.",
+  "numero": {
+    "valor": "R$ 500mi",
+    "legenda": "é a meta do fundo da Outfield com a Ingresse para adiantar bilheteria e sócio-torcedor de clubes",
+    "comparacao": [
+      {
+        "rotulo": "Já captado · R$ 100 mi",
+        "valor": 100
+      },
+      {
+        "rotulo": "Meta · R$ 500 mi",
+        "valor": 500
+      }
+    ]
+  },
+  "contexto": "A MP 1.394, de setembro, proibiu as bets. Elas eram patrocinadoras máster de 14 dos 20 clubes da Série A. Empresas de ingressos ocuparam parte do espaço.",
+  "por_que_importa": "Na prática, é crédito. O adiantamento do São Paulo volta à Ticketmaster em 5 anos, com juros de CDI + 1,99% ao ano, descontado da bilheteria.",
+  "o_que_observar": "O custo dessas antecipações quase nunca é divulgado. A dúvida é quanto da bilheteria futura dos clubes já está comprometida."
+}

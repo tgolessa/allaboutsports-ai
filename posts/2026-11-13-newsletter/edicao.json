@@ -1,0 +1,84 @@
+{
+  "numero": 1,
+  "data": "13/11/2026",
+  "abertura": "Primeira edição da newsletter da AllAboutSports.AI. A semana teve cifras grandes lá fora, com a F1 valendo US$ 50 bi e um time da NBA que ainda não existe cotado a US$ 10 bi, e um futebol brasileiro procurando dinheiro novo depois da saída das bets das camisas.",
+  "itens": [
+    {
+      "pilar": "Deals & dinheiro",
+      "numero": "US$ 50 bi",
+      "titulo": "As 11 equipes da F1 valem US$ 50 bi somadas",
+      "texto": "No ranking anual da Sportico, a Ferrari lidera com US$ 8,2 bi e a estreante Cadillac fecha a lista com US$ 2,7 bi; a Audi, de Gabriel Bortoleto, vale US$ 3 bi. A valorização média foi de 33% em um ano, acima de NFL (30%) e NBA (28%). Com US$ 4,55 bi por equipe, a F1 só fica atrás das duas ligas americanas.",
+      "fonte": "Sportico",
+      "fonte_url": "https://www.sportico.com/valuations/teams/2026/f1-team-values-ferrari-mercedes-1234958153/"
+    },
+    {
+      "pilar": "Deals & dinheiro",
+      "numero": "US$ 10 bi",
+      "titulo": "Finalistas oferecem US$ 10 bi por um time da NBA em Las Vegas",
+      "texto": "Segundo Shams Charania, da ESPN, os três grupos finalistas pela franquia de expansão oferecem cerca de US$ 10 bi de taxa de entrada. Em 2004, na última expansão, o Charlotte pagou US$ 300 mi. A NBA quer decidir até o fim do ano.",
+      "fonte": "ESPN"
+    },
+    {
+      "pilar": "Deals & dinheiro",
+      "numero": "R$ 140 mi",
+      "titulo": "São Paulo cede bilheteria e sócio-torcedor à Ticketmaster",
+      "texto": "O acordo de 5 anos rendeu R$ 110 mi adiantados e mais R$ 30 mi por um camarote no Morumbis. O adiantamento funciona como crédito: volta à Ticketmaster com juros de CDI + 1,99% ao ano, descontado da bilheteria. Outros clubes seguem o mesmo caminho depois da proibição das bets.",
+      "fonte": "Máquina do Esporte"
+    },
+    {
+      "pilar": "Mídia & streaming",
+      "numero": "+24%",
+      "titulo": "Monday Night Football cresce 24% na ESPN",
+      "texto": "O jogo de segunda tem média de 19 mi de espectadores nas 9 primeiras semanas, e Bills x Vikings teve 21,7 mi, recorde de semana 9 na era ESPN. A NFL inteira sobe 2%, para 18,3 mi por jogo, e o Thursday Night, da Amazon, cresce 13%.",
+      "fonte": "Barrett Media",
+      "fonte_url": "https://barrettmedia.com/2026/11/12/espn-monday-night-football-ratings-surge/"
+    },
+    {
+      "pilar": "Deals & dinheiro",
+      "numero": "R$ 1,1 bi",
+      "titulo": "Soriano e Guardiola vêm ao Brasil ver o Bahia",
+      "texto": "O CEO do City Football Group fala a cerca de 600 executivos em São Paulo e depois visita o Bahia em Salvador, com Guardiola na primeira passagem pelo país. Segundo o Bahia Notícias, o grupo já aportou mais de R$ 1,1 bi no clube desde 2023. A receita subiu para R$ 367,5 mi em 2025, ainda com prejuízo de R$ 154,6 mi.",
+      "fonte": "Máquina do Esporte",
+      "fonte_url": "https://maquinadoesporte.com.br/futebol/ferran-soriano-vem-ao-brasil-com-pep-guardiola-para-jantar-com-executivos-e-visita-ao-bahia/"
+    },
+    {
+      "pilar": "Deals & dinheiro",
+      "numero": "R$ 640 mi",
+      "titulo": "Corinthians e Caixa negociam a dívida da arena",
+      "texto": "Uma das saídas em discussão é o banco ficar com os naming rights do estádio em troca da quitação do financiamento. O presidente da Caixa se diz otimista, mas quer uma solução aceita pelos órgãos de controle. Nada foi fechado.",
+      "fonte": "TMC",
+      "fonte_url": "https://tmc.com.br/esporte/presidente-caixa-atualiza-negociacao-corinthians-divida-arena/"
+    },
+    {
+      "pilar": "Marcas & patrocínio",
+      "numero": "CHF 371 mi",
+      "titulo": "On, que tem Federer como sócio, lucra CHF 371 mi",
+      "texto": "De janeiro a setembro, as vendas somaram CHF 2,6 bi, alta de 15,1%, e o lucro subiu 176%, com ajuda de reembolsos de tarifas nos EUA. A venda direta ao consumidor cresceu 22,7%, mais que o dobro do atacado.",
+      "fonte": "FashionUnited",
+      "fonte_url": "https://fashionunited.com/news/business/on-reports-record-revenue-in-third-quarter/2026111075660"
+    },
+    {
+      "pilar": "Marcas & patrocínio",
+      "numero": "2030",
+      "titulo": "Lay's patrocina a Libertadores até 2030",
+      "texto": "A marca da PepsiCo estreia no torneio em 2027 e o junta à sua plataforma de futebol, que já tem Champions League e Copa do Mundo. O valor não foi divulgado.",
+      "fonte": "Conmebol / Máquina do Esporte"
+    },
+    {
+      "pilar": "Mídia & streaming",
+      "numero": "2028",
+      "titulo": "MotoGP fecha com a ESPN nas Américas",
+      "texto": "O acordo de 2 anos começa em 2027 e torna a ESPN a casa exclusiva da categoria nos EUA, mantendo a América Latina. O contrato permite sublicenciar corridas para TVs abertas no Brasil e na Argentina.",
+      "fonte": "ESPN / The Race"
+    },
+    {
+      "pilar": "Tech, produto & parcerias",
+      "numero": "200 mi",
+      "titulo": "Waze passa a mostrar ciclistas que usam Garmin",
+      "texto": "Com os Live Cycling Alerts, ciclistas que compartilham a localização pelo LiveTrack aparecem no mapa dos motoristas do Waze, que tem cerca de 200 mi de usuários. Para a Garmin, é argumento para vender relógio e ciclocomputador.",
+      "fonte": "Google / Garmin",
+      "fonte_url": "https://blog.google/waze/garmin-safety-cyclists/"
+    }
+  ],
+  "fechamento": "Obrigado por ler a primeira edição. Toda sexta, as 10 notícias que mexeram com o dinheiro do esporte, com contexto, chegam aqui; no dia a dia, estamos no Instagram."
+}

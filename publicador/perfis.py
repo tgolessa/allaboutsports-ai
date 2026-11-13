@@ -51,7 +51,8 @@ def mencoes(handle, n=25):
         print(f"menções {handle}: {str(e)[:200]}", file=sys.stderr)
         return collections.Counter()
     caps = [m.get("caption") or "" for m in d["business_discovery"].get("media", {}).get("data", [])]
-    print(f"menções {handle}: {len(caps)} legendas", file=sys.stderr)
+    txt = " ".join(caps)
+    print(f"menções {handle}: {len(caps)} legendas, {txt.count('@')} arrobas, amostra: {txt[:300]!r}", file=sys.stderr)
     found = re.findall(r"(?<![\w.])@([A-Za-z0-9_.]{3,30})", " ".join(caps))
     return collections.Counter(h.rstrip(".").lower() for h in found if h.rstrip(".").lower() != handle)
 

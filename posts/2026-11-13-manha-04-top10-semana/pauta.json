@@ -1,0 +1,107 @@
+{
+  "tipo": "semanal",
+  "semana": 46,
+  "periodo": "09–13 NOV 2026",
+  "noticias": [
+    {
+      "titulo_curto": "F1 vale US$ 50 bi",
+      "titulo": "Equipes da F1 valem US$ 50 bi somadas",
+      "resumo": "Ferrari lidera com US$ 8,2 bi; valorização média de 33% em um ano.",
+      "numero": "$50B",
+      "direcao": "up",
+      "sinal": "Valuation",
+      "pilar": "F1 · Deals",
+      "fonte": "Sportico"
+    },
+    {
+      "titulo_curto": "NBA em Las Vegas",
+      "titulo": "Finalistas oferecem US$ 10 bi por time em Vegas",
+      "resumo": "Três grupos disputam a franquia de expansão da NBA, segundo a ESPN.",
+      "numero": "$10B",
+      "direcao": "up",
+      "sinal": "Expansão",
+      "pilar": "NBA · Deals",
+      "fonte": "ESPN"
+    },
+    {
+      "titulo_curto": "São Paulo e Ticketmaster",
+      "titulo": "São Paulo cede bilheteria à Ticketmaster",
+      "resumo": "Acordo de 5 anos rende R$ 140 mi, parte como adiantamento com juros.",
+      "numero": "R$140M",
+      "direcao": "up",
+      "sinal": "Bilheteria",
+      "pilar": "Futebol · Deals",
+      "fonte": "Máquina do Esporte"
+    },
+    {
+      "titulo_curto": "Audiência do Monday Night",
+      "titulo": "Monday Night Football cresce 24%",
+      "resumo": "Média de 19 mi de espectadores na ESPN; a NFL toda sobe 2%.",
+      "numero": "+24%",
+      "direcao": "up",
+      "sinal": "Audiência",
+      "pilar": "NFL · Mídia",
+      "fonte": "Sports Media Watch"
+    },
+    {
+      "titulo_curto": "Grupo City no Bahia",
+      "titulo": "Soriano e Guardiola vêm ao Brasil",
+      "resumo": "Grupo dono do Bahia já aportou mais de R$ 1,1 bi no clube.",
+      "numero": "R$1,1B",
+      "direcao": "up",
+      "sinal": "Investimento",
+      "pilar": "Futebol · Deals",
+      "fonte": "Máquina do Esporte"
+    },
+    {
+      "titulo_curto": "Dívida da arena corintiana",
+      "titulo": "Corinthians negocia dívida da arena com a Caixa",
+      "resumo": "Naming rights para o banco estão entre as saídas. Nada fechado.",
+      "numero": "R$640M",
+      "direcao": "flat",
+      "sinal": "Dívida",
+      "pilar": "Futebol · Deals",
+      "fonte": "TMC"
+    },
+    {
+      "titulo_curto": "Lucro da On",
+      "titulo": "On, de Federer, lucra CHF 371 mi",
+      "resumo": "Vendas de janeiro a setembro sobem 15,1%, para CHF 2,6 bi.",
+      "numero": "CHF371M",
+      "direcao": "up",
+      "sinal": "Lucro",
+      "pilar": "Corrida · Marcas",
+      "fonte": "On"
+    },
+    {
+      "titulo_curto": "Lay's na Libertadores",
+      "titulo": "Lay's patrocina a Libertadores até 2030",
+      "resumo": "Marca da PepsiCo junta o torneio a Champions e Copa do Mundo.",
+      "numero": "2030",
+      "direcao": "flat",
+      "sinal": "Patrocínio",
+      "pilar": "Futebol · Marcas",
+      "fonte": "Conmebol"
+    },
+    {
+      "titulo_curto": "MotoGP fica na ESPN",
+      "titulo": "MotoGP fecha com a ESPN nas Américas",
+      "resumo": "Acordo de 2027 a 2028 permite sublicenciar para TV aberta no Brasil.",
+      "numero": "2028",
+      "direcao": "flat",
+      "sinal": "Mídia",
+      "pilar": "MotoGP · Mídia",
+      "fonte": "ESPN"
+    },
+    {
+      "titulo_curto": "Waze mostra ciclistas",
+      "titulo": "Waze passa a mostrar ciclistas com Garmin",
+      "resumo": "Motoristas veem no mapa quem pedala com o LiveTrack ligado.",
+      "numero": "200M",
+      "direcao": "up",
+      "sinal": "Tech",
+      "pilar": "Ciclismo · Tech",
+      "fonte": "Garmin"
+    }
+  ]
+}

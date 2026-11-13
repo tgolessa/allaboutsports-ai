@@ -1,0 +1,28 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "Sportico · 12 nov 2026",
+  "fontes": [
+    "Sportico · 12 nov 2026",
+    "Reuters / Field Level Media · 12 nov 2026",
+    "TimesLIVE · 13 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "50bi",
+    "manchete": "é quanto valem, somadas, as 11 equipes da F1"
+  },
+  "fato": "A Sportico publicou seu ranking anual de valor das equipes da F1. A Ferrari lidera com US$ 8,2 bi. A estreante Cadillac fecha a lista, com US$ 2,7 bi.",
+  "numero": {
+    "valor": "+33%",
+    "legenda": "foi a valorização média das equipes em um ano, mais que NFL e NBA",
+    "comparacao": [
+      { "rotulo": "NBA · +28%", "valor": 28 },
+      { "rotulo": "NFL · +30%", "valor": 30 },
+      { "rotulo": "F1 · +33%", "valor": 33 }
+    ]
+  },
+  "contexto": "Patrocínio e prêmio pago pela F1 são as maiores receitas. Em 2025, segundo a Sportico, as equipes dividiram US$ 1,4 bi, 34% da receita da categoria.",
+  "por_que_importa": "Cada equipe vale em média US$ 4,55 bi. Só NFL (US$ 9,34 bi) e NBA (US$ 6,64 bi) têm média maior. Entrar na F1 ficou bem mais caro.",
+  "o_que_observar": "A Audi, de Gabriel Bortoleto, vale US$ 3 bi. O novo Pacto de Concórdia, em vigor desde 2026, pode mudar a divisão do prêmio entre as equipes."
+}

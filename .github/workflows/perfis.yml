@@ -10,6 +10,10 @@ on:
       perfis:
         description: "Lista de @ separados por vírgula"
         required: true
+      mencoes:
+        description: "Também extrair os @ mais marcados nas legendas (sim/não)"
+        required: false
+        default: "não"
 
 permissions:
   contents: read
@@ -27,4 +31,5 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           PERFIS: ${{ inputs.perfis }}
+          MENCOES: ${{ inputs.mencoes == 'sim' && '1' || '' }}
         run: python publicador/perfis.py

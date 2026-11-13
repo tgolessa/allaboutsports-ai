@@ -8,9 +8,14 @@ Uso: python publicador/perfis.py arroba1 arroba2 ...   (ou PERFIS="a,b,c")
 Imprime um JSON entre as linhas ===PERFIS=== e ===FIM=== com, para cada @:
 username, nome, seguidores, posts, bio, site e data do último post.
 Contas pessoais (não profissionais) e @ inexistentes voltam com "erro".
+
+Com MENCOES=1, também lê as últimas 50 legendas de cada perfil encontrado
+e lista os @ que ele mais marca (bom para descobrir perfis do mesmo meio).
 """
+import collections
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -39,6 +44,16 @@ def consultar(handle):
         return {"username": h, "erro": str(e)[:160]}
 
 
+def mencoes(handle, n=50):
+    try:
+        d = graph("GET", IG_USER, {"fields": f"business_discovery.username({handle}){{media.limit({n}){{caption}}}}"})
+    except GraphError:
+        return collections.Counter()
+    caps = [m.get("caption") or "" for m in d["business_discovery"].get("media", {}).get("data", [])]
+    found = re.findall(r"@([A-Za-z0-9_.]{3,30})", " ".join(caps))
+    return collections.Counter(h.rstrip(".").lower() for h in found if h.rstrip(".").lower() != handle)
+
+
 def main():
     if not TOKEN or not IG_USER:
         sys.exit("Faltam IG_ACCESS_TOKEN e/ou IG_USER_ID.")
@@ -47,6 +62,15 @@ def main():
     for h in dict.fromkeys(x.strip().lstrip("@").lower() for x in handles if x.strip()):
         out.append(consultar(h))
         time.sleep(1)
+    if os.environ.get("MENCOES"):
+        total = collections.Counter()
+        for p in out:
+            if "erro" not in p:
+                c = mencoes(p["username"])
+                total.update(c)
+                time.sleep(1)
+        print("===MENCOES===")
+        print(json.dumps(total.most_common(200), ensure_ascii=False))
     print("===PERFIS===")
     print(json.dumps(out, ensure_ascii=False))
     print("===FIM===")

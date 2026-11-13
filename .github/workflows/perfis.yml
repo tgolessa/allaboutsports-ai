@@ -1,0 +1,30 @@
+name: Consultar perfis
+
+# Consulta dados públicos de contas profissionais do Instagram
+# (seguidores, posts, bio, último post) para listas de quem seguir
+# ou convidar para parcerias. Só leitura: não segue nem interage.
+
+on:
+  workflow_dispatch:
+    inputs:
+      perfis:
+        description: "Lista de @ separados por vírgula"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  consultar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Consultar
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          PERFIS: ${{ inputs.perfis }}
+        run: python publicador/perfis.py

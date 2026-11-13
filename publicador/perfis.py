@@ -44,13 +44,15 @@ def consultar(handle):
         return {"username": h, "erro": str(e)[:160]}
 
 
-def mencoes(handle, n=50):
+def mencoes(handle, n=25):
     try:
         d = graph("GET", IG_USER, {"fields": f"business_discovery.username({handle}){{media.limit({n}){{caption}}}}"})
-    except GraphError:
+    except GraphError as e:
+        print(f"menções {handle}: {str(e)[:200]}", file=sys.stderr)
         return collections.Counter()
     caps = [m.get("caption") or "" for m in d["business_discovery"].get("media", {}).get("data", [])]
-    found = re.findall(r"@([A-Za-z0-9_.]{3,30})", " ".join(caps))
+    print(f"menções {handle}: {len(caps)} legendas", file=sys.stderr)
+    found = re.findall(r"(?<![\w.])@([A-Za-z0-9_.]{3,30})", " ".join(caps))
     return collections.Counter(h.rstrip(".").lower() for h in found if h.rstrip(".").lower() != handle)
 
 

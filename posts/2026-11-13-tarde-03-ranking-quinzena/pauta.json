@@ -1,0 +1,17 @@
+{
+  "tipo": "ranking",
+  "quinzena": "23",
+  "periodo": "31 OUT – 13 NOV 2026",
+  "itens": [
+    { "numero": "$10B", "titulo": "Ofertas por time da NBA em Vegas", "resumo": "Três grupos disputam a vaga de expansão. Ainda é lance.", "categoria": "Deals", "fonte": "ESPN" },
+    { "numero": "$10B", "titulo": "Projeto para estádio dos Bears", "resumo": "Complexo em Chicago proposto por incorporadores. Time não aceitou.", "categoria": "Estrutura", "fonte": "Front Office Sports" },
+    { "numero": "$1,7B", "titulo": "ESPN e o playoff de 24 times", "resumo": "Cinco anos de direitos exclusivos do college football.", "categoria": "Mídia", "fonte": "Forbes" },
+    { "numero": "$625M", "titulo": "Oura compra a Counsel Health", "resumo": "Dona do anel inteligente leva startup de saúde com IA.", "categoria": "Tech", "fonte": "Fierce Healthcare" },
+    { "numero": "$353M", "titulo": "Dinheiro público para estádio dos Rays", "resumo": "Condado de Hillsborough aprova verba e títulos.", "categoria": "Estrutura", "fonte": "Yahoo News" },
+    { "numero": "$115M", "titulo": "Dona dos Enhanced Games compra DEAG", "resumo": "Valor da promotora alemã no negócio, todo em ações.", "categoria": "Deals", "fonte": "Music Business Worldwide" },
+    { "numero": "$70M", "titulo": "Naming rights do estádio de Washington", "resumo": "Columbia Bank assina por 10 anos, recorde no college.", "categoria": "Marcas", "fonte": "Athletic Business" },
+    { "numero": "$46M", "titulo": "Renovação de Newsome nos Giants", "resumo": "Cornerback assina por três anos na NFL.", "categoria": "Salários", "fonte": "Giants.com" },
+    { "numero": "$35M", "titulo": "Evan Phillips vai para os Braves", "resumo": "Primeira assinatura do top 50 da free agency.", "categoria": "Salários", "fonte": "CBS Sports" },
+    { "numero": "$12M", "titulo": "United paga por Pochettino", "resumo": "Multa e comissão técnica para tirá-lo da seleção dos EUA.", "categoria": "Deals", "fonte": "Front Office Sports" }
+  ]
+}

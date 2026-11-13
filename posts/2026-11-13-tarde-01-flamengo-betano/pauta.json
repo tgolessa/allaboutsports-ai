@@ -1,0 +1,27 @@
+{
+  "tipo": "noticia",
+  "pilar": "Marcas & patrocínio",
+  "fonte": "UOL / TMC · 13 nov 2026",
+  "fontes": [
+    "UOL (Rodrigo Mattos) / TMC · 13 nov 2026",
+    "VAVEL Brasil · 13 nov 2026",
+    "Agora RN · 13 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "R$",
+    "numero": "268,5mi",
+    "manchete": "é o patrocínio que Flamengo e Betano negociam suspender"
+  },
+  "fato": "Flamengo e Betano negociam suspender o maior patrocínio de camisa do futebol brasileiro. O motivo é a MP que proíbe as bets no Brasil.",
+  "numero": {
+    "valor": "R$220mi",
+    "legenda": "é a parte fixa do contrato em 2026; o resto vem de bônus e propriedades",
+    "comparacao": [
+      { "rotulo": "Bônus e extras · R$ 48,5 mi", "valor": 48.5 },
+      { "rotulo": "Parte fixa · R$ 220 mi", "valor": 220 }
+    ]
+  },
+  "contexto": "A MP 1.394/2026 proíbe operar e anunciar apostas de cota fixa desde outubro. A medida foi prorrogada por 60 dias, e o Congresso tem até março de 2027 para votar.",
+  "por_que_importa": "O Flamengo já recebeu todo o valor de 2026 e discute quanto devolver, em dinheiro ou serviços. Sem as bets, o clube estima perder até R$ 430 mi por ano.",
+  "o_que_observar": "Suspensão não é rescisão: o contrato vai até 2028 e pode voltar se a lei mudar. Enquanto isso, o clube procura outro patrocinador máster para 2027."
+}

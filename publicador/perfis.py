@@ -63,8 +63,12 @@ def main():
     handles = sys.argv[1:] or [h for h in os.environ.get("PERFIS", "").replace("\n", ",").split(",") if h.strip()]
     out = []
     for h in dict.fromkeys(x.strip().lstrip("@").lower() for x in handles if x.strip()):
-        out.append(consultar(h))
-        time.sleep(1)
+        r = consultar(h)
+        if "request limit" in r.get("erro", ""):
+            print(f"Limite de chamadas da Meta atingido em {h}; parei aqui.", file=sys.stderr)
+            break
+        out.append(r)
+        time.sleep(2)
     if os.environ.get("MENCOES"):
         total = collections.Counter()
         for p in out:

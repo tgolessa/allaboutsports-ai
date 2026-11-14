@@ -1,0 +1,28 @@
+{
+  "tipo": "noticia",
+  "pilar": "Mídia & streaming",
+  "fonte": "CNBC · 13 nov 2026",
+  "fontes": [
+    "CNBC · 13 nov 2026",
+    "Barrett Media · 13 nov 2026",
+    "OutKick / Fox News · 13 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "4,5bi",
+    "manchete": "é o contrato de TV que a NHL quer dobrar"
+  },
+  "fato": "A NHL, liga de hóquei dos EUA e do Canadá, quer de 50% a 100% a mais pelos direitos de TV, segundo a CNBC. O contrato atual acaba em 2028.",
+  "numero": {
+    "valor": "até 2x",
+    "legenda": "é o aumento que a liga busca. Média anual, sobre US$ 4,5 bi em 7 anos",
+    "comparacao": [
+      { "rotulo": "Hoje · US$ 640 mi/ano", "valor": 640 },
+      { "rotulo": "+50% · US$ 960 mi", "valor": 960 },
+      { "rotulo": "+100% · US$ 1,3 bi", "valor": 1290 }
+    ]
+  },
+  "contexto": "ESPN e TNT dividem a liga desde 2021. Os playoffs da última temporada tiveram média recorde de 1,8 mi de espectadores. A final teve 5,2 mi.",
+  "por_que_importa": "A NBA quase triplicou a receita de TV no último contrato, e a NHL usa o precedente. Mas a NFL também vai pedir mais às mesmas emissoras.",
+  "o_que_observar": "As conversas formais começam em 1º de janeiro. A ESPN quer mais jogos de playoff. Netflix e Amazon são citadas como possíveis interessadas, segundo a OutKick."
+}

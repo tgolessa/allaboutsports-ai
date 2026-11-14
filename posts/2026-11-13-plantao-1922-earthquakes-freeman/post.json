@@ -1,5 +1,5 @@
 {
-  "status": "aprovado",
+  "status": "publicado",
   "plantao": true,
   "publicar_em": "2026-11-13T19:45:00-03:00",
   "tipo": "nota",
@@ -7,5 +7,9 @@
   "imagens": [
     "imagens/01.jpg",
     "imagens/02.jpg"
-  ]
+  ],
+  "media_id": "17958221880270930",
+  "link": "https://www.instagram.com/p/DftVzv7l2Gu/",
+  "publicado_em": "2026-11-14T04:24:27+0000",
+  "story_id": "18122821726984895"
 }

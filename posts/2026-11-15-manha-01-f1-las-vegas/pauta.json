@@ -1,0 +1,34 @@
+{
+  "tipo": "noticia",
+  "pilar": "Ligas & modelos de negócio",
+  "fonte": "LVCVA via Fox5 · Liberty Media via The Race · nov 2026",
+  "fontes": [
+    "Fox5 Vegas · 15 jul 2026",
+    "The Race · 6 nov 2026",
+    "Racer · 9 nov 2026",
+    "Roundtable Sports / Yahoo · 12 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "100mi",
+    "manchete": "é o que Las Vegas paga à F1 até 2037"
+  },
+  "fato": "A F1 corre em Las Vegas de 19 a 21/11. O órgão de turismo local, a LVCVA, aprovou US$ 10 mi por ano em patrocínio de 2028 a 2037.",
+  "numero": {
+    "valor": "3,2bi",
+    "legenda": "em dólares, é o impacto econômico das três primeiras edições, segundo a LVCVA",
+    "comparacao": [
+      {
+        "rotulo": "2023 · US$ 1,5 bi",
+        "valor": 1.5
+      },
+      {
+        "rotulo": "2024 e 2025 · US$ 1,7 bi",
+        "valor": 1.7
+      }
+    ]
+  },
+  "contexto": "Aqui a própria F1 organiza a corrida e é dona do prédio dos boxes. Antes, a LVCVA gastava cerca de US$ 9 mi por ano, somando patrocínio e ingressos.",
+  "por_que_importa": "A cidade paga para atrair turistas, e a F1 fica com ingresso e hospitalidade. A Liberty Media faturou US$ 1,1 bi com a F1 de julho a setembro.",
+  "o_que_observar": "Economistas contestam os números de impacto. E a Apple, dona dos direitos da F1 nos EUA, vai transmitir o fim de semana de graça por lá."
+}

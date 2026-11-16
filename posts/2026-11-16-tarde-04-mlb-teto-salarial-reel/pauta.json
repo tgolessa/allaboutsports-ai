@@ -1,0 +1,27 @@
+{
+  "tipo": "noticia",
+  "pilar": "Ligas & modelos de negócio",
+  "fonte": "MLB.com · Front Office Sports · AP",
+  "fontes": [
+    "MLB.com · 4 nov 2026",
+    "Front Office Sports · 16 nov 2026",
+    "AP · 29 out 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "258mi",
+    "manchete": "é o teto salarial que os donos da MLB propõem"
+  },
+  "fato": "Os donos dos times da MLB, a liga de beisebol dos EUA, querem teto e piso salarial a partir de 2028. O acordo atual com os jogadores vence em 1º/12.",
+  "numero": {
+    "valor": "20",
+    "legenda": "dos 30 times teriam de mexer na folha salarial, pelos números de 2026",
+    "comparacao": [
+      { "rotulo": "12 times sobem · US$ 636 mi", "valor": 636 },
+      { "rotulo": "8 times cortam · US$ 528 mi", "valor": 528 }
+    ]
+  },
+  "contexto": "A proposta: gastar no mínimo US$ 180,2 mi e no máximo US$ 258,2 mi por time. NBA, NFL e NHL já têm teto. A MLB só cobra imposto de quem gasta demais.",
+  "por_que_importa": "O sindicato dos jogadores rejeita o teto. Sem acordo até 1º/12, os donos devem decretar um lockout, paralisação imposta pelos times que congela contratações e trocas.",
+  "o_que_observar": "A liga lançou um vídeo para convencer os fãs, e os donos se reúnem em Nova York nesta semana. Em 2022, o último lockout durou 99 dias."
+}

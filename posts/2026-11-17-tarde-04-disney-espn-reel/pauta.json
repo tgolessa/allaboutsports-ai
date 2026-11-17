@@ -1,0 +1,33 @@
+{
+  "tipo": "noticia",
+  "pilar": "Mídia & streaming",
+  "fonte": "Disney · Front Office Sports · Fast Company",
+  "fontes": [
+    "Disney (balanço) · 17 nov 2026",
+    "Front Office Sports · 17 nov 2026",
+    "Fast Company · 17 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "4,6bi",
+    "manchete": "faturou a divisão de esportes da Disney no trimestre"
+  },
+  "fato": "A área de esportes da Disney, liderada pela ESPN, faturou US$ 4,6 bi no trimestre encerrado em 3/10. É 16% a mais que no mesmo período de 2025.",
+  "numero": {
+    "valor": "+53%",
+    "legenda": "foi a alta do lucro operacional da divisão, para US$ 1,39 bi",
+    "comparacao": [
+      {
+        "rotulo": "4º tri fiscal 2025 · US$ 911 mi",
+        "valor": 911
+      },
+      {
+        "rotulo": "4º tri fiscal 2026 · US$ 1,39 bi",
+        "valor": 1393
+      }
+    ]
+  },
+  "contexto": "Publicidade, taxas pagas pelas operadoras e a NFL Network, que a Disney assumiu num acordo com a liga, puxaram a alta. O trimestre teve uma semana a mais.",
+  "por_que_importa": "Esporte ao vivo sustenta a TV paga e o streaming da Disney. Ainda assim, a empresa quer cortar US$ 3 bi anuais em custos até 2029 e prevê mais demissões.",
+  "o_que_observar": "A Disney prevê gastar US$ 26 bi com conteúdo em 2027. No Brasil, a ESPN divide com o Prime Video um pacote da Copa do Brasil de 2027 a 2030."
+}

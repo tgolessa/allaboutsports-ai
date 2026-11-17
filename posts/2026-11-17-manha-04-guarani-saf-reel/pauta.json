@@ -1,0 +1,28 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "Mix Vale · Hora Campinas · 16-17 nov 2026",
+  "fontes": [
+    "Mix Vale · 17 nov 2026",
+    "Hora Campinas · 16 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "R$",
+    "numero": "1,075bi",
+    "manchete": "é o investimento prometido em troca de 90% do Guarani"
+  },
+  "fato": "Os sócios do Guarani votam nesta quinta (19) a venda de 90% da SAF ao empresário Roberto Graziano. O clube ficaria com os outros 10%.",
+  "numero": {
+    "valor": "40 anos",
+    "legenda": "é o prazo para os R$ 400 mi prometidos ao futebol",
+    "comparacao": [
+      { "rotulo": "CT · R$ 25 mi", "valor": 25 },
+      { "rotulo": "Estádio · R$ 300 mi", "valor": 300 },
+      { "rotulo": "Dívidas · até R$ 350 mi", "valor": 350 },
+      { "rotulo": "Futebol · R$ 400 mi", "valor": 400 }
+    ]
+  },
+  "contexto": "O clube de Campinas está em recuperação judicial e tem salários atrasados. Em outubro, os sócios aprovaram criar a SAF por 235 votos a 12.",
+  "por_que_importa": "A SAF, o clube-empresa, virou a saída de clubes endividados. Aqui, o comprador assume dívidas da recuperação judicial e se compromete a entregar estádio e CT novos.",
+  "o_que_observar": "A votação é híbrida, das 15h30 até cerca de 20h. Uma cláusula impede revender a SAF antes de entregar estádio e CT. A diretoria quer concluir ainda em novembro."
+}

@@ -1,0 +1,34 @@
+{
+  "tipo": "noticia",
+  "pilar": "Marcas & patrocínio",
+  "fonte": "Atlético-MG · Máquina do Esporte · Gazeta Esportiva",
+  "fontes": [
+    "Atlético-MG (comunicado) · 18 nov 2026",
+    "Máquina do Esporte · 18 nov 2026",
+    "Gazeta Esportiva · 18 nov 2026",
+    "Bolavip · 4 out 2026"
+  ],
+  "capa": {
+    "prefixo": "R$",
+    "numero": "75mi",
+    "manchete": "é o potencial do novo máster do Atlético, sem bets"
+  },
+  "fato": "O Atlético-MG estreia no sábado, na final da Sul-Americana contra o Boca, o Torcedor Premiado como patrocinador máster. O contrato vale por três anos.",
+  "numero": {
+    "valor": "-58%",
+    "legenda": "é a distância entre o novo acordo e o da H2bet, encerrado após a MP das bets",
+    "comparacao": [
+      {
+        "rotulo": "H2bet · R$ 180 mi em 3 temporadas",
+        "valor": 180
+      },
+      {
+        "rotulo": "Novo acordo · R$ 75 mi em 3 anos (potencial)",
+        "valor": 75
+      }
+    ]
+  },
+  "contexto": "O valor depende da adesão: o torcedor paga R$ 19,90 por mês, ganha créditos a cada gol do Galo e concorre a prêmios. Parte da assinatura vai ao clube.",
+  "por_que_importa": "Com a MP que proibiu as bets, muitos clubes ficaram sem patrocinador máster. Dividir a receita de assinaturas vira alternativa, mas o valor final não é garantido.",
+  "o_que_observar": "Depois da final, a marca vai para o calção. O programa já está em Flamengo, Corinthians, Santos e Inter, mas é a primeira vez no espaço máster."
+}

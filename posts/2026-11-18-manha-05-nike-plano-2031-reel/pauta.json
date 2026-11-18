@@ -1,0 +1,26 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "Nike (comunicado à SEC) · Motley Fool · 17 nov 2026",
+  "fontes": [
+    "Nike, comunicado à SEC · 17 nov 2026",
+    "Motley Fool · Stocktwits · 17 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "5bi",
+    "manchete": "é a receita extra que a Nike promete até 2031"
+  },
+  "fato": "A Nike apresentou nesta terça (17) seu plano até o ano fiscal de 2031. A meta é somar cerca de US$ 5 bi à receita, partindo da base de 2027.",
+  "numero": {
+    "valor": "12-14%",
+    "legenda": "é a margem operacional prometida para 2031; neste ano fiscal, deve ficar perto de 6%",
+    "comparacao": [
+      { "rotulo": "Ano fiscal 2027 · cerca de 6%", "valor": 6 },
+      { "rotulo": "Meta 2031 · até 14%", "valor": 14 }
+    ]
+  },
+  "contexto": "A receita deve cair neste ano fiscal, que termina em maio de 2027. A Nike diz que volta a crescer no ritmo do mercado em 2029 e acima dele depois.",
+  "por_que_importa": "A Nike veste seleções, clubes e atletas no mundo todo. Do extra prometido, cerca de US$ 4 bi viriam dos esportes de performance e US$ 1 bi da linha casual.",
+  "o_que_observar": "As ações subiram no começo do pregão e viraram para queda. O plano depende de um corte de custos de US$ 2,5 bi por ano até 2031."
+}

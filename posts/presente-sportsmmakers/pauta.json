@@ -1,0 +1,27 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "Ticket Sports via Máquina do Esporte · Folha de Pernambuco",
+  "fontes": [
+    "Máquina do Esporte · 1 set 2026",
+    "Folha de Pernambuco · 3 set 2026",
+    "Dados: Ticket Sports (TS Summit 2026)"
+  ],
+  "capa": {
+    "prefixo": "R$",
+    "numero": "21bi",
+    "manchete": "é o tamanho do mercado de corrida de rua no Brasil"
+  },
+  "fato": "Segundo a Ticket Sports, plataforma de inscrições em provas, o mercado de corrida de rua no Brasil soma R$ 21 bi, entre inscrições, vestuário e patrocínio.",
+  "numero": {
+    "valor": "14,6mi",
+    "legenda": "de brasileiros correm, segundo a Ticket Sports; em 2022, eram 9 mi",
+    "comparacao": [
+      { "rotulo": "2022 · 9 mi de corredores", "valor": 9 },
+      { "rotulo": "2026 · 14,6 mi de corredores", "valor": 14.6 }
+    ]
+  },
+  "contexto": "Só as inscrições devem render R$ 1,3 bi em 2026. São mais de 14 mil eventos esportivos previstos no ano, cerca de 90% deles de corrida de rua.",
+  "por_que_importa": "Mais da metade dos participantes (55%) corre uma única prova por ano. Por isso, marcas e organizadores disputam comunidade, e não só inscrição.",
+  "o_que_observar": "Cerca de 40% dos organizadores fecharam desde 2015, segundo Daniel Krutman, CEO da Ticket Sports. E 25% dos organizadores de 2026 são novatos."
+}

@@ -1,0 +1,27 @@
+{
+  "tipo": "noticia",
+  "pilar": "Marcas & patrocínio",
+  "fonte": "Sport Insider · Máquina do Esporte · Propmark",
+  "fontes": [
+    "Sport Insider · 28 ago 2026",
+    "Máquina do Esporte · 9 out 2026",
+    "Propmark · 14 out 2026 · O Povo · 13 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "",
+    "numero": "7",
+    "manchete": "marcas patrocinam o futebol feminino da CBF; em 2025, nenhuma"
+  },
+  "fato": "Amazon, Coca-Cola, Hyundai, Itambé, Monange, Sicoob e Uber patrocinam em 2026 o pacote do Brasileirão, da Copa do Brasil e da Supercopa femininas.",
+  "numero": {
+    "valor": "2x",
+    "legenda": "é quanto cresceu a cota de cada clube no Brasileirão Feminino: de R$ 360 mil para R$ 720 mil",
+    "comparacao": [
+      { "rotulo": "Antes · R$ 360 mil", "valor": 360 },
+      { "rotulo": "2026 · R$ 720 mil", "valor": 720 }
+    ]
+  },
+  "contexto": "A final entre São Paulo e Corinthians levou 49.405 pessoas ao Morumbis, o maior público de um jogo de clubes femininos na América do Sul.",
+  "por_que_importa": "O torneio alcançou 56,3 mi de pessoas nos canais da Globo em 2026, 14% a mais que em 2025. Mais audiência ajuda a vender patrocínio e direitos.",
+  "o_que_observar": "A Copa do Mundo Feminina de 2027 será no Brasil. A Fifa abre a venda de ingressos em 1º de dezembro, com entradas a partir de R$ 30."
+}

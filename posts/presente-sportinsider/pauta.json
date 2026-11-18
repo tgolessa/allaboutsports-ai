@@ -1,0 +1,27 @@
+{
+  "tipo": "noticia",
+  "pilar": "Ligas & modelos de negócio",
+  "fonte": "Tennis Australia · Máquina do Esporte · Ministry of Sport",
+  "fontes": [
+    "Tennis Australia (estudo IER) · jun 2026",
+    "Ministry of Sport · 2 fev 2026 · Máquina do Esporte · 16 jan 2026",
+    "Portal TV e Streaming · out 2026"
+  ],
+  "capa": {
+    "prefixo": "",
+    "numero": "1,37mi",
+    "manchete": "de pessoas foram ao Australian Open 2026, um recorde"
+  },
+  "fato": "O Australian Open de 2026 recebeu 1.368.043 pessoas em três semanas de evento em Melbourne. O recorde anterior, de 2025, era de 1.218.831.",
+  "numero": {
+    "valor": "425mi",
+    "legenda": "em dólares australianos, é o valor do contrato de TV com a Nine por cinco anos",
+    "comparacao": [
+      { "rotulo": "Contrato anterior · AUD 300 mi", "valor": 300 },
+      { "rotulo": "Contrato atual · AUD 425 mi", "valor": 425 }
+    ]
+  },
+  "contexto": "A Tennis Australia faturou AUD 693 mi no último ano fiscal, encerrado em setembro, e pagou em 2026 uma premiação recorde de AUD 111,5 mi.",
+  "por_que_importa": "O torneio virou um festival de três semanas. Em 2026, movimentou AUD 722 mi na economia de Victoria, 27% a mais que em 2025, segundo a Tennis Australia.",
+  "o_que_observar": "A edição de 2027 vai de 11 a 31 de janeiro. O brasileiro André Sá, ex-tenista, é diretor da Tennis Australia."
+}

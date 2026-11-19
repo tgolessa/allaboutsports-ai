@@ -1,0 +1,39 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "Times Brasil · Terra · Máquina do Esporte · 17-19 nov 2026",
+  "fontes": [
+    "Corinthians (nota oficial) · 17 nov 2026",
+    "Times Brasil · 17 nov 2026",
+    "Terra · 17 nov 2026",
+    "Máquina do Esporte · 17 nov 2026",
+    "Brasileirão.com.br · 19 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "R$",
+    "numero": "2,8bi",
+    "manchete": "é a dívida que o Corinthians quer renegociar na Justiça"
+  },
+  "fato": "O Corinthians pediu à Justiça de São Paulo uma tutela cautelar: até 60 dias sem cobranças, penhoras e bloqueios para negociar com os credores, com mediação.",
+  "numero": {
+    "valor": "R$ 56mi",
+    "legenda": "em parcelas atrasadas de três acordos que seguravam a dívida",
+    "comparacao": [
+      {
+        "rotulo": "RCE · R$ 10,1 mi",
+        "valor": 10.1
+      },
+      {
+        "rotulo": "CNRD · cerca de R$ 20 mi",
+        "valor": 20
+      },
+      {
+        "rotulo": "PGFN · R$ 26,2 mi",
+        "valor": 26.2
+      }
+    ]
+  },
+  "contexto": "RCE junta as execuções na Justiça. CNRD é a câmara de disputas da CBF. PGFN cobra impostos: o acordo com a União baixou R$ 1,2 bi para R$ 679 mi.",
+  "por_que_importa": "A cautelar costuma ser o passo anterior a uma recuperação judicial. Sem proteção, os atrasos podem derrubar os acordos, liberar penhoras e travar o registro de reforços.",
+  "o_que_observar": "A Justiça ainda precisa decidir o pedido. A audiência de pré-mediação com credores é em 27/11, e no dia 28 o clube elege o presidente do triênio 2027‑2029."
+}

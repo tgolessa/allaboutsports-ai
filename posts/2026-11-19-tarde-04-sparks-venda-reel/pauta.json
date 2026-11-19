@@ -1,0 +1,34 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "Sportico · Yahoo Sports · Bleacher Report",
+  "fontes": [
+    "Sportico · 19 nov 2026",
+    "Yahoo Sports · 19 nov 2026",
+    "Bleacher Report · 19 nov 2026",
+    "Front Office Sports · 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "750mi",
+    "manchete": "é o preço do Sparks em venda recorde na WNBA"
+  },
+  "fato": "Os donos do San Diego Padres, José Feliciano e Kwanza Jones, estão perto de comprar o Los Angeles Sparks, da WNBA, por US$ 750 mi, segundo a Sportico.",
+  "numero": {
+    "valor": "2,5x",
+    "legenda": "o recorde anterior da liga: a venda do Connecticut Sun, em 2026",
+    "comparacao": [
+      {
+        "rotulo": "Connecticut Sun · US$ 300 mi",
+        "valor": 300
+      },
+      {
+        "rotulo": "Los Angeles Sparks · US$ 750 mi",
+        "valor": 750
+      }
+    ]
+  },
+  "contexto": "Quem vende é Mark Walter, dono dos Dodgers, que controla o Sparks desde 2014. Ele já se desfez das fatias que tinha nos Lakers e no Chelsea.",
+  "por_que_importa": "A venda do Sun ao dono do Houston Rockets era o recorde da WNBA. Meses depois, o preço pode mais que dobrar, com donos de grandes ligas masculinas na disputa.",
+  "o_que_observar": "O acordo ainda não foi assinado e precisa ser aprovado pela liga. Vanessa Bryant, citada como parte de outro grupo interessado, negou qualquer conversa."
+}

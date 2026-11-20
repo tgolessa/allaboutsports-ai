@@ -1,0 +1,24 @@
+{
+  "tipo": "noticia",
+  "pilar": "Mídia & streaming",
+  "fonte": "CNBC · Bloomberg · Awful Announcing · 18-19 nov 2026",
+  "fontes": [
+    "CNBC, via Awful Announcing · 19 nov 2026",
+    "Bloomberg, via Awful Announcing e Briefs · 18-19 nov 2026",
+    "Wisevoter · 19 nov 2026",
+    "IstoÉ Dinheiro · 13 out 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "1,5bi",
+    "manchete": "ou mais: preço esperado da Copa de 2030 nos EUA"
+  },
+  "fato": "Terminou nesta quinta (19) o prazo das primeiras ofertas pelos direitos de TV e streaming da Copa de 2030 nos EUA. O pacote inclui opção pela Copa de 2034.",
+  "numero": {
+    "valor": "3",
+    "legenda": "gigantes ficaram fora da disputa: ESPN, Apple e Skydance, dona da CBS"
+  },
+  "contexto": "Hoje a Fox tem a Copa em inglês, e a Telemundo, em espanhol. Para 2030, a Fifa deve vender os dois juntos, o que favorece os streamings, diz a CNBC.",
+  "por_que_importa": "Netflix, Amazon, YouTube e Fox devem disputar. A ESPN não fechou a conta de US$ 1,5 bi. A Netflix já tem a Copa de 2030 na Espanha.",
+  "o_que_observar": "A NBC, dona da Telemundo, ainda não tinha decidido se entra. Segundo a imprensa americana, a Fifa quer escolher o vencedor até o fim do ano."
+}

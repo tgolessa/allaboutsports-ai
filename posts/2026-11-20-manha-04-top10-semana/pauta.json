@@ -1,0 +1,17 @@
+{
+  "tipo": "semanal",
+  "semana": 47,
+  "periodo": "16–20 NOV 2026",
+  "noticias": [
+    {"titulo_curto": "Dívida do Corinthians na Justiça", "titulo": "Corinthians pede proteção contra credores", "resumo": "Clube quer até 60 dias sem penhoras para renegociar a dívida.", "numero": "R$2,8B", "direcao": "down", "sinal": "Dívida", "pilar": "Futebol · Deals", "fonte": "Times Brasil"},
+    {"titulo_curto": "Copa de 2030 nos EUA", "titulo": "Streamings disputam a Copa de 2030 nos EUA", "resumo": "ESPN, Apple e Skydance ficam fora; Netflix e Amazon devem disputar.", "numero": "$1,5B", "direcao": "up", "sinal": "Mídia", "pilar": "Futebol · Mídia", "fonte": "CNBC"},
+    {"titulo_curto": "Venda recorde na WNBA", "titulo": "Los Angeles Sparks perto de venda recorde", "resumo": "Donos do San Diego Padres pagam 2,5 vezes o recorde anterior.", "numero": "$750M", "direcao": "up", "sinal": "Valuation", "pilar": "WNBA · Deals", "fonte": "Sportico"},
+    {"titulo_curto": "ESPN puxa a Disney", "titulo": "Esportes da Disney faturam US$ 4,6 bi", "resumo": "Receita sobe 16% no trimestre e lucro operacional cresce 53%.", "numero": "$4,6B", "direcao": "up", "sinal": "Receita", "pilar": "ESPN · Mídia", "fonte": "Disney"},
+    {"titulo_curto": "CBF perde com as bets", "titulo": "CBF projeta perda de R$ 2 bi sem as bets", "resumo": "Conta vai até 2030; Copa Sul-Sudeste não terá edição em 2027.", "numero": "R$2B", "direcao": "down", "sinal": "Receita", "pilar": "Futebol · Ligas", "fonte": "CNN Brasil"},
+    {"titulo_curto": "Nike leva bola da Champions", "titulo": "Nike tira da Adidas a bola da Uefa", "resumo": "Contrato vale de 2027/28 a 2030/31 e dobra o valor atual, diz o FT.", "numero": "€40M/ano", "direcao": "up", "sinal": "Patrocínio", "pilar": "Futebol · Marcas", "fonte": "Uefa"},
+    {"titulo_curto": "Atlético troca bet por fidelidade", "titulo": "Atlético-MG estreia máster sem bets", "resumo": "Torcedor Premiado pode render até R$ 75 mi em três anos.", "numero": "R$75M", "direcao": "down", "sinal": "Patrocínio", "pilar": "Futebol · Marcas", "fonte": "Atlético-MG"},
+    {"titulo_curto": "Teto salarial na MLB", "titulo": "Donos da MLB propõem teto salarial", "resumo": "Limite de US$ 258 mi por time a partir de 2028; acordo vence em 1º/12.", "numero": "$258M", "direcao": "flat", "sinal": "Liga", "pilar": "MLB · Ligas", "fonte": "MLB.com"},
+    {"titulo_curto": "LIV Golf quebra", "titulo": "LIV pede recuperação judicial nos EUA", "resumo": "Liga saudita gastou US$ 5 bi e não volta em 2027.", "numero": "$5B", "direcao": "down", "sinal": "Liga", "pilar": "Golfe · Ligas", "fonte": "Front Office Sports"},
+    {"titulo_curto": "Whoop entra na F1", "titulo": "F1 fecha parceria de dados com a Whoop", "resumo": "Dados físicos dos pilotos na transmissão a partir de 2027.", "numero": "$10,1B", "direcao": "up", "sinal": "Tech", "pilar": "F1 · Tech", "fonte": "Máquina do Esporte"}
+  ]
+}

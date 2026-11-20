@@ -1,0 +1,81 @@
+{
+  "numero": 2,
+  "data": "20/11/2026",
+  "abertura": "Foi a semana em que a conta da proibição das bets chegou ao futebol brasileiro: o Corinthians foi à Justiça, a CBF projetou perder R$ 2 bi e o Atlético-MG estreou um patrocinador máster sem apostas. Lá fora, a Copa de 2030 virou disputa de streaming nos EUA e a WNBA teve venda recorde.",
+  "itens": [
+    {
+      "pilar": "Deals & dinheiro",
+      "numero": "R$ 2,8 bi",
+      "titulo": "Corinthians pede proteção da Justiça para renegociar a dívida",
+      "texto": "O clube pediu uma tutela cautelar: até 60 dias sem cobranças, penhoras e bloqueios enquanto negocia com os credores, com mediação. Há cerca de R$ 56 mi em parcelas atrasadas de acordos que organizavam a dívida, como o RCE e o acordo de impostos com a União. Não é recuperação judicial, mas costuma ser o passo anterior; a audiência com credores é em 27/11, um dia antes da eleição presidencial do clube.",
+      "fonte": "Times Brasil / Máquina do Esporte"
+    },
+    {
+      "pilar": "Mídia & streaming",
+      "numero": "US$ 1,5 bi",
+      "titulo": "Streamings disputam a Copa de 2030 nos EUA",
+      "texto": "Terminou na quinta (19) o prazo das primeiras ofertas pelos direitos da Copa de 2030 nos EUA, com opção por 2034. Segundo a CNBC, Netflix, Amazon, YouTube e Fox devem disputar um pacote que deve sair por US$ 1,5 bi ou mais; ESPN e Apple ficaram fora, e a Skydance também desistiu, segundo a Bloomberg. A Fifa deve vender inglês e espanhol juntos, o que favorece os streamings.",
+      "fonte": "CNBC, via Awful Announcing",
+      "fonte_url": "https://awfulannouncing.com/espn/not-bid-2030-world-cup-rights.html"
+    },
+    {
+      "pilar": "Deals & dinheiro",
+      "numero": "US$ 750 mi",
+      "titulo": "Los Angeles Sparks perto de venda recorde na WNBA",
+      "texto": "Os donos do San Diego Padres, José Feliciano e Kwanza Jones, estão perto de comprar o time de Mark Walter, dono dos Dodgers, segundo a Sportico. O valor é 2,5 vezes o recorde anterior da liga, a venda do Connecticut Sun por US$ 300 mi.",
+      "fonte": "Sportico",
+      "fonte_url": "https://www.sportico.com/business/team-sales/2026/wnba-los-angeles-sparks-sale-feliciano-jones-1234958926/"
+    },
+    {
+      "pilar": "Mídia & streaming",
+      "numero": "US$ 4,6 bi",
+      "titulo": "Esportes da Disney faturam US$ 4,6 bi no trimestre",
+      "texto": "A divisão liderada pela ESPN cresceu 16% no trimestre encerrado em 3/10, e o lucro operacional subiu 53%, para US$ 1,39 bi. Publicidade, taxas das operadoras e a NFL Network puxaram a alta; o trimestre teve uma semana a mais.",
+      "fonte": "Disney (balanço)"
+    },
+    {
+      "pilar": "Ligas & modelos de negócio",
+      "numero": "R$ 2 bi",
+      "titulo": "CBF projeta perder R$ 2 bi até 2030 sem as bets",
+      "texto": "A entidade apresentou a conta aos clubes e admite risco de três anos seguidos de prejuízo; o orçamento de 2026 já previa déficit de R$ 270 mi. A Copa Sul-Sudeste não terá edição em 2027, e a CBF espera queda no preço da publicidade depois da MP que proibiu as apostas.",
+      "fonte": "CNN Brasil"
+    },
+    {
+      "pilar": "Marcas & patrocínio",
+      "numero": "€ 40 mi por ano",
+      "titulo": "Nike tira da Adidas a bola da Champions",
+      "texto": "A Uefa confirmou a Nike como fornecedora da bola de todas as suas competições masculinas de clubes de 2027/28 a 2030/31. Segundo o Financial Times, o contrato vale o dobro do atual. A Adidas fazia a bola da Champions desde 2001/02.",
+      "fonte": "Uefa / SportsPro"
+    },
+    {
+      "pilar": "Marcas & patrocínio",
+      "numero": "R$ 75 mi",
+      "titulo": "Atlético-MG estreia patrocinador máster sem bets",
+      "texto": "O programa Torcedor Premiado estampa a camisa na final da Sul-Americana, em contrato de três anos que pode render até R$ 75 mi, conforme a adesão dos torcedores. É menos da metade do acordo com a H2bet, encerrado depois da MP das bets.",
+      "fonte": "O Tempo",
+      "fonte_url": "https://www.otempo.com.br/sports/atletico/2026/11/18/atletico-tera-patrocinador-master-para-final-da-sul-americana-com-direito-a-promocao-para-a-massa"
+    },
+    {
+      "pilar": "Ligas & modelos de negócio",
+      "numero": "US$ 258 mi",
+      "titulo": "Donos da MLB propõem teto salarial",
+      "texto": "A proposta cria teto de US$ 258,2 mi e piso de US$ 180,2 mi por time a partir de 2028. Pelos números de 2026, 20 dos 30 times teriam de mexer na folha. O acordo coletivo com os jogadores vence em 1º/12, e o sindicato rejeita o teto.",
+      "fonte": "MLB.com / Front Office Sports"
+    },
+    {
+      "pilar": "Ligas & modelos de negócio",
+      "numero": "US$ 5 bi",
+      "titulo": "LIV Golf pede recuperação judicial e perde DeChambeau",
+      "texto": "A liga bancada pela Arábia Saudita gastou cerca de US$ 5 bi e não volta em 2027. Bryson DeChambeau vira membro do circuito europeu, e outros ex-LIV ganharam convites para torneios da Europa; o PGA Tour diz não ter planos de reabrir a porta.",
+      "fonte": "Front Office Sports"
+    },
+    {
+      "pilar": "Tech, produto & parcerias",
+      "numero": "US$ 10,1 bi",
+      "titulo": "F1 fecha parceria de dados com a Whoop",
+      "texto": "A partir de 2027, a transmissão vai mostrar ao vivo dados físicos dos pilotos que usarem o sensor da Whoop, nova parceira global da categoria e da F1 Academy. O valor do acordo não foi divulgado; a empresa foi avaliada em US$ 10,1 bi em março, segundo a Bloomberg.",
+      "fonte": "Máquina do Esporte"
+    }
+  ],
+  "fechamento": "Obrigado por ler. Na semana que vem tem final de Libertadores e fim do acordo coletivo da MLB; no dia a dia, estamos no Instagram."
+}

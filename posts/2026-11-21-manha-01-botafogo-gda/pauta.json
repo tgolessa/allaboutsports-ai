@@ -1,0 +1,26 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "ge · Esporte News Mundo · 20 nov 2026",
+  "fontes": [
+    "ge (via FogãoNET) · 20 nov 2026",
+    "Esporte News Mundo (via CartaCapital) · 20 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "61mi",
+    "manchete": "já depositados pelo investidor que deve assumir o Botafogo"
+  },
+  "fato": "A GDA Luma, do empresário mexicano Gabriel de Alba, já colocou cerca de US$ 61 mi (R$ 339 mi) no Botafogo, segundo o ge. Ainda assim, não é dona da SAF.",
+  "numero": {
+    "valor": "60%",
+    "legenda": "do investimento previsto no acordo assinado em junho",
+    "comparacao": [
+      { "rotulo": "Depositado · US$ 61 mi", "valor": 61 },
+      { "rotulo": "Previsto · US$ 104 mi", "valor": 104 }
+    ]
+  },
+  "contexto": "O dinheiro entra como empréstimo DIP, usado por empresas em recuperação judicial. Foram três parcelas: US$ 25 mi na gestão Textor, US$ 25 mi em julho e US$ 11 mi em outubro.",
+  "por_que_importa": "A troca de ações só acontece quando os credores aprovarem o plano de recuperação. Até lá, o investidor banca salários e dívidas atrasadas sem ter o controle do clube.",
+  "o_que_observar": "A GDA deve fazer novo aporte até o fim do ano para cobrir custos mensais, sem valor divulgado. Gabriel de Alba é esperado no Rio nas próximas semanas."
+}

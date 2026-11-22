@@ -1,0 +1,32 @@
+{
+  "tipo": "noticia",
+  "pilar": "Ligas & modelos de negócio",
+  "fonte": "Máquina do Esporte · Times Brasil · 19 nov 2026",
+  "fontes": [
+    "Máquina do Esporte · 19 nov 2026",
+    "Times Brasil (CNBC), via Estadão · 19 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "R$",
+    "numero": "955mi",
+    "manchete": "em dívidas da sócia que divide o Pacaembu"
+  },
+  "fato": "A Progen, dona de 50% da Allegra Pacaembu, pediu recuperação extrajudicial em São Paulo para renegociar R$ 955 mi com bancos e fornecedores.",
+  "numero": {
+    "valor": "2,5x",
+    "legenda": "o tamanho da dívida da Progen em dois anos",
+    "comparacao": [
+      {
+        "rotulo": "2023 · R$ 353,6 mi",
+        "valor": 353.6
+      },
+      {
+        "rotulo": "2025 · R$ 877,7 mi",
+        "valor": 877.7
+      }
+    ]
+  },
+  "contexto": "Boa parte da dívida bancou a reforma do estádio. A empresa culpa a Selic de 15% e uma captação de até R$ 515 mi que não saiu.",
+  "por_que_importa": "A concessão do Pacaembu tem 35 anos e depende de dinheiro privado. Quando o sócio de obras aperta, o modelo de arena pública com gestão privada é testado.",
+  "o_que_observar": "A Allegra diz que o pedido não envolve a concessionária e que a arena segue operando. Falta saber se os credores aceitam o plano."
+}

@@ -4,7 +4,7 @@ Regras aprendidas com os números do perfil. São propostas pelo analista semana
 
 ## Em vigor
 
-_Nenhuma regra ainda. As primeiras devem surgir depois de 3 a 4 semanas de dados._
+- 2026-11-23 · O Reel alcançou mais que o carrossel do mesmo tema em 15 de 15 pares gerados pelo agente (11 a 19/11; alcance mediano 28 x 3). Teste por 2 semanas: em pacote com 2 ou mais pautas, a segunda pauta mais forte (de preferência uma nota com número fácil de entender) também vira Reel, no próximo horário livre que respeite o intervalo de 1 hora do publicador. O analista revê em 07/12 pelo alcance e pelos seguidores ganhos.
 
 ## Revogadas
 

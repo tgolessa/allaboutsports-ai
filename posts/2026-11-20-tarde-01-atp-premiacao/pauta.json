@@ -1,0 +1,32 @@
+{
+  "tipo": "noticia",
+  "pilar": "Ligas & modelos de negócio",
+  "fonte": "ATP · Sportcal · 20 nov 2026",
+  "fontes": [
+    "ATP (comunicado) · 20 nov 2026",
+    "Sportcal · 20 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "350mi",
+    "manchete": "é quanto a ATP projeta pagar aos tenistas em 2028"
+  },
+  "fato": "A ATP anunciou nesta sexta (20) a nova fase do OneVision, plano de reforma do circuito masculino. A remuneração dos jogadores deve passar de US$ 350 mi a partir de 2028.",
+  "numero": {
+    "valor": "+30%",
+    "legenda": "sobre os US$ 270 mi pagos hoje, segundo a Sportcal",
+    "comparacao": [
+      {
+        "rotulo": "Hoje · US$ 270 mi",
+        "valor": 270
+      },
+      {
+        "rotulo": "2028 · mais de US$ 350 mi",
+        "valor": 350
+      }
+    ]
+  },
+  "contexto": "Mais de US$ 100 mi saem da própria ATP: US$ 50 mi em bônus nos Masters 1000, US$ 25 mi pelo ranking final e US$ 26 mi para a previdência dos jogadores.",
+  "por_que_importa": "O ganho mínimo projetado no top 100 sobe 39% sobre 2025, para US$ 1,1 mi. No top 250, sobe 67%. O aumento proporcional é maior longe do topo.",
+  "o_que_observar": "A ATP também cria a ATP Ventures, que junta mídia, dados e patrocínios centrais. O contrato será detalhado em 2027, e a operação começa em 2028."
+}

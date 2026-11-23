@@ -1,0 +1,27 @@
+{
+  "tipo": "noticia",
+  "pilar": "Ligas & modelos de negócio",
+  "fonte": "Real Madrid · Forbes · Reuters · 21-22 nov 2026",
+  "fontes": [
+    "Real Madrid (site oficial) · 21 nov 2026",
+    "Forbes · 22 nov 2026",
+    "Reuters via CNA · 21 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "€",
+    "numero": "1,25bi",
+    "manchete": "é a receita que o Real Madrid prevê para 2026/27"
+  },
+  "fato": "Na assembleia de sócios de sábado (21), o Real Madrid aprovou o orçamento da temporada e colocou Rafael Nadal na diretoria, com 99,5% dos votos.",
+  "numero": {
+    "valor": "+2,4%",
+    "legenda": "sobre a receita recorde da temporada passada",
+    "comparacao": [
+      { "rotulo": "2025/26 · € 1,221 bi", "valor": 1.221 },
+      { "rotulo": "2026/27 (previsão) · € 1,25 bi", "valor": 1.25 }
+    ]
+  },
+  "contexto": "O clube fechou 2025/26 com receita recorde de € 1,221 bi e lucro de € 26,2 mi. A reforma do Bernabéu custou € 1,408 bi e virou nova fonte de receita.",
+  "por_que_importa": "O Real Madrid pertence aos sócios, sem dono. Florentino Pérez repetiu que o clube não está à venda, enquanto fundos compram fatias de grandes clubes europeus.",
+  "o_que_observar": "A diretoria prepara uma reforma para que os sócios sejam donos dos ativos do clube. Pérez ainda não explicou como ela vai funcionar."
+}

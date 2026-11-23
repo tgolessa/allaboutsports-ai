@@ -1,0 +1,38 @@
+{
+  "tipo": "noticia",
+  "pilar": "Mídia & streaming",
+  "fonte": "NBA · Sports Media Watch · Front Office Sports · 23 nov 2026",
+  "fontes": [
+    "NBA (nba.com) · 23 nov 2026",
+    "Sports Media Watch · 23 nov 2026",
+    "Front Office Sports · 23 nov 2026",
+    "Forbes · 23 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "+",
+    "numero": "37%",
+    "manchete": "foi o salto de audiência da NBA no primeiro mês"
+  },
+  "fato": "No primeiro mês de 2026/27, os jogos da NBA nas TVs nacionais dos EUA tiveram média de 2,62 mi de espectadores, recorde para o início de uma temporada completa.",
+  "numero": {
+    "valor": "2,62 mi",
+    "legenda": "de média por jogo, somando NBC, Prime Video e ESPN",
+    "comparacao": [
+      {
+        "rotulo": "ESPN · 1,8 mi · +13%",
+        "valor": 1.8
+      },
+      {
+        "rotulo": "Prime Video · 2,05 mi · +83%",
+        "valor": 2.05
+      },
+      {
+        "rotulo": "NBC e Peacock · 4,5 mi · +27%",
+        "valor": 4.5
+      }
+    ]
+  },
+  "contexto": "É a segunda temporada do contrato de 11 anos e US$ 76 bi com Disney, NBC e Amazon. O Prime Video, da Amazon, teve a maior alta nos oito primeiros jogos.",
+  "por_que_importa": "Audiência maior valoriza cada intervalo comercial do contrato novo. E o público rejuvenesceu: 25% tem menos de 35 anos, contra 22% na temporada passada.",
+  "o_que_observar": "A NBA Cup começou com média de 2 mi por jogo, alta de 90%, segundo a Forbes. O próximo teste é a rodada de Natal, uma das mais vistas do ano."
+}

@@ -1,6 +1,6 @@
 # Agente diário — AllAboutSports.AI
 
-Instruções para o agente que pesquisa as notícias, produz o pacote de posts e abre a proposta de aprovação. Ele roda em duas tarefas agendadas: **manhã** (todos os dias) e **tarde** (segunda a sexta).
+Instruções para o agente que pesquisa as notícias, produz o pacote de posts e abre a proposta de aprovação. Ele roda numa tarefa agendada: **manhã** (todos os dias). Desde 24/11/2026 o pacote da tarde e o plantão estão pausados: o foco é crescer a base com menos posts e mais fortes.
 
 O agente **nunca publica** e **nunca grava direto na `main`**. Ele entrega uma proposta (pull request); o Tiago aprova com o merge e o workflow `publicar.yml` publica nos horários marcados.
 
@@ -17,25 +17,23 @@ Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
 
 ## 1. O que entra no pacote
 
-| Período | Pacote | Horários de publicação |
+| Dia | Post 1 · 12:00 | Post 2 · 19:00 |
 | --- | --- | --- |
-| Manhã, seg–sex | 1 carrossel (`noticia`) + 1 a 3 notas (`nota`) | 09:30 · 11:30 · 13:00 · 14:30 |
-| Tarde, seg–sex | 1 carrossel (`noticia`) + 1 a 3 notas (`nota`) | 17:30 · 20:00 · 21:15 · 22:30 |
-| Manhã, sáb e dom | 1 carrossel + 1 a 3 notas | 10:00 · 12:30 · 15:00 · 18:00 |
+| Seg a qui, sáb e dom | 1 carrossel (`noticia`) com a pauta mais forte | 1 Reel com a segunda pauta mais forte |
+| Sexta | o `semanal` (Top 10 da semana) | 1 Reel com a pauta mais forte do dia |
+| Sábado de semana ISO par | o `ranking` (10 maiores valores dos últimos 14 dias, mesmo tipo de valor e moeda) | 1 Reel com a pauta mais forte do dia |
 
-- Total de 2 a 4 posts por pacote, **mais o Reel** (veja abaixo). Use os primeiros horários da tabela, na ordem; o carrossel vai no primeiro horário.
-- **Sexta de manhã:** acrescente o `semanal` (Top 10 da semana, segunda a sexta), no último horário do pacote. Ele pode ser o 4º post.
-- **Sexta de manhã, newsletter:** acrescente também a edição da newsletter (Top 10 da semana por e-mail), com envio às **18:00**. Ela não ocupa horário do feed. Veja "Newsletter" em Produção.
-- **Sexta à tarde, semana ISO par:** acrescente o `ranking` (10 maiores valores dos últimos 14 dias, todos no mesmo tipo de valor e moeda), no último horário.
-- **Reel em todo pacote:** o carrossel do pacote também vira um Reel, publicado como post separado no horário de Reel: **15:30** (manhã, seg–sex), **18:45** (tarde) e **19:30** (fim de semana). Os horários respeitam o intervalo mínimo de 1 hora entre posts do publicador. Veja a seção "Reel" em Produção.
-- **Story em todo post do feed:** cada carrossel e nota ganha um `story.jpg`, publicado nos Stories logo depois do post. Veja "Story" em Produção.
-- **Grandes eventos:** confira `docs/calendario.md`. Se houver um evento nos próximos 7 dias, pelo menos 1 post do pacote deve ser sobre o negócio por trás dele (e o pacote pode trazer uma série, marcada como `"serie": "<nome>"` no `post.json`). Se o assunto merecer identidade especial, sugira na proposta.
-- Qualidade antes de volume: se não houver 2 pautas que passem nos critérios, entregue 1 e explique na proposta.
+- **São 2 posts por dia, os dois decididos no pacote da manhã.** Notas (`nota`) não entram mais no feed por enquanto.
+- **Os dois posts são de pautas diferentes.** O Reel do post 2 é feito a partir de um `pauta.json` de carrossel (`noticia`) da segunda pauta, que não vira carrossel no feed: o Reel é o formato que mais chega a quem ainda não segue o perfil. Veja a seção "Reel" em Produção.
+- **Qualidade antes de volume:** os dois posts são a vitrine do perfil para quem chega agora. Gancho forte no primeiro slide/cena, número na frente e um "por que importa" claro. Se só houver 1 pauta boa, entregue só o carrossel e explique na proposta.
+- **Sexta, newsletter:** acrescente a edição da newsletter (Top 10 da semana por e-mail), com envio às **18:00**. Ela não ocupa horário do feed. Veja "Newsletter" em Produção.
+- **Story nos dois posts:** o carrossel (ou semanal/ranking) e o Reel ganham um `story.jpg`, publicado nos Stories logo depois do post. Veja "Story" em Produção.
+- **Grandes eventos:** confira `docs/calendario.md`. Se houver um evento nos próximos 7 dias, pelo menos 1 dos 2 posts do dia deve ser sobre o negócio por trás dele (e o pacote pode trazer uma série, marcada como `"serie": "<nome>"` no `post.json`). Se o assunto merecer identidade especial, sugira na proposta.
 
 ## 2. Pesquisa
 
 1. **Histórico:** leia os `pauta.json` dos posts dos últimos 14 dias em `posts/` e não repita assunto já publicado, a não ser que haja fato novo relevante (e então diga o que mudou).
-2. **Janela:** notícias das últimas 24 horas (manhã: desde a tarde anterior; tarde: desde a manhã). Prefira o que ainda está repercutindo.
+2. **Janela:** notícias das últimas 24 horas. Prefira o que ainda está repercutindo.
 3. **Busca:** faça buscas separadas por pilar e por liga/esporte (ex.: "NFL franchise sale", "Premier League broadcast rights", "sponsorship deal sports", "sports tech partnership", "NBA media rights"), em inglês e em português. Abra as matérias (WebFetch), não confie só no resumo da busca.
 4. **Critérios** (nota de 1 a 5 em cada; escolha as maiores somas):
    - tem um número concreto e verificável, ou é uma mudança de produto/parceria relevante;
@@ -48,7 +46,7 @@ Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
 
 ## 3. Produção
 
-Para cada post, crie a pasta `posts/AAAA-MM-DD-<manha|tarde>-NN-<slug>/` (NN = 01, 02… na ordem de publicação) com:
+Para cada post, crie a pasta `posts/AAAA-MM-DD-manha-NN-<slug>/` (NN = 01, 02… na ordem de publicação) com:
 
 **`pauta.json`** — os campos do formato (`noticia`, `nota`, `semanal` ou `ranking`), seguindo os limites de texto do README.
 
@@ -70,13 +68,13 @@ Se aparecer `ESTOUROU`, encurte o texto e gere de novo.
 ```
 O status já vai como `aprovado` porque a aprovação acontece no merge da proposta.
 
-**Story** (todo carrossel e nota):
+**Story** (os dois posts do dia; no Reel, rode com o `pauta.json` da pasta do Reel):
 ```bash
 python agente/story.py posts/<pasta>/pauta.json
 ```
 Cria `story.jpg` na pasta do post; o publicador cuida do resto. Abra a imagem para conferir.
 
-**Reel** (todo pacote): crie a pasta `posts/AAAA-MM-DD-<periodo>-NN-<slug>-reel/`, copie o `pauta.json` do carrossel e gere o vídeo:
+**Reel** (post 2, às 19:00): crie a pasta `posts/AAAA-MM-DD-manha-02-<slug>-reel/` com um `pauta.json` de carrossel (`noticia`) da segunda pauta, escrito como se fosse um carrossel, e gere o vídeo:
 ```bash
 python agente/reel.py posts/<pasta-reel>/pauta.json
 ```
@@ -110,13 +108,13 @@ O `post.json` usa `"tipo": "newsletter"`, `"status": "aprovado"`, `"publicar_em"
 ```bash
 git checkout -b pacote/AAAA-MM-DD-<periodo>
 git add posts
-git commit -m "Pacote <manhã|tarde> de DD/MM: N posts"
+git commit -m "Pacote de DD/MM: N posts"
 git push -u origin pacote/AAAA-MM-DD-<periodo>
 ```
 
 Abra a proposta pela API REST do GitHub (`gh api -X POST repos/tgolessa/allaboutsports-ai/pulls`), com:
 
-- **Título:** `Pacote <manhã|tarde> · DD/MM · N posts`
+- **Título:** `Pacote · DD/MM · N posts`
 - **Corpo:**
   - a prévia: `![prévia](https://raw.githubusercontent.com/tgolessa/allaboutsports-ai/pacote/AAAA-MM-DD-<periodo>/posts/_previas/AAAA-MM-DD-<periodo>.jpg)`
   - uma linha por post: horário · formato · manchete · fontes (com links);

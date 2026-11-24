@@ -1,0 +1,28 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "Front Office Sports · J.P. Morgan · 23 nov 2026",
+  "fontes": [
+    "Front Office Sports · 23 nov 2026",
+    "J.P. Morgan (relatório citado pelo FOS)",
+    "Forbes (avaliações dos times usadas no relatório)"
+  ],
+  "capa": {
+    "numero": "12%",
+    "manchete": "ao ano: quanto valorizam os times dos EUA desde 2000"
+  },
+  "fato": "Relatório do J.P. Morgan mostra que o valor médio dos times de NFL, NBA, MLB e NHL cresceu cerca de 12% ao ano desde 2000, segundo o Front Office Sports.",
+  "numero": {
+    "valor": "12%",
+    "legenda": "ao ano para os times, quase o dobro da bolsa americana",
+    "comparacao": [
+      { "rotulo": "Inflação nos EUA · 2,5%", "valor": 2.5 },
+      { "rotulo": "S&P 500 · 6,8%", "valor": 6.8 },
+      { "rotulo": "Fortunas do 0,1% mais rico · 7,3%", "valor": 7.3 },
+      { "rotulo": "Times das 4 ligas · 12%", "valor": 12 }
+    ]
+  },
+  "contexto": "Há pouca oferta: de 2000 a 2025, as quatro ligas criaram só 4 times. E sobram compradores: os bilionários americanos passaram de 243 em 2002 para 902 em 2025.",
+  "por_que_importa": "Times quase não sentem as crises da bolsa. Em 2022, o S&P 500 caiu 19,4% e o valor médio das franquias subiu 19,3%, segundo dados da Forbes.",
+  "o_que_observar": "O banco não vê motivo para desacelerar. Fundos já somam cerca de 35 fatias minoritárias nas ligas, e 2026 teve vendas de controle de Lakers, Padres e Seahawks."
+}

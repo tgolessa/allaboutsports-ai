@@ -32,7 +32,7 @@ Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
 
 1. **Histórico:** leia os `pauta.json` dos posts dos últimos 14 dias em `posts/` e não repita assunto já publicado, a não ser que haja fato novo relevante (e então diga o que mudou). Veja também se o plantão já publicou algo hoje.
 2. **Janela:** notícias das últimas 24 a 48 horas; inscrições e calendário podem ter anúncio mais antigo se a data de abertura ainda não passou.
-3. **Busca:** faça buscas separadas por editoria e por circuito, em português e em inglês (ex.: "IRONMAN Brasil", "IRONMAN 70.3 inscrições", "triathlon resultado", "IRONMAN Pro Series results", "T100 triathlon", "Kona qualifying", "triathlon training study", nomes dos principais pros brasileiros). Abra as matérias e as páginas oficiais (WebFetch); não confie só no resumo da busca.
+3. **Busca:** inclua sempre buscas pela imprensa regional brasileira ("Ironman" + nome de capital, "triathlon" + estado, "etapa do Ironman", "nova prova de triathlon"): prova nova no Brasil costuma aparecer primeiro em jornal local. Faça buscas separadas por editoria e por circuito, em português e em inglês (ex.: "IRONMAN Brasil", "IRONMAN 70.3 inscrições", "triathlon resultado", "IRONMAN Pro Series results", "T100 triathlon", "Kona qualifying", "triathlon training study", nomes dos principais pros brasileiros). Abra as matérias e as páginas oficiais (WebFetch); não confie só no resumo da busca.
 4. **Critérios** (nota de 1 a 5; escolha as maiores somas):
    - é útil ou interessante para o triatleta amador brasileiro (vai salvar, mandar no grupo de treino ou comentar);
    - tem um dado concreto (tempo, distância, data, preço, vagas) ou uma história forte;

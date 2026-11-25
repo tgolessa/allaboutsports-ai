@@ -17,8 +17,10 @@ Leia `docs/linha-editorial.md`, `docs/calendario.md` e as seções 3 e 4 do `AGE
 
 Publicada nas **últimas 3 horas** e que cumpra **todas** as condições:
 
-1. **Relevante:** resultado de Kona, Mundial de 70.3, IRONMAN Pro Series, T100 ou IRONMAN/70.3 no Brasil; brasileiro no pódio de prova internacional; recorde; abertura de inscrições de prova muito procurada por brasileiros; anúncio oficial de prova nova no Brasil ou mudança grande de calendário ou regra.
-2. **Confirmada:** resultado oficial publicado (ironman.com, t100triathlon.com, triathlon.org, organizadora) ou comunicado oficial. Rumor e resultado extraoficial não entram.
+1. **Relevante:** resultado de Kona, Mundial de 70.3, IRONMAN Pro Series, T100 ou IRONMAN/70.3 no Brasil; brasileiro no pódio de prova internacional; recorde; abertura de inscrições de prova muito procurada por brasileiros; **prova nova no Brasil** (nova cidade, nova distância, etapa que volta) ou mudança grande de calendário, percurso ou regra.
+2. **Com fonte identificável:**
+   - resultado: só o oficial (ironman.com, t100triathlon.com, triathlon.org, organizadora);
+   - prova nova no Brasil ou mudança de calendário: comunicado oficial **ou** reportagem/coluna de veículo de imprensa com nome (inclusive jornais regionais, como O Popular, Zero Hora, Correio Braziliense). Se ainda não houver confirmação da organizadora (Unlimited Sports ou IRONMAN), o post diz isso com todas as letras: título com "deve" ou "pode", e "segundo <veículo>" no texto e na legenda. Nunca transforme "deve sediar" em "vai sediar".
 3. **Inédita no perfil:** não está nos posts dos últimos 3 dias em `posts/`.
 4. **Cabe no dia:** no máximo 1 post de plantão por dia e nunca a menos de 1 hora de outro post agendado (veja os `publicar_em` de hoje em `posts/`).
 

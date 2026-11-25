@@ -1,0 +1,28 @@
+{
+  "tipo": "noticia",
+  "pilar": "Ligas & modelos de negócio",
+  "fonte": "Transfermarkt via Lance! Biz (jan 2026) e Exame (out 2026)",
+  "fontes": [
+    "Transfermarkt, via Lance! Biz · 28 jan 2026",
+    "Transfermarkt, via Exame · 5 out 2026",
+    "Máquina do Esporte · 23 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "€",
+    "numero": "210mi",
+    "manchete": "valia o elenco mais caro do Brasileirão. Não foi campeão"
+  },
+  "fato": "Em janeiro, o Palmeiras tinha o elenco mais valioso da Série A, segundo o Transfermarkt. O título de 2026 ficou com o Flamengo, o segundo da lista.",
+  "numero": {
+    "valor": "15º",
+    "legenda": "era o Athletico no ranking de valor em janeiro; em outubro, estava em 3º na tabela",
+    "comparacao": [
+      { "rotulo": "Athletico · € 44 mi", "valor": 44.4 },
+      { "rotulo": "Flamengo · € 196 mi", "valor": 195.7 },
+      { "rotulo": "Palmeiras · € 210 mi", "valor": 209.9 }
+    ]
+  },
+  "contexto": "Valor de mercado é estimativa e muda com o resultado. O elenco do Athletico passou de € 69 mi em maio para € 109 mi em outubro, segundo o Transfermarkt.",
+  "por_que_importa": "Dinheiro aumenta a chance, mas não garante a vaga. Em 2025, o Mirassol, com um dos elencos mais baratos, terminou em 4º e viu seu valor quase dobrar.",
+  "o_que_observar": "O Centro de Estudos em Gestão do Futebol da UFJF pesquisa a relação entre valor de mercado e classificação final. Quanto do título se compra?"
+}

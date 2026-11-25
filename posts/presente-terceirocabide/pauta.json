@@ -1,0 +1,27 @@
+{
+  "tipo": "noticia",
+  "pilar": "Marcas & patrocínio",
+  "fonte": "UOL · Metrópoles · CNN Brasil · out-nov 2026",
+  "fontes": [
+    "UOL (via Terceiro Cabide) · Metrópoles · 7 out 2026",
+    "Diário do Pará · 5 out 2026 · VGN · 18 out 2026",
+    "CNN Brasil · 17 nov 2026 · UOL/TMC · 13 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "",
+    "numero": "14",
+    "manchete": "dos 20 clubes da Série A tinham bet no peito"
+  },
+  "fato": "A MP 1.394, de 25/09/2026, proibiu as apostas de cota fixa no Brasil. Os clubes tiveram até o começo de outubro para tirar as marcas das camisas.",
+  "numero": {
+    "valor": "R$910mi",
+    "legenda": "por ano era a parte fixa desses 14 contratos, segundo levantamento do UOL",
+    "comparacao": [
+      { "rotulo": "Sem bet no peito · 6 clubes", "valor": 6 },
+      { "rotulo": "Com bet no peito · 14 clubes", "valor": 14 }
+    ]
+  },
+  "contexto": "Alguns espaços já têm dono: Shopee no Corinthians, Agibank no Santos e Superscore, plataforma de estatísticas ligada à Superbet, em Fluminense e São Paulo.",
+  "por_que_importa": "Nenhum setor ocupou o lugar das bets. A CBF projeta perder R$ 2 bi até 2030 sem as apostas e prevê queda no preço da publicidade.",
+  "o_que_observar": "O Congresso tem até março de 2027 para votar a MP. Flamengo e Betano negociam suspender, e não rescindir, o contrato que vai até 2028."
+}

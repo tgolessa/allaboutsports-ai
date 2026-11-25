@@ -1,0 +1,26 @@
+{
+  "tipo": "noticia",
+  "pilar": "Marcas & patrocínio",
+  "fonte": "On (3º tri) · Nike (SEC) · Máquina do Esporte · nov 2026",
+  "fontes": [
+    "On, relatório do 3º trimestre · Máquina do Esporte · 11 nov 2026",
+    "Nike, comunicado à SEC · 17 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "+",
+    "numero": "15%",
+    "manchete": "nas vendas da On enquanto a Nike prevê queda"
+  },
+  "fato": "De janeiro a setembro, a On, que tem Federer como sócio, vendeu CHF 2,6 bi, 15,1% a mais que em 2025. A Nike prevê receita menor neste ano fiscal.",
+  "numero": {
+    "valor": "22,7%",
+    "legenda": "foi a alta da venda direta da On ao consumidor; no atacado, a alta foi de 10,2%",
+    "comparacao": [
+      { "rotulo": "Atacado · +10,2%", "valor": 10.2 },
+      { "rotulo": "Venda direta · +22,7%", "valor": 22.7 }
+    ]
+  },
+  "contexto": "O lucro da On no período chegou a CHF 371 mi, alta de 176%, com ajuda de reembolsos de tarifas dos EUA. O ano fiscal da Nike termina em maio de 2027.",
+  "por_que_importa": "A On cresce mais onde vende direto, sem lojista no meio. A Nike, maior marca do setor, só promete voltar a crescer no ritmo do mercado em 2029.",
+  "o_que_observar": "O plano da Nike mira US$ 5 bi a mais de receita até 2031, cerca de US$ 4 bi em esportes de performance, como corrida. A On segue no caminho."
+}

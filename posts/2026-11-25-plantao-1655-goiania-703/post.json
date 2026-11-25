@@ -1,5 +1,5 @@
 {
-  "status": "aprovado",
+  "status": "publicado",
   "plantao": true,
   "publicar_em": "2026-11-25T16:45-03:00",
   "tipo": "carrossel",
@@ -8,5 +8,9 @@
     "imagens/01.jpg",
     "imagens/02.jpg",
     "imagens/03.jpg"
-  ]
+  ],
+  "media_id": "18107635601377424",
+  "link": "https://www.instagram.com/p/DgLUuyWiSyd/",
+  "publicado_em": "2026-11-25T19:52:15+0000",
+  "story_id": "18114394523237548"
 }

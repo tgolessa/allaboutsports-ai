@@ -1,61 +1,57 @@
-# Linha editorial — AllAboutSports.AI
+# Linha editorial — AllAboutTri.AI
 
-**O negócio por trás dos esportes, explicado em português.** Notícias globais de negócios do esporte para quem acompanha esporte e quer entender o que move clubes, ligas, atletas e marcas.
+**Triathlon e Ironman, explicados em português.** Notícias das provas, resultados, inscrições, bastidores dos atletas e treino, para o triatleta amador brasileiro que quer saber o que está acontecendo no esporte.
 
 ## Público
 
-Fã de esporte de 25 a 45 anos que já consome conteúdo de negócios (finanças, marketing, startups, tecnologia). Quer repertório e assunto para conversa no trabalho, com qualidade de informação e sem jargão de relatório. Referência de tom: a clareza do Front Office Sports com o rigor da Sportico.
+Triatleta amador brasileiro, de 30 a 55 anos, que faz ou sonha fazer 70.3 e Ironman. Treina cedo, acompanha os pros, compra equipamento, viaja para provas e conversa sobre tudo isso no grupo de treino. Quer informação confiável e rápida, sem ter de ler cinco sites em inglês.
 
-## Pilares
+## Editorias
 
-| Pilar | O que cobre | Peso na semana |
+| Editoria | O que cobre | Peso na semana |
 | --- | --- | --- |
-| Deals & dinheiro | Contratos, transferências, compras de clubes, valuations, investimentos | 30% |
-| Mídia & streaming | Direitos de transmissão, plataformas, audiência | 25% |
-| Marcas & patrocínio | Naming rights, camisas, atletas como marca, campanhas | 20% |
-| Ligas & modelos de negócio | Novas ligas, teto salarial, SAF, regras com impacto financeiro | 15% |
-| Tech, produto & parcerias | IA, dados, wearables, apostas, parcerias entre marcas de tecnologia e esporte | 10% |
+| Provas | Notícias das provas: percursos, mudanças, novidades, provas novas no Brasil e no mundo | 25% |
+| Resultados | Resultados importantes: Kona, Mundial de 70.3, IRONMAN Pro Series, T100, IRONMAN Brasil e 70.3 brasileiros, brasileiros nos pódios | 25% |
+| Inscrições | Abertura de inscrições, lotes, vagas para o Mundial, provas que esgotam | 15% |
+| Bastidores | Atletas: rotina, patrocínio, equipamento, carreira, dinheiro do esporte | 20% |
+| Treino | Treino, nutrição, recuperação e equipamento, sempre a partir de técnico, estudo ou atleta citado | 15% |
 
-**Primeiro mês (até 11/12/2026): cerca de 40% dos posts com ângulo brasileiro** (SAF, patrocínio de clubes, direitos do Brasileirão, brasileiros em ligas de fora, empresas brasileiras no esporte global, comparações Brasil x mundo). O objetivo é gerar identificação e compartilhamento enquanto o perfil busca os primeiros seguidores. Depois dessa data, volta a regra abaixo, salvo nova decisão.
-
-Temas globais (NFL, NBA, MLB, NHL, Premier League e grandes ligas europeias, Champions, F1, UFC, tênis, golfe, olimpismo, ciclismo, corrida, padel). Brasil entra quando há conexão global.
+**Brasil primeiro.** Cerca de metade dos posts com ângulo brasileiro: provas no Brasil, brasileiros pro e amadores, marcas e assessorias daqui. O global entra quando for grande (Kona, Mundial de 70.3, T100, recordes, transferências de patrocínio dos pros) ou quando ajudar o amador brasileiro (inscrições de provas lá fora muito procuradas por brasileiros).
 
 ## Tom de voz
 
-Informado, direto, com leveza de quem gosta de esporte. Explica como um amigo que trabalha no mercado.
+Como um amigo do grupo de treino que lê tudo e explica sem enrolar. Direto, com leveza e respeito por quem treina.
 
 | Faça | Não faça |
 | --- | --- |
-| Abrir com o número ou o fato mais forte | Abrir com "Você sabia que..." ou "Atenção!" |
-| Frases curtas, uma ideia por slide | Parágrafos longos |
-| Explicar o termo técnico na primeira vez | Sigla sem explicação |
-| Valores com "bi" e "mi" (US$ 2,5 bi) | "bilhões de dólares americanos" |
-| Dizer por que importa | Opinar sobre torcida, arbitragem ou resultado |
+| Abrir com o tempo, o número ou o fato mais forte | Abrir com "Você sabia que..." ou "Atenção!" |
+| Usar o vocabulário do triatleta: transição, T1, T2, pace, watts, vácuo, age group, slot, rolldown, DNF | Explicar como se o leitor nunca tivesse treinado |
+| Explicar sigla menos comum na primeira vez (PTO, T100, KPR) | Sigla sem explicação |
+| Tempos no formato 8:31:12 e distâncias em km (3,8 km, 180 km, 42,2 km) | Milhas e jardas sem conversão |
+| Dizer por que importa para quem treina | Opinar sobre doping, lesão ou vida pessoal sem fato confirmado |
 | Emoji com moderação, só na legenda | Emoji na arte |
 
-Termos mantidos em inglês: naming rights, valuation, salary cap, draft, streaming, fan engagement, sports betting.
+Expressões proibidas (soam como texto de IA): "no mundo do triathlon", "vale destacar", "em um cenário cada vez mais", "não é apenas X, é Y", "revolucionar", "divisor de águas", "jornada", "superação" como clichê, travessões em excesso.
 
-Expressões proibidas (soam como texto de IA): "no mundo dos esportes", "vale destacar", "em um cenário cada vez mais", "não é apenas X, é Y", "revolucionar", "divisor de águas", "game changer", travessões em excesso.
+## Treino: cuidado redobrado
 
-## Número na frente, quando houver
-
-Se a pauta tiver um dado forte (valor de contrato, receita, audiência, valuation), ele abre o post. Temas de produto, tecnologia e parcerias entram mesmo sem cifra.
+- Nunca prescreva treino, dieta ou suplemento. Conte o que um técnico, atleta ou estudo disse, com nome e fonte.
+- Estudo científico: diga quem fez, com quantas pessoas e o limite do achado. Nada de "a ciência prova".
+- Lesão, saúde e morte em prova: sobriedade, só fatos confirmados, sem especulação.
 
 ## Checagem e fontes
 
-- Todo número precisa estar em pelo menos uma fonte confiável, de preferência duas. Número de fonte única vai com "segundo [fonte]".
-- Rumor de transferência ou negociação só entra se veículo de primeira linha publicar, sempre marcado como "em negociação".
-- Data e moeda sempre explícitas. Conversão para real só quando ajudar.
-- Nunca afirmar mais do que a fonte diz (ex.: disponibilidade por país, prazos, valores estimados).
+- Resultado só com a lista oficial (site do IRONMAN, do T100/PTO, da World Triathlon, da CBTri ou da organizadora) ou com veículo de primeira linha. Confira nome, país e tempo de cada atleta.
+- Inscrições: data, preço e número de vagas só do site oficial da prova ou da organizadora (no Brasil, em geral a Unlimited Sports). Diga se o preço é do 1º lote.
+- Todo número em pelo menos uma fonte confiável, de preferência duas. Número de fonte única vai com "segundo [fonte]".
+- Rumor de patrocínio, transferência ou aposentadoria só entra se veículo de primeira linha publicar, sempre marcado como "segundo [fonte]".
+- Data sempre explícita. Nunca afirmar mais do que a fonte diz.
 
-Fontes prioritárias: Sportico, Front Office Sports, SportBusiness, Sports Business Journal, The Athletic (negócios), Bloomberg, Reuters, Financial Times, CNBC Sport, Forbes, Máquina do Esporte, comunicados oficiais e balanços.
+Fontes prioritárias: ironman.com, t100triathlon.com, triathlon.org, cbtri.org.br, unlimitedsports.com.br, TRI247, Triathlete, Slowtwitch, Triathlon Magazine Canada, 220 Triathlon, Tri Sport, ge, perfis oficiais de atletas e marcas.
 
 ## Direitos autorais e imagem
 
 - Texto sempre reescrito. Nunca copiar frase de matéria.
 - Fonte citada no rodapé dos slides e na legenda.
-- Não usar fotos de agências ou de matérias, nem escudos e logos de clubes, ligas ou marcas. A arte é feita só com tipografia, números e gráficos da identidade.
-
-## Temas sensíveis
-
-Apostas, disputas judiciais, morte, doping, violência e saúde de atletas: tratar com sobriedade e sinalizar na proposta de aprovação.
+- Não usar fotos de agências, de matérias ou de atletas sem autorização, nem logos de provas, ligas ou marcas. A arte é tipografia, números, tempos e gráficos da identidade.
+- "IRONMAN" é marca registrada: pode ser citada no texto, mas nunca no nome do perfil nem como se fosse um canal oficial.

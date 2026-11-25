@@ -1,0 +1,45 @@
+{
+  "tipo": "inscricao",
+  "prova": "IRONMAN 70.3 Exemplo",
+  "prefixo": "Inscrições abrem",
+  "abertura": "00/00",
+  "manchete": "Manchete de exemplo da abertura de inscrições",
+  "fonte": "Exemplo",
+  "dados": [
+    {
+      "rotulo": "Natação",
+      "valor": "1,9 km"
+    },
+    {
+      "rotulo": "Bike",
+      "valor": "90 km"
+    },
+    {
+      "rotulo": "Corrida",
+      "valor": "21,1 km"
+    }
+  ],
+  "itens": [
+    {
+      "rotulo": "Data da prova",
+      "valor": "00 de mês de 2027"
+    },
+    {
+      "rotulo": "Local",
+      "valor": "Cidade (UF)"
+    },
+    {
+      "rotulo": "Abertura",
+      "valor": "00/00, às 00h"
+    },
+    {
+      "rotulo": "1º lote",
+      "valor": "R$ 0.000"
+    },
+    {
+      "rotulo": "Vagas p/ Mundial",
+      "valor": "Até 00"
+    }
+  ],
+  "observacao": "Observação de exemplo: onde se inscrever e qualquer regra importante."
+}

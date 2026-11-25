@@ -1,5 +1,5 @@
 """
-AllAboutSports.AI — gera o Story (9:16) que acompanha um post do feed.
+AllAboutTri.AI — gera o Story (9:16) que acompanha um post do feed.
 
 Uso: python agente/story.py posts/<pasta>/pauta.json [--out posts/<pasta>]
 
@@ -27,10 +27,9 @@ def main():
     pauta_path = Path(a.pauta).resolve()
     out_dir = Path(a.out).resolve() if a.out else pauta_path.parent
     d = json.loads(pauta_path.read_text(encoding="utf-8"))
-    builders = {"noticia": r.build_noticia, "nota": r.build_nota,
-                "semanal": r.build_semanal, "ranking": r.build_ranking}
+    builders = r.BUILDERS
     capa = builders[d["tipo"]](d)[0]
-    for old in ("<strong>Arraste →</strong>", "<strong>Nota rápida</strong>", "<strong>01/07 →</strong>"):
+    for old in ("<strong>Arraste →</strong>", f"<strong>{r.HANDLE}</strong>"):
         capa = capa.replace(old, "<strong>Post novo no perfil ↑</strong>")
     with tempfile.TemporaryDirectory() as tmp:
         r.render([capa], Path(tmp), "vertical")

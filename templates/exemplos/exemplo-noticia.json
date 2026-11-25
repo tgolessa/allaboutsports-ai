@@ -1,23 +1,47 @@
 {
   "tipo": "noticia",
-  "pilar": "Deals & dinheiro",
-  "fonte": "[veículo] · [data]",
-  "fontes": ["[Veículo 1] · [data]", "[Veículo 2] · [data]"],
+  "editoria": "Provas",
+  "fonte": "Exemplo",
+  "fontes": [
+    "Exemplo de fonte 1",
+    "Exemplo de fonte 2"
+  ],
   "capa": {
-    "prefixo": "US$",
-    "numero": "10bi",
-    "manchete": "Quanto vale o time mais caro da NFL"
-  },
-  "fato": "Um grupo de investidores fechou a compra de uma franquia da NFL pelo maior valor já pago por um time esportivo nos EUA.",
-  "numero": {
-    "valor": "3x",
-    "legenda": "o valor médio de uma franquia há dez anos",
-    "comparacao": [
-      { "rotulo": "2016 · US$ 2,3 bi", "valor": 2.3 },
-      { "rotulo": "2026 · US$ 7 bi", "valor": 7 }
+    "prefixo": "exemplo de capa",
+    "numero": "226",
+    "unidade": "km",
+    "manchete": "O que acontece por trás de um Ironman",
+    "dados": [
+      {
+        "rotulo": "Swim",
+        "valor": "3,8"
+      },
+      {
+        "rotulo": "Bike",
+        "valor": "180,2"
+      },
+      {
+        "rotulo": "Run",
+        "valor": "42,2"
+      }
     ]
   },
-  "contexto": "Os valores das franquias subiram com contratos de TV cada vez maiores, receita dividida entre os times e oferta limitada: são só 32 equipes.",
-  "por_que_importa": "O preço vira referência para as próximas vendas. Quem comprar o próximo time vai negociar a partir daqui, e fundos de investimento ganham mais espaço na liga.",
-  "o_que_observar": "A venda ainda precisa ser aprovada pelos outros donos. A pergunta é se a liga vai abrir mais espaço para investidores de fora dos EUA."
+  "fato": "Texto de exemplo do fato principal, com até 30 palavras, direto ao ponto.",
+  "numero": {
+    "valor": "17h",
+    "legenda": "Tempo limite para cruzar a linha de chegada de um Ironman completo.",
+    "comparacao": [
+      {
+        "rotulo": "Exemplo A",
+        "valor": 8
+      },
+      {
+        "rotulo": "Exemplo B",
+        "valor": 17
+      }
+    ]
+  },
+  "contexto": "Texto de exemplo do contexto, com até 30 palavras.",
+  "por_que_importa": "Texto de exemplo do por que importa, com até 30 palavras.",
+  "o_que_observar": "Texto de exemplo do que observar, com até 30 palavras."
 }

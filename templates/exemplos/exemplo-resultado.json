@@ -1,0 +1,65 @@
+{
+  "tipo": "resultado",
+  "editoria": "Resultado",
+  "prova": "IRONMAN Exemplo",
+  "data": "00/00/2026",
+  "manchete": "Manchete de exemplo do resultado",
+  "fonte": "Exemplo",
+  "fontes": [
+    "Resultados oficiais (exemplo)"
+  ],
+  "categorias": [
+    {
+      "nome": "Pro feminino",
+      "podio": [
+        {
+          "pos": "1",
+          "atleta": "Atleta Exemplo Um",
+          "pais": "BRA",
+          "tempo": "8:31:12",
+          "parciais": {
+            "natacao": "52:10",
+            "bike": "4:39:05",
+            "corrida": "2:54:40"
+          }
+        },
+        {
+          "pos": "2",
+          "atleta": "Atleta Exemplo Dois",
+          "pais": "GER",
+          "tempo": "8:36:40"
+        },
+        {
+          "pos": "3",
+          "atleta": "Atleta Exemplo Três",
+          "pais": "USA",
+          "tempo": "8:41:02"
+        }
+      ]
+    },
+    {
+      "nome": "Pro masculino",
+      "podio": [
+        {
+          "pos": "1",
+          "atleta": "Atleta Exemplo Quatro",
+          "pais": "NOR",
+          "tempo": "7:40:22"
+        },
+        {
+          "pos": "2",
+          "atleta": "Atleta Exemplo Cinco",
+          "pais": "BRA",
+          "tempo": "7:44:51"
+        },
+        {
+          "pos": "3",
+          "atleta": "Atleta Exemplo Seis",
+          "pais": "FRA",
+          "tempo": "7:49:30"
+        }
+      ],
+      "observacao": "Observação de exemplo, uma frase."
+    }
+  ]
+}

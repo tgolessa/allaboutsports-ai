@@ -1,54 +1,51 @@
-# Agente diário — AllAboutSports.AI
+# Agente diário — AllAboutTri.AI
 
-Instruções para o agente que pesquisa as notícias, produz o pacote de posts e abre a proposta de aprovação. Ele roda numa tarefa agendada: **manhã** (todos os dias). Desde 24/11/2026 o pacote da tarde e o plantão estão pausados: o foco é crescer a base com menos posts e mais fortes.
-
-O agente **nunca publica** e **nunca grava direto na `main`**. Ele entrega uma proposta (pull request); o Tiago aprova com o merge e o workflow `publicar.yml` publica nos horários marcados.
+Instruções para o agente que, toda madrugada, escolhe as pautas do dia, produz os 3 posts e deixa tudo agendado. **A publicação é automática:** o agente grava os posts na `main` com `"status": "aprovado"` e o workflow `publicar.yml` (a cada 15 minutos) publica cada um no horário marcado. Não há aprovação manual, então a checagem é responsabilidade do agente: **na dúvida sobre um fato, o post não sai.**
 
 ## 0. Preparação
 
 ```bash
 git clone https://github.com/tgolessa/allaboutsports-ai && cd allaboutsports-ai
-pip install --break-system-packages playwright pillow
+pip install --break-system-packages playwright pillow numpy
 ```
 
-Leia antes de começar: `docs/linha-editorial.md` (regras de conteúdo), `docs/aprendizados.md` (regras aprendidas com os números do perfil, que você deve seguir), `README.md` (formatos e limites de texto) e os exemplos em `templates/exemplos/`.
+Leia antes de começar: `docs/linha-editorial.md` (regras de conteúdo), `docs/calendario.md` (provas e inscrições), `docs/aprendizados.md` (o que funcionou), `README.md` (formatos e limites de texto) e os exemplos em `templates/exemplos/`.
 
 Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
 
-## 1. O que entra no pacote
+## 1. Os 3 posts do dia
 
-| Dia | Post 1 · 12:00 | Post 2 · 19:00 |
+| Horário | Post | Formatos |
 | --- | --- | --- |
-| Seg a qui, sáb e dom | 1 carrossel (`noticia`) com a pauta mais forte | 1 Reel com a segunda pauta mais forte |
-| Sexta | o `semanal` (Top 10 da semana) | 1 Reel com a pauta mais forte do dia |
-| Sábado de semana ISO par | o `ranking` (10 maiores valores dos últimos 14 dias, mesmo tipo de valor e moeda) | 1 Reel com a pauta mais forte do dia |
+| **06:30** | Rápido, para quem abre o celular antes ou depois do treino | `nota`, `inscricao` ou `resultado` |
+| **12:30** | O post principal do dia | `noticia` (carrossel) ou `resultado` de prova grande |
+| **19:30** | Reel, sobre uma pauta diferente das outras duas | `reel` feito a partir de um `pauta.json` de `noticia` |
 
-- **São 2 posts por dia, os dois decididos no pacote da manhã.** Notas (`nota`) não entram mais no feed por enquanto.
-- **Os dois posts são de pautas diferentes.** O Reel do post 2 é feito a partir de um `pauta.json` de carrossel (`noticia`) da segunda pauta, que não vira carrossel no feed: o Reel é o formato que mais chega a quem ainda não segue o perfil. Veja a seção "Reel" em Produção.
-- **Qualidade antes de volume:** os dois posts são a vitrine do perfil para quem chega agora. Gancho forte no primeiro slide/cena, número na frente e um "por que importa" claro. Se só houver 1 pauta boa, entregue só o carrossel e explique na proposta.
-- **Sexta, newsletter:** acrescente a edição da newsletter (Top 10 da semana por e-mail), com envio às **18:00**. Ela não ocupa horário do feed. Veja "Newsletter" em Produção.
-- **Story nos dois posts:** o carrossel (ou semanal/ranking) e o Reel ganham um `story.jpg`, publicado nos Stories logo depois do post. Veja "Story" em Produção.
-- **Grandes eventos:** confira `docs/calendario.md`. Se houver um evento nos próximos 7 dias, pelo menos 1 dos 2 posts do dia deve ser sobre o negócio por trás dele (e o pacote pode trazer uma série, marcada como `"serie": "<nome>"` no `post.json`). Se o assunto merecer identidade especial, sugira na proposta.
+- **Segunda:** o post das 06:30 é o resultado mais importante do fim de semana, se houver prova relevante (IRONMAN Pro Series, T100, IRONMAN ou 70.3 no Brasil, brasileiro em pódio).
+- **Sexta:** o post das 12:30 é o `semanal` (Top 10 da semana, de segunda a sexta).
+- **Calendário:** se houver prova grande ou abertura de inscrições nos próximos 7 dias (`docs/calendario.md`), pelo menos 1 post do dia trata disso.
+- **Mistura de editorias:** respeite os pesos da linha editorial ao longo da semana e cerca de metade dos posts com ângulo brasileiro.
+- **Story em todos os posts.**
+- **Menos é melhor que errado:** se não houver 3 pautas que passem na checagem, publique 2, ou 1. Diga isso na mensagem final.
 
 ## 2. Pesquisa
 
-1. **Histórico:** leia os `pauta.json` dos posts dos últimos 14 dias em `posts/` e não repita assunto já publicado, a não ser que haja fato novo relevante (e então diga o que mudou).
-2. **Janela:** notícias das últimas 24 horas. Prefira o que ainda está repercutindo.
-3. **Busca:** faça buscas separadas por pilar e por liga/esporte (ex.: "NFL franchise sale", "Premier League broadcast rights", "sponsorship deal sports", "sports tech partnership", "NBA media rights"), em inglês e em português. Abra as matérias (WebFetch), não confie só no resumo da busca.
-4. **Critérios** (nota de 1 a 5 em cada; escolha as maiores somas):
-   - tem um número concreto e verificável, ou é uma mudança de produto/parceria relevante;
-   - envolve marca, liga ou atleta conhecido do público brasileiro;
-   - é novo ou muda o entendimento de um tema;
-   - rende um "por que importa" claro;
-   - equilibra os pesos dos pilares na semana;
-   - **até 11/12/2026:** tem ângulo brasileiro. Mire em cerca de 40% dos posts da semana com conexão Brasil (veja a linha editorial) e diga na proposta quantos posts do pacote têm esse ângulo.
-5. **Checagem:** confirme cada número em pelo menos uma fonte confiável, de preferência duas, e nunca afirme mais do que a fonte diz.
+1. **Histórico:** leia os `pauta.json` dos posts dos últimos 14 dias em `posts/` e não repita assunto já publicado, a não ser que haja fato novo relevante (e então diga o que mudou). Veja também se o plantão já publicou algo hoje.
+2. **Janela:** notícias das últimas 24 a 48 horas; inscrições e calendário podem ter anúncio mais antigo se a data de abertura ainda não passou.
+3. **Busca:** faça buscas separadas por editoria e por circuito, em português e em inglês (ex.: "IRONMAN Brasil", "IRONMAN 70.3 inscrições", "triathlon resultado", "IRONMAN Pro Series results", "T100 triathlon", "Kona qualifying", "triathlon training study", nomes dos principais pros brasileiros). Abra as matérias e as páginas oficiais (WebFetch); não confie só no resumo da busca.
+4. **Critérios** (nota de 1 a 5; escolha as maiores somas):
+   - é útil ou interessante para o triatleta amador brasileiro (vai salvar, mandar no grupo de treino ou comentar);
+   - tem um dado concreto (tempo, distância, data, preço, vagas) ou uma história forte;
+   - envolve prova, atleta ou marca conhecida aqui;
+   - é novo ou muda o que se sabia;
+   - equilibra as editorias da semana.
+5. **Checagem:** siga a seção "Checagem e fontes" da linha editorial. Resultado e inscrição só com fonte oficial. Confira nome, país, tempo, data e preço um a um.
 
 ## 3. Produção
 
-Para cada post, crie a pasta `posts/AAAA-MM-DD-manha-NN-<slug>/` (NN = 01, 02… na ordem de publicação) com:
+Para cada post, crie a pasta `posts/AAAA-MM-DD-NN-<slug>/` (NN = 01, 02, 03 na ordem do dia) com:
 
-**`pauta.json`** — os campos do formato (`noticia`, `nota`, `semanal` ou `ranking`), seguindo os limites de texto do README.
+**`pauta.json`** — os campos do formato, seguindo os exemplos em `templates/exemplos/` e os limites de texto do README.
 
 **Imagens:**
 ```bash
@@ -56,77 +53,57 @@ python templates/render.py posts/<pasta>/pauta.json --out posts/<pasta>/imagens
 ```
 Se aparecer `ESTOUROU`, encurte o texto e gere de novo.
 
+**Story** (todos os posts):
+```bash
+python agente/story.py posts/<pasta>/pauta.json
+```
+
+**Reel** (post das 19:30): na pasta do Reel, escreva um `pauta.json` de `noticia` sobre a pauta escolhida (ele não vira carrossel no feed) e gere o vídeo:
+```bash
+python agente/reel.py posts/<pasta>/pauta.json
+python agente/story.py posts/<pasta>/pauta.json
+```
+Isso cria `reel.mp4` e `reel_capa.jpg`. Confira pelo menos 3 quadros (`ffmpeg -ss <segundos> -i reel.mp4 -frames:v 1 quadro.png`). O `post.json` do Reel usa `"tipo": "reel"`, `"video": "reel.mp4"`, `"capa": "reel_capa.jpg"` (sem `imagens`).
+
 **`post.json`:**
 ```json
 {
   "status": "aprovado",
-  "publicar_em": "2026-11-12T09:30:00-03:00",
+  "publicar_em": "2026-11-26T12:30:00-03:00",
   "tipo": "noticia",
   "legenda": "...",
   "imagens": ["imagens/01.jpg", "imagens/02.jpg"]
 }
 ```
-O status já vai como `aprovado` porque a aprovação acontece no merge da proposta.
 
-**Story** (os dois posts do dia; no Reel, rode com o `pauta.json` da pasta do Reel):
-```bash
-python agente/story.py posts/<pasta>/pauta.json
-```
-Cria `story.jpg` na pasta do post; o publicador cuida do resto. Abra a imagem para conferir.
-
-**Reel** (post 2, às 19:00): crie a pasta `posts/AAAA-MM-DD-manha-02-<slug>-reel/` com um `pauta.json` de carrossel (`noticia`) da segunda pauta, escrito como se fosse um carrossel, e gere o vídeo:
-```bash
-python agente/reel.py posts/<pasta-reel>/pauta.json
-```
-Isso cria `reel.mp4` (9:16, trilha original gerada por código) e `reel_capa.jpg`. Assista a pelo menos 3 quadros (`ffmpeg -ss <segundos> -i reel.mp4 -frames:v 1 quadro.png`) para conferir. O `post.json` do Reel usa `"tipo": "reel"`, `"video": "reel.mp4"`, `"capa": "reel_capa.jpg"` (sem `imagens`) e uma legenda mais curta que a do carrossel, começando pelo gancho e terminando com um convite para salvar ou mandar para alguém.
-
-**Newsletter** (sexta de manhã): crie a pasta `posts/AAAA-MM-DD-newsletter/` com um `edicao.json` (formato no topo de `agente/newsletter.py`): número da edição (anterior + 1), abertura de 2 a 3 frases sobre o que marcou a semana, os mesmos 10 itens do Top 10 com 2 a 3 frases cada (mais completos que no carrossel) e link da fonte, e um fechamento de 1 a 2 frases. Gere o HTML e a prévia:
-```bash
-python agente/newsletter.py posts/<pasta>/edicao.json --previa
-```
-O `post.json` usa `"tipo": "newsletter"`, `"status": "aprovado"`, `"publicar_em": "<sexta>T18:00:00-03:00"`, `"assunto"` (até 60 caracteres, com o tema mais forte da semana), `"previa"` (até 90 caracteres, complementando o assunto), `"descricao"` e `"html": "newsletter.html"`. Inclua `previa.jpg` no corpo da proposta.
-
-**Legenda** (até ~1.200 caracteres):
+**Legenda** (até ~1.000 caracteres; no Reel, mais curta):
 1. Primeira linha: o gancho da capa, em outras palavras.
-2. Duas a quatro frases explicando o fato e por que importa.
-3. Uma pergunta para os comentários.
-4. `Fontes: <veículo> (<data>), <veículo>.`
-5. 5 a 8 hashtags: sempre `#sportsbusiness #negociosdoesporte`, mais as do tema.
+2. Duas a quatro frases com o fato e por que importa para quem treina.
+3. Uma pergunta para os comentários (ex.: "Você vai?", "Qual foi seu tempo nessa prova?").
+4. `Fontes: <fonte> (<data>), <fonte>.`
+5. 5 a 8 hashtags: sempre `#triathlon #triatlo #ironman`, mais as do tema (`#ironman703`, `#triathlonbrasil`, `#ironmanbrasil`, `#kona`, `#t100`, `#treinodetriathlon`).
 
-## 4. Revisão antes de entregar
+## 4. Revisão antes de gravar
 
-- Abra (Read) cada imagem gerada e confira: nada cortado, nenhum erro de digitação, números iguais aos da fonte.
+- Abra (Read) cada imagem e cada story: nada cortado, sem erro de digitação, nomes, tempos e datas iguais aos da fonte.
 - Releia os textos procurando as expressões proibidas da linha editorial e frases com cara de texto de IA.
-- Confira se nenhum post afirma mais do que a fonte diz.
-- Gere a folha de prévia do pacote:
-  ```bash
-  python agente/previa.py posts/<pasta-1> posts/<pasta-2> ... --out posts/_previas/AAAA-MM-DD-<periodo>.jpg
-  ```
+- Confira se nenhum post afirma mais do que a fonte diz. Se houver dúvida que você não consegue resolver, tire o post.
 
-## 5. Entrega
+## 5. Entrega (direto na `main`)
 
 ```bash
-git checkout -b pacote/AAAA-MM-DD-<periodo>
-git add posts
-git commit -m "Pacote de DD/MM: N posts"
-git push -u origin pacote/AAAA-MM-DD-<periodo>
+git add posts docs/calendario.md
+git commit -m "Posts de DD/MM: <manchete 1> · <manchete 2> · <manchete 3>"
+git pull --rebase origin main && git push origin main
 ```
 
-Abra a proposta pela API REST do GitHub (`gh api -X POST repos/tgolessa/allaboutsports-ai/pulls`), com:
+Às segundas, revise também `docs/calendario.md`: confirme as datas "a confirmar" e acrescente aberturas de inscrição anunciadas, sempre com o link da fonte.
 
-- **Título:** `Pacote · DD/MM · N posts`
-- **Corpo:**
-  - a prévia: `![prévia](https://raw.githubusercontent.com/tgolessa/allaboutsports-ai/pacote/AAAA-MM-DD-<periodo>/posts/_previas/AAAA-MM-DD-<periodo>.jpg)`
-  - uma linha por post: horário · formato · manchete · fontes (com links);
-  - alertas: temas sensíveis, números de fonte única, pautas que você considerou e descartou por falta de checagem;
-  - se algum assunto merecer tratamento **especial** (cobertura maior ou identidade visual própria), sugira em uma linha, sem criar arte nova;
-  - instruções: "Para aprovar, faça o merge. Para tirar um post, apague a pasta dele nesta proposta antes do merge. Para não publicar nada, feche a proposta."
-
-Se houver uma proposta anterior ainda aberta, não mexa nela; avise no corpo da nova.
+Ao terminar, mande ao Tiago uma mensagem curta: os horários e as manchetes do dia, e qualquer alerta (fonte única, tema sensível, pauta descartada por falta de checagem). Se algo impediu a entrega, diga exatamente o quê.
 
 ## O que o agente não faz
 
-- Não publica, não faz merge e não grava na `main`.
+- Não publica direto no Instagram: quem publica é o workflow.
 - Não altera `publicador/`, `.github/`, `templates/` nem este arquivo.
-- Não usa fotos, escudos ou logos.
-- Não cria identidade visual nova por conta própria.
+- Não usa fotos, logos ou imagens de terceiros.
+- Não prescreve treino, dieta ou suplemento.

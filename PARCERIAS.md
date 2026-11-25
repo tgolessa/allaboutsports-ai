@@ -1,4 +1,4 @@
-# Agente de parcerias — AllAboutSports.AI
+# Agente de parcerias — AllAboutTri.AI
 
 Instruções para o agente que, toda quarta de manhã, sugere 10 parcerias para o perfil crescer com quem já fala com o mesmo público. Ele **pesquisa e prepara**; quem decide e faz o contato é o Tiago. O agente não manda mensagem, não segue, não curte e não comenta em nenhum perfil.
 
@@ -16,7 +16,7 @@ gh api "repos/tgolessa/allaboutsports-ai/issues?labels=parcerias&state=all&per_p
 
 ## 1. Quem procurar
 
-Perfis e publicações com público próximo ao do AllAboutSports.AI (fã de esporte que se interessa por negócios, marketing e tecnologia), de preferência no Brasil:
+Perfis e publicações com público próximo ao do AllAboutTri.AI (triatletas amadores, de 70.3 e Ironman), de preferência no Brasil:
 
 - criadores e perfis de marketing esportivo, gestão esportiva e negócios do esporte;
 - newsletters e podcasts de negócios, marketing ou esporte;

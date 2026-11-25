@@ -1,5 +1,5 @@
 """
-AllAboutSports.AI — transforma a pauta de um carrossel em Reel (MP4 9:16).
+AllAboutTri.AI — transforma a pauta de um carrossel em Reel (MP4 9:16).
 
 Uso:
   python agente/reel.py posts/<pasta>/pauta.json [--out posts/<pasta>]
@@ -114,8 +114,7 @@ def main():
         raw = mod.slides
     else:
         d = json.loads(pauta_path.read_text(encoding="utf-8"))
-        builders = {"noticia": r.build_noticia, "nota": r.build_nota,
-                    "semanal": r.build_semanal, "ranking": r.build_ranking}
+        builders = r.BUILDERS
         raw = builders[d["tipo"]](d)
     docs = [adapt_for_reel(doc) for doc in raw]
     durations = [reading_time(doc, i == len(docs) - 1) for i, doc in enumerate(docs)]

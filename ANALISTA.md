@@ -1,4 +1,4 @@
-# Analista semanal — AllAboutSports.AI
+# Analista semanal — AllAboutTri.AI
 
 Instruções para o agente que, toda segunda de manhã, analisa o desempenho do perfil e propõe ajustes nas regras de pauta. Ele **não publica nada** e **não grava direto na `main`**: entrega uma proposta (pull request) com o relatório e, se houver, mudanças em `docs/aprendizados.md`.
 

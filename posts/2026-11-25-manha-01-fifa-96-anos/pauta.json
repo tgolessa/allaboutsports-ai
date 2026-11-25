@@ -1,0 +1,32 @@
+{
+  "tipo": "noticia",
+  "pilar": "Deals & dinheiro",
+  "fonte": "The Guardian · Máquina do Esporte · 24 nov 2026",
+  "fontes": [
+    "The Guardian · 23 nov 2026",
+    "Máquina do Esporte · 24 nov 2026",
+    "Goal · 23 nov 2026"
+  ],
+  "capa": {
+    "numero": "96",
+    "manchete": "anos: o plano engavetado da Fifa para os direitos da Copa"
+  },
+  "fato": "Documentos obtidos pelo Guardian mostram que a Fifa planejou passar os direitos comerciais da Copa e dos seus outros torneios para uma nova empresa, com sócios privados.",
+  "numero": {
+    "valor": "US$ 20bi",
+    "legenda": "era o valor inicial da nova empresa, a Fifa Forward Enterprise",
+    "comparacao": [
+      {
+        "rotulo": "Investidores privados · até 49%",
+        "valor": 49
+      },
+      {
+        "rotulo": "Fifa · 51%",
+        "valor": 51
+      }
+    ]
+  },
+  "contexto": "Os direitos seriam licenciados em ciclos de 12 anos, até somar 96. A Thrive Capital, de Josh Kushner, seria a investidora líder, e a Fifa manteria 51%.",
+  "por_que_importa": "Sem licitação, um fundo entraria no maior produto do futebol. E até 5% das ações virariam bônus da gestão: US$ 50 mi a cada US$ 1 bi de valorização.",
+  "o_que_observar": "O plano caiu após reação negativa, inclusive da Uefa. A Fifa nega que Infantino fosse lucrar e diz que vai responder às perguntas do seu Conselho."
+}

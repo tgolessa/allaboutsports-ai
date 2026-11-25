@@ -1,0 +1,33 @@
+{
+  "tipo": "noticia",
+  "pilar": "Marcas & patrocínio",
+  "fonte": "Máquina do Esporte · Conmebol · 24 nov 2026",
+  "fontes": [
+    "Máquina do Esporte · 24 nov 2026",
+    "Conmebol (tabela de premiação 2026)",
+    "Nosso Palmeiras · 23 nov 2026"
+  ],
+  "capa": {
+    "prefixo": "US$",
+    "numero": "18mi",
+    "manchete": "separam campeão e vice na final de sábado da Libertadores"
+  },
+  "fato": "Palmeiras e Estudiantes decidem a Libertadores no sábado (28), em Montevidéu. Pela tabela da Conmebol, o campeão leva US$ 25 mi e o vice, US$ 7 mi.",
+  "numero": {
+    "valor": "US$ 25mi",
+    "legenda": "é o prêmio do campeão, mais que o triplo do vice",
+    "comparacao": [
+      {
+        "rotulo": "Vice · US$ 7 mi",
+        "valor": 7
+      },
+      {
+        "rotulo": "Campeão · US$ 25 mi",
+        "valor": 25
+      }
+    ]
+  },
+  "contexto": "O Palmeiras vai jogar de camisa limpa. Com a MP que proibiu as apostas no Brasil, a Sportingbet saiu do uniforme, mas o contrato não foi rompido.",
+  "por_que_importa": "A Sportingbet ainda paga bônus pelo título, com desconto e valor sigiloso. O acordo deste ano previa R$ 100 mi fixos e até R$ 73 mi por metas.",
+  "o_que_observar": "O bônus também vale na final da Copa do Brasil, contra o Grêmio, em 6 de dezembro. A MP só deve ser discutida no Congresso a partir de março."
+}

@@ -1,6 +1,6 @@
 # Agente diário — AllAboutTri.AI
 
-Instruções para o agente que, toda madrugada, escolhe as pautas do dia, produz os 3 posts e deixa tudo agendado. **A publicação é automática:** o agente grava os posts na `main` com `"status": "aprovado"` e o workflow `publicar.yml` (a cada 15 minutos) publica cada um no horário marcado. Não há aprovação manual, então a checagem é responsabilidade do agente: **na dúvida sobre um fato, o post não sai.**
+Instruções para o agente que, toda madrugada, escolhe as pautas do dia, produz os 3 posts e deixa tudo agendado. O resumo "As últimas 24h no triathlon", às 20:00, é de outro agente (`ULTIMAS24H.md`): não use esse horário. **A publicação é automática:** o agente grava os posts na `main` com `"status": "aprovado"` e o workflow `publicar.yml` (a cada 15 minutos) publica cada um no horário marcado. Não há aprovação manual, então a checagem é responsabilidade do agente: **na dúvida sobre um fato, o post não sai.**
 
 ## 0. Preparação
 
@@ -19,7 +19,7 @@ Datas e horários sempre no fuso de Brasília (America/Sao_Paulo, `-03:00`).
 | --- | --- | --- |
 | **06:30** | Rápido, para quem abre o celular antes ou depois do treino | `nota`, `inscricao` ou `resultado` |
 | **12:30** | O post principal do dia | `noticia` (carrossel) ou `resultado` de prova grande |
-| **19:30** | Reel, sobre uma pauta diferente das outras duas | `reel` feito a partir de um `pauta.json` de `noticia` |
+| **18:30** | Reel, sobre uma pauta diferente das outras duas | `reel` feito a partir de um `pauta.json` de `noticia` |
 
 - **Segunda:** o post das 06:30 é o resultado mais importante do fim de semana, se houver prova relevante (IRONMAN Pro Series, T100, IRONMAN ou 70.3 no Brasil, brasileiro em pódio).
 - **Sexta:** o post das 12:30 é o `semanal` (Top 10 da semana, de segunda a sexta).
@@ -58,7 +58,7 @@ Se aparecer `ESTOUROU`, encurte o texto e gere de novo.
 python agente/story.py posts/<pasta>/pauta.json
 ```
 
-**Reel** (post das 19:30): na pasta do Reel, escreva um `pauta.json` de `noticia` sobre a pauta escolhida (ele não vira carrossel no feed) e gere o vídeo:
+**Reel** (post das 18:30): na pasta do Reel, escreva um `pauta.json` de `noticia` sobre a pauta escolhida (ele não vira carrossel no feed) e gere o vídeo:
 ```bash
 python agente/reel.py posts/<pasta>/pauta.json
 python agente/story.py posts/<pasta>/pauta.json

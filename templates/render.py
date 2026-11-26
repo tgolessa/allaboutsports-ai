@@ -14,6 +14,7 @@ Tipos de JSON (exemplos em templates/exemplos/):
   "resultado" -> resultado de prova: capa + tabela por categoria + fechamento
   "inscricao" -> abertura de inscrições: capa + ficha + fechamento
   "semanal"   -> top 10 da semana (7 slides)
+  "ultimas24h"-> resumo diário das 20h: "As últimas 24h no triathlon" (4 a 8 itens)
 """
 import argparse
 import html
@@ -261,7 +262,36 @@ def build_semanal(d):
     return slides
 
 
-BUILDERS = {"noticia": build_noticia, "nota": build_nota, "resultado": build_resultado,
+# ------------------------------------------------------------ últimas 24h
+def build_ultimas24h(d):
+    """Resumo diário das 20h: 'As últimas 24h no triathlon', com 4 a 8 itens, 2 por slide."""
+    items = d["itens"]
+    if not 4 <= len(items) <= 8:
+        sys.exit("O resumo das últimas 24h precisa de 4 a 8 itens.")
+    pages = (len(items) + 1) // 2
+    total = pages + 2
+    lst = "".join(f'<div class="item"><span>{k+1:02d}</span><strong>{e(x["titulo_curto"])}</strong></div>' for k, x in enumerate(items))
+    slides = [page(
+        top(d["data"])
+        + '<div class="main" style="gap:34px"><span class="prefix">resumo diário · 20h</span>'
+        '<span class="closing" style="font-size:132px">As últimas 24h no triathlon<b>.</b></span>'
+        f'<div class="list">{lst}</div></div>'
+        + foot(f"{len(items)} notícias em 1 minuto", "Arraste →"),
+    )]
+    for s in range(pages):
+        pair = items[2 * s: 2 * s + 2]
+        blocks = ""
+        for k, x in enumerate(pair):
+            num = f'<span class="b-num fit-w">{e(x["numero"])}</span>' if x.get("numero") else ""
+            blocks += (f'<div class="block"><span class="kicker">{2*s+k+1:02d} · {e(x["editoria"])}</span>{num}'
+                       f'<span class="b-title fit-h">{e(x["titulo"])}</span><p class="b-text fit-h">{e(x["resumo"])}</p></div>')
+        src = " · ".join(dict.fromkeys(x["fonte"] for x in pair))
+        slides.append(page(top(counter(s + 2, total)) + f'<div class="main" style="gap:0">{blocks}</div>' + foot(f"Fontes: {src}")))
+    slides.append(closing(total, total, [x["fonte"] for x in items], "Amanhã, 20h, tem mais"))
+    return slides
+
+
+BUILDERS = {"ultimas24h": build_ultimas24h, "noticia": build_noticia, "nota": build_nota, "resultado": build_resultado,
             "inscricao": build_inscricao, "semanal": build_semanal}
 
 

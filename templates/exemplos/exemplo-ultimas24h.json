@@ -1,0 +1,54 @@
+{
+  "tipo": "ultimas24h",
+  "data": "00/00",
+  "itens": [
+    {
+      "titulo_curto": "Título curto de exemplo 1",
+      "titulo": "Título de exemplo 1",
+      "resumo": "Resumo de exemplo em uma ou duas frases, até 30 palavras.",
+      "numero": "",
+      "editoria": "Provas",
+      "fonte": "Exemplo"
+    },
+    {
+      "titulo_curto": "Título curto de exemplo 2",
+      "titulo": "Título de exemplo 2",
+      "resumo": "Resumo de exemplo em uma ou duas frases, até 30 palavras.",
+      "numero": "4:01:20",
+      "editoria": "Resultados",
+      "fonte": "Exemplo"
+    },
+    {
+      "titulo_curto": "Título curto de exemplo 3",
+      "titulo": "Título de exemplo 3",
+      "resumo": "Resumo de exemplo em uma ou duas frases, até 30 palavras.",
+      "numero": "",
+      "editoria": "Inscrições",
+      "fonte": "Exemplo"
+    },
+    {
+      "titulo_curto": "Título curto de exemplo 4",
+      "titulo": "Título de exemplo 4",
+      "resumo": "Resumo de exemplo em uma ou duas frases, até 30 palavras.",
+      "numero": "4:01:20",
+      "editoria": "Bastidores",
+      "fonte": "Exemplo"
+    },
+    {
+      "titulo_curto": "Título curto de exemplo 5",
+      "titulo": "Título de exemplo 5",
+      "resumo": "Resumo de exemplo em uma ou duas frases, até 30 palavras.",
+      "numero": "",
+      "editoria": "Treino",
+      "fonte": "Exemplo"
+    },
+    {
+      "titulo_curto": "Título curto de exemplo 6",
+      "titulo": "Título de exemplo 6",
+      "resumo": "Resumo de exemplo em uma ou duas frases, até 30 palavras.",
+      "numero": "4:01:20",
+      "editoria": "Provas",
+      "fonte": "Exemplo"
+    }
+  ]
+}

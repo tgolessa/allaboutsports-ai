@@ -4,6 +4,12 @@ on:
   schedule:
     # A cada 15 minutos publica os posts aprovados cujo horário já passou.
     - cron: "*/15 * * * *"
+    # O GitHub atrasa o agendamento acima; estes horários fixos (UTC) reforçam
+    # os posts das 06:30, 12:30, 18:30 e 20:00 de Brasília.
+    - cron: "31 9 * * *"
+    - cron: "31 15 * * *"
+    - cron: "31 21 * * *"
+    - cron: "1 23 * * *"
   workflow_dispatch:
     inputs:
       modo:

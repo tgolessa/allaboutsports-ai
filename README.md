@@ -28,7 +28,8 @@ As imagens saem em `templates/out/<nome-do-json>/`. O script reduz a fonte de te
 | `resultado` | Resultado de prova: capa com o tempo do vencedor, tabela por categoria (até 2 categorias, até 10 atletas cada) | 3 ou 4 |
 | `inscricao` | Abertura de inscrições: capa com a data, ficha da prova | 3 |
 | `semanal` | Top 10 da semana, toda sexta | 7 |
-| `reel` | Vídeo 9:16 feito de um `pauta.json` de `noticia` (`agente/reel.py`), todo dia às 19:30 | 1 vídeo |
+| `reel` | Vídeo 9:16 feito de um `pauta.json` de `noticia` (`agente/reel.py`), todo dia às 18:30 | 1 vídeo |
+| `ultimas24h` | "As últimas 24h no triathlon", resumo diário das 20:00 com 4 a 8 notícias | 4 a 6 |
 
 Os campos de cada tipo estão nos exemplos em `templates/exemplos/`.
 
@@ -52,6 +53,7 @@ Identidade "Split": fundo claro, barra com as três modalidades (natação azul,
 | Arquivo | O que faz | Quando |
 | --- | --- | --- |
 | `AGENTE.md` | Pesquisa, produz e agenda os 3 posts do dia (publicação automática) | 5h15 todo dia |
+| `ULTIMAS24H.md` | Resumo "As últimas 24h no triathlon" (publicação automática às 20h) | 18h15 todo dia |
 | `PLANTAO.md` | Notícia quente: resultado oficial ou anúncio importante, publicação automática | 9h20 · 13h20 · 17h20 · 21h20 |
 | `ANALISTA.md` | Relatório de desempenho e ajustes em `docs/aprendizados.md` | pausado |
 | `COMENTARIOS.md` | Responde comentários simples e separa os sensíveis | 12h05 · 18h05 · 22h05 |

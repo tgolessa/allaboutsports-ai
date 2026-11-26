@@ -1,0 +1,48 @@
+{
+  "tipo": "noticia",
+  "editoria": "Provas",
+  "fonte": "Unlimited Sports",
+  "fontes": [
+    "Unlimited Sports (13/11/2026)",
+    "Portal R3 (25/11/2026)",
+    "Bike Magazine (13/11/2026)"
+  ],
+  "capa": {
+    "prefixo": "domingo, 29/11, em Aracaju",
+    "numero": "1.300",
+    "unidade": "atletas",
+    "manchete": "Último 70.3 do ano no Brasil tem Hidalgo e Toldi",
+    "dados": [
+      {
+        "rotulo": "Natação",
+        "valor": "1,9 km"
+      },
+      {
+        "rotulo": "Bike",
+        "valor": "90 km"
+      },
+      {
+        "rotulo": "Corrida",
+        "valor": "21,1 km"
+      }
+    ]
+  },
+  "fato": "O IRONMAN 70.3 Aracaju-Sergipe é neste domingo (29/11) e fecha a temporada brasileira do circuito. São cerca de 1.300 atletas de dez países, na terceira edição da prova.",
+  "numero": {
+    "valor": "50",
+    "legenda": "vagas para amadores (25 masculinas e 25 femininas) no Mundial de 70.3 de 2027, em Chattanooga (EUA). A elite masculina disputa outras 2.",
+    "comparacao": [
+      {
+        "rotulo": "Vagas pro",
+        "valor": 2
+      },
+      {
+        "rotulo": "Vagas amadores",
+        "valor": 50
+      }
+    ]
+  },
+  "contexto": "A elite é só masculina este ano. Miguel Hidalgo, vice do WTCS 2025, faz sua estreia em Sergipe. Fernando Toldi defende o título, e Reinaldo Colucci e André Lopes também largam.",
+  "por_que_importa": "É uma das últimas chances da temporada de garantir vaga para o Mundial de 2027. A bike tem três voltas e é quase plana, mas a organização alerta para vento e calor.",
+  "o_que_observar": "A elite larga às 5h na foz do Rio Vaza-Barris, e os amadores, de 5h15 a 5h35. A corrida é toda na orla de Atalaia. Premiação acima de R$ 80 mil."
+}

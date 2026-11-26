@@ -1,0 +1,37 @@
+{
+  "tipo": "resultado",
+  "editoria": "Resultado",
+  "prova": "Mundial de Longa Distância · Abu Dhabi",
+  "data": "22/11/2026",
+  "manchete": "Hirsch e Pierré são campeões mundiais de longa distância",
+  "fonte": "Slowtwitch, FFTRI",
+  "fontes": [
+    "Slowtwitch (22/11/2026)",
+    "Federação Francesa de Triathlon (23/11/2026)",
+    "Triathlon Today (22/11/2026)"
+  ],
+  "categorias": [
+    {
+      "nome": "Elite masculino",
+      "podio": [
+        {"pos": "1", "atleta": "Wilhelm Hirsch", "pais": "GER", "tempo": "5:12:05", "parciais": {"natacao": "42:53", "bike": "2:37:21", "corrida": "1:46:29"}},
+        {"pos": "2", "atleta": "William Draper", "pais": "GBR", "tempo": "5:17:25"},
+        {"pos": "3", "atleta": "Wojciech Kopyciński", "pais": "POL", "tempo": "5:20:27"},
+        {"pos": "4", "atleta": "Ondrej Kubo", "pais": "SVK", "tempo": "5:25:18"},
+        {"pos": "5", "atleta": "Toon Mariën", "pais": "BEL", "tempo": "5:26:43"}
+      ],
+      "observacao": "3 km de natação, 120 km de bike e 30 km de corrida. O espanhol Antonio Benito López, bicampeão, abandonou lesionado na corrida."
+    },
+    {
+      "nome": "Elite feminino",
+      "podio": [
+        {"pos": "1", "atleta": "Marjolaine Pierré", "pais": "FRA", "tempo": "5:35:25", "parciais": {"natacao": "47:56", "bike": "2:46:01", "corrida": "1:56:04"}},
+        {"pos": "2", "atleta": "Caroline Pohle", "pais": "GER", "tempo": "5:38:38"},
+        {"pos": "3", "atleta": "Anne-Sophie Pierre", "pais": "FRA", "tempo": "5:58:22"},
+        {"pos": "4", "atleta": "Aurélia Boulanger", "pais": "FRA", "tempo": "6:05:16"},
+        {"pos": "5", "atleta": "Lydia Dant", "pais": "GBR", "tempo": "6:06:41"}
+      ],
+      "observacao": "Terceiro título mundial seguido de Marjolaine Pierré, depois de 2023 e 2025."
+    }
+  ]
+}

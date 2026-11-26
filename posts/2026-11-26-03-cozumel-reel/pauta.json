@@ -1,0 +1,29 @@
+{
+  "tipo": "noticia",
+  "editoria": "Resultados",
+  "fonte": "PTO, TRI247",
+  "fontes": [
+    "Resultados PTO (22/11/2026)",
+    "TRI247",
+    "Triathlon Today (22/11/2026)"
+  ],
+  "capa": {
+    "prefixo": "IRONMAN Cozumel · 22/11",
+    "numero": "7:24:34",
+    "unidade": "",
+    "manchete": "Keulen, 2º no IRONMAN Brasil, vence em Cozumel",
+    "dados": [
+      {"rotulo": "Natação", "valor": "38:29"},
+      {"rotulo": "Bike", "valor": "4:01:41"},
+      {"rotulo": "Corrida", "valor": "2:40:05"}
+    ]
+  },
+  "fato": "O holandês Youri Keulen venceu o IRONMAN Cozumel no domingo (22/11) em 7:24:34, 5:49 à frente do alemão Lasse Nygaard Priester, que estreava na distância.",
+  "numero": {
+    "valor": "8:21:56",
+    "legenda": "Tempo da austríaca Lisa Perterer, que defendeu o título no feminino, 7:33 mais rápida que em 2025. Anna Bergsten foi 2ª e Loanne Duvoisin, 3ª."
+  },
+  "contexto": "Keulen foi 2º no IRONMAN Brasil, em maio, e 9º em Kona, em outubro. A natação de Cozumel tem correnteza a favor, por isso os tempos não contam como recorde.",
+  "por_que_importa": "Cozumel deu 4 vagas por gênero para o Mundial de IRONMAN de 2027, em Kona. Era a última chance fora da Oceania de garantir a vaga pro este ano.",
+  "o_que_observar": "A próxima chance é o IRONMAN Western Australia, em 6 de dezembro, com mais 4 vagas por gênero para Kona 2027."
+}

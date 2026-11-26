@@ -1,0 +1,46 @@
+{
+  "tipo": "ultimas24h",
+  "data": "26/11",
+  "itens": [
+    {
+      "titulo_curto": "70.3 Sergipe confirmado em 2027",
+      "titulo": "Governo de Sergipe confirma o IRONMAN 70.3 em 2027",
+      "resumo": "O governador Fábio Mitidieri recebeu Carlos Galvão, CEO do IRONMAN Brasil, na quarta (25/11) e confirmou a 4ª edição seguida. O estado diz investir R$ 3 milhões na prova.",
+      "numero": "R$ 3 mi",
+      "editoria": "Provas",
+      "fonte": "Infonet (26/11/2026)"
+    },
+    {
+      "titulo_curto": "Vila do 70.3 abre em Aracaju",
+      "titulo": "Vila do 70.3 abre em Aracaju; largada é domingo às 5h",
+      "resumo": "A retirada de kits começou nesta quinta (26/11). No domingo (29/11), a elite masculina larga às 5h e os amadores, das 5h15 às 5h35. São mais de 1.300 inscritos.",
+      "numero": "5h",
+      "editoria": "Provas",
+      "fonte": "Infonet (26/11/2026)"
+    },
+    {
+      "titulo_curto": "Hirsch e Pierré campeões mundiais",
+      "titulo": "Hirsch e Pierré são campeões mundiais de longa distância",
+      "resumo": "Em Abu Dhabi (22/11), o alemão fez 5:12:05 em 3 km de natação, 120 km de bike e 30 km de corrida. A francesa venceu em 5:35:25, seu terceiro título mundial.",
+      "numero": "5:12:05",
+      "editoria": "Resultados",
+      "fonte": "Slowtwitch, FFTRI"
+    },
+    {
+      "titulo_curto": "Keulen e Perterer vencem Cozumel",
+      "titulo": "Keulen e Perterer vencem o IRONMAN Cozumel",
+      "resumo": "O holandês, 2º no IRONMAN Brasil em maio, fez 7:24:34 no domingo (22/11) e vai a Kona 2027. A austríaca Lisa Perterer defendeu o título em 8:21:56.",
+      "numero": "7:24:34",
+      "editoria": "Resultados",
+      "fonte": "PTO, TRI247"
+    },
+    {
+      "titulo_curto": "Anne Haug vence as 4 etapas",
+      "titulo": "Aposentada, Anne Haug vence as 4 etapas em Lanzarote",
+      "resumo": "Campeã de Kona em 2019, a alemã ganhou todas as etapas do Lanzarote International Running Challenge, 49 km no total, cerca de 14 minutos à frente da 2ª colocada.",
+      "numero": "49 km",
+      "editoria": "Bastidores",
+      "fonte": "Triathlon Today (26/11/2026)"
+    }
+  ]
+}

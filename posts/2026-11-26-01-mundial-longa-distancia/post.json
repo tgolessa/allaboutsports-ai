@@ -1,5 +1,5 @@
 {
-  "status": "aprovado",
+  "status": "publicado",
   "publicar_em": "2026-11-26T06:30:00-03:00",
   "tipo": "resultado",
   "legenda": "5:12:05 para 3 km de natação, 120 km de bike e 30 km de corrida: Wilhelm Hirsch é campeão mundial de longa distância.\n\nO alemão, que venceu o IRONMAN Brasil em maio, ganhou no domingo (22/11), em Abu Dhabi, seu primeiro título mundial, com a corrida mais rápida do dia (1:46:29). No feminino, a francesa Marjolaine Pierré fez 5:35:25 e chegou ao terceiro título seguido, depois de 2023 e 2025. O espanhol Antonio Benito López, bicampeão, abandonou lesionado na corrida.\n\nVocê encararia uma prova de 120 km de bike e 30 km de corrida no calor?\n\nFontes: Slowtwitch (22/11/2026), Federação Francesa de Triathlon (23/11/2026), Triathlon Today (22/11/2026), TRI247.\n\n#triathlon #triatlo #ironman #worldtriathlon #longadistancia #triathlonbrasil",
@@ -8,5 +8,9 @@
     "imagens/02.jpg",
     "imagens/03.jpg",
     "imagens/04.jpg"
-  ]
+  ],
+  "media_id": "18106036403051447",
+  "link": "https://www.instagram.com/p/DgMyi89CV6E/",
+  "publicado_em": "2026-11-26T09:31:56+0000",
+  "story_id": "18030910448923278"
 }

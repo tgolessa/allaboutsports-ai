@@ -1,0 +1,29 @@
+{
+  "tipo": "noticia",
+  "editoria": "Resultados",
+  "fonte": "TRI247, Triathlon Today",
+  "fontes": ["TRI247 (novembro de 2026)", "Triathlon Today (25/11/2026)"],
+  "capa": {
+    "prefixo": "T100 Catar · 11 e 12/12",
+    "numero": "6",
+    "unidade": "pontos",
+    "manchete": "Taylor-Brown e Derron decidem o título do T100 no Catar",
+    "dados": [
+      {"rotulo": "Natação", "valor": "2 km"},
+      {"rotulo": "Bike", "valor": "80 km"},
+      {"rotulo": "Corrida", "valor": "18 km"}
+    ]
+  },
+  "fato": "A final do T100 é em Lusail, no Catar: mulheres na sexta (11/12), homens no sábado (12/12). A britânica Georgia Taylor-Brown tem 96 pontos; a suíça Julie Derron, 90.",
+  "numero": {
+    "valor": "55",
+    "legenda": "pontos para quem vencer a final, contra 35 numa etapa comum. Quem das duas ganhar no Catar leva o título.",
+    "comparacao": [
+      {"rotulo": "Etapa comum", "valor": 35},
+      {"rotulo": "Final", "valor": 55}
+    ]
+  },
+  "contexto": "O T100 é o circuito da PTO, a associação dos triatletas profissionais. Taylor-Brown venceu na Espanha e em Dubai; Derron ganhou em Vancouver. Kate Waugh, campeã de 2025, já não tem chance.",
+  "por_que_importa": "No masculino, o neozelandês Hayden Wilde chega com 105 pontos e três vitórias em três provas. O segundo, Kyle Smith, tem 63.",
+  "o_que_observar": "Segundo o TRI247, a campeã da temporada leva US$ 100 mil de bônus. Wilhelm Hirsch e Youri Keulen, os dois primeiros do IRONMAN Brasil, estão na largada masculina."
+}

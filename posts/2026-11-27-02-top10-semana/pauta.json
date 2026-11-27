@@ -1,0 +1,17 @@
+{
+  "tipo": "semanal",
+  "semana": 48,
+  "periodo": "23–27 NOV 2026",
+  "noticias": [
+    {"titulo_curto": "Hirsch e Pierré, campeões mundiais", "titulo": "Hirsch e Pierré são campeões mundiais de longa distância", "resumo": "Em Abu Dhabi (22/11), o alemão fez 5:12:05 em 3 km, 120 km e 30 km. A francesa venceu em 5:35:25, seu terceiro título seguido.", "numero": "5:12:05", "editoria": "Resultados", "fonte": "Slowtwitch, FFTRI"},
+    {"titulo_curto": "Keulen e Perterer vencem Cozumel", "titulo": "Keulen e Perterer vencem o IRONMAN Cozumel", "resumo": "O holandês, 2º no IRONMAN Brasil, fez 7:24:34 e vai a Kona 2027. A austríaca Lisa Perterer defendeu o título em 8:21:56.", "numero": "7:24:34", "editoria": "Resultados", "fonte": "PTO, TRI247"},
+    {"titulo_curto": "Aracaju fecha a temporada domingo", "titulo": "IRONMAN 70.3 Aracaju fecha a temporada no domingo", "resumo": "São cerca de 1.300 atletas em 29/11 e 50 vagas para amadores no Mundial de 70.3 de 2027, em Chattanooga.", "numero": "1.300", "editoria": "Provas", "fonte": "Unlimited Sports"},
+    {"titulo_curto": "Sergipe confirma 70.3 em 2027", "titulo": "Governo de Sergipe confirma o IRONMAN 70.3 em 2027", "resumo": "O governador Fábio Mitidieri confirmou a 4ª edição seguida da prova. O estado diz investir R$ 3 milhões.", "numero": "R$ 3 mi", "editoria": "Provas", "fonte": "Infonet"},
+    {"titulo_curto": "Goiânia deve ganhar um 70.3", "titulo": "Goiânia deve ganhar um IRONMAN 70.3 em 2027", "resumo": "O prefeito Sandro Mabel falou em prova em julho de 2027, segundo O Popular. Falta o anúncio oficial da IRONMAN e da Unlimited Sports.", "numero": "", "editoria": "Provas", "fonte": "O Popular"},
+    {"titulo_curto": "Título do T100 decidido no Catar", "titulo": "Taylor-Brown e Derron decidem o T100 no Catar", "resumo": "A britânica tem 96 pontos e a suíça, 90. A final feminina é em 11/12, em Lusail, e a vitória vale 55 pontos.", "numero": "96 x 90", "editoria": "Resultados", "fonte": "TRI247, Triathlon Today"},
+    {"titulo_curto": "Wilde chega invicto à final", "titulo": "Hayden Wilde chega invicto à final do T100", "resumo": "O neozelandês venceu as três provas que fez e soma 105 pontos. Kyle Smith é o 2º, com 63. A final masculina é em 12/12.", "numero": "105", "editoria": "Resultados", "fonte": "Triathlon Today"},
+    {"titulo_curto": "Hirsch: Ironman e T100 em 6 dias", "titulo": "Campeão do IRONMAN Brasil fará Ironman e T100 em 6 dias", "resumo": "Segundo o TRI247, Wilhelm Hirsch corre o IRONMAN Western Australia em 6/12. Ele também está na largada do T100 do Catar, em 12/12.", "numero": "6 dias", "editoria": "Bastidores", "fonte": "TRI247"},
+    {"titulo_curto": "Anne Haug vence as 4 etapas", "titulo": "Aposentada, Anne Haug vence as 4 etapas em Lanzarote", "resumo": "Campeã de Kona em 2019, a alemã ganhou todas as etapas de um desafio de corrida em Lanzarote, com 49 km no total.", "numero": "49 km", "editoria": "Bastidores", "fonte": "Triathlon Today"},
+    {"titulo_curto": "Mais 4 vagas para Kona em 6/12", "titulo": "Western Australia dá mais vagas pro para Kona", "resumo": "Depois de Cozumel, o IRONMAN Western Australia, em 6/12, distribui mais 4 vagas por gênero para o Mundial de 2027, em Kona.", "numero": "4", "editoria": "Provas", "fonte": "PTO"}
+  ]
+}

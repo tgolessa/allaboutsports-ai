@@ -1,0 +1,46 @@
+{
+  "tipo": "ultimas24h",
+  "data": "27/11",
+  "itens": [
+    {
+      "titulo_curto": "70.3 Sergipe fecha a temporada",
+      "titulo": "70.3 Sergipe fecha a temporada com só elite masculina",
+      "resumo": "Domingo (29/11), em Aracaju: elite larga às 5h e amadores a partir de 5h15. Segundo a Bikemagazine, são mais de R$ 80 mil em prêmios e 50 vagas amadoras para Chattanooga 2027.",
+      "numero": "50 vagas",
+      "editoria": "Provas",
+      "fonte": "Bikemagazine (27/11/2026)"
+    },
+    {
+      "titulo_curto": "70.3 muda 14 linhas de ônibus",
+      "titulo": "70.3 muda o trajeto de 14 linhas de ônibus em Aracaju",
+      "resumo": "Segundo a Prefeitura de Aracaju, os desvios valem no domingo (29/11), das 5h às 14h, enquanto as vias do percurso estiverem fechadas. Quem vai torcer deve sair mais cedo.",
+      "numero": "14",
+      "editoria": "Provas",
+      "fonte": "A8 Sergipe (27/11/2026)"
+    },
+    {
+      "titulo_curto": "Brasília tem triathlon no sábado",
+      "titulo": "Metrópoles Endurance tem sprint e olímpico no Lago Paranoá",
+      "resumo": "No sábado (28/11), no Pontão do Lago Sul, o sprint larga às 6h e o olímpico (1,5 km, 40 km e 10 km) às 6h35. A premiação total do evento é de R$ 110 mil.",
+      "numero": "R$ 110 mil",
+      "editoria": "Provas",
+      "fonte": "Metrópoles (27/11/2026)"
+    },
+    {
+      "titulo_curto": "T100: 6 pontos decidem o título",
+      "titulo": "Taylor-Brown e Derron decidem o T100 no Catar",
+      "resumo": "A britânica tem 96 pontos e a suíça, 90, antes da final em Lusail (11/12). A vitória vale 55 pontos. No masculino, Hayden Wilde lidera com 105.",
+      "numero": "6",
+      "editoria": "Resultados",
+      "fonte": "TRI247, Triathlon Today"
+    },
+    {
+      "titulo_curto": "Hirsch: Ironman e T100 em 6 dias",
+      "titulo": "Hirsch fará Ironman e T100 com 6 dias de intervalo",
+      "resumo": "Segundo o TRI247, o campeão do IRONMAN Brasil corre o IRONMAN Western Australia em 6/12 e está na largada do T100 do Catar em 12/12.",
+      "numero": "6 dias",
+      "editoria": "Bastidores",
+      "fonte": "TRI247, Triathlon Today"
+    }
+  ]
+}

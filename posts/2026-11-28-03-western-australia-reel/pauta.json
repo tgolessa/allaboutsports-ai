@@ -1,0 +1,28 @@
+{
+  "tipo": "noticia",
+  "editoria": "Provas",
+  "fonte": "TRI247",
+  "fontes": [
+    "TRI247 (lista de largada, novembro de 2026)",
+    "TRI247 (resultado do IRONMAN Cairns 2026)"
+  ],
+  "capa": {
+    "prefixo": "IRONMAN Western Australia · 6/12",
+    "numero": "8",
+    "unidade": "vagas",
+    "manchete": "Último Ironman pro do ano distribui vagas para Kona",
+    "dados": [
+      {"rotulo": "Natação", "valor": "3,8 km"},
+      {"rotulo": "Bike", "valor": "180 km"},
+      {"rotulo": "Corrida", "valor": "42,2 km"}
+    ]
+  },
+  "fato": "O IRONMAN Western Australia, em Busselton, no domingo (6/12), é o último Ironman com elite do ano. Dá 4 vagas por gênero para o Mundial de 2027, em Kona.",
+  "numero": {
+    "valor": "8:30:50",
+    "legenda": "Tempo da holandesa Lotte Wilms, que venceu em 2025 com 14 minutos de vantagem e volta para defender o título, segundo o TRI247."
+  },
+  "contexto": "Segundo o TRI247, o belga Jelle Geens, bicampeão mundial de 70.3, tenta de novo a distância completa. Na estreia, no IRONMAN Texas, ele não terminou a maratona.",
+  "por_que_importa": "Na lista também estão o australiano Nick Thompson, campeão do IRONMAN Cairns em junho, e o alemão Wilhelm Hirsch, campeão do IRONMAN Brasil em maio.",
+  "o_que_observar": "Hirsch tenta emendar provas: seis dias depois, no sábado (12/12), ele está na largada do T100 do Catar, a final do circuito da PTO."
+}

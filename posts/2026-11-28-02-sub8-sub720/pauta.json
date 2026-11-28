@@ -1,0 +1,29 @@
+{
+  "tipo": "noticia",
+  "editoria": "Bastidores",
+  "fonte": "Triathlon Magazine Canada, Slowtwitch, TRI247",
+  "fontes": [
+    "Triathlon Magazine Canada (26/11/2026)",
+    "Slowtwitch (07/11/2026)",
+    "TRI247 (novembro de 2026)"
+  ],
+  "capa": {
+    "prefixo": "Ironman masculino · 1996 a 2026",
+    "numero": "7:19:17",
+    "unidade": "",
+    "manchete": "Do sub-8 ao sub-7:20: 30 anos de recordes no Ironman",
+    "dados": [
+      {"rotulo": "1996 · Leder", "valor": "7:57:02"},
+      {"rotulo": "2023 · Ditlev", "valor": "7:24:40"},
+      {"rotulo": "2026 · Ditlev", "valor": "7:19:17"}
+    ]
+  },
+  "fato": "Em 1996, o alemão Lothar Leder fez 7:57:02 em Roth, o primeiro Ironman abaixo de 8 horas. Em 7/11/2026, o dinamarquês Magnus Ditlev fez 7:19:17 na Flórida.",
+  "numero": {
+    "valor": "575",
+    "legenda": "chegadas abaixo de 8 horas desde 1996, de 225 atletas diferentes, segundo a Triathlon Magazine Canada. Quem mais tem é o britânico Joe Skipper: 15."
+  },
+  "contexto": "Em Cozumel 2021, Kristian Blummenfelt fez 7:21:12, mas com correnteza a favor na natação. Em Roth 2023, Ditlev fez 7:24:40, o primeiro abaixo de 7:30 sem essa ajuda.",
+  "por_que_importa": "Em julho de 2026, Sam Laidlow baixou a marca para 7:21:04 em Roth. Quatro meses depois, Ditlev tirou mais 1:47, com bike de 3:51:16 e maratona de 2:33:31.",
+  "o_que_observar": "Segundo a Triathlon Magazine Canada, 13 homens fizeram 14 provas abaixo de 7:30 em 2026. Só no IRONMAN Texas, seis atletas ficaram abaixo dessa marca."
+}
